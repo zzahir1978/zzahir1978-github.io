@@ -1,56 +1,47 @@
-<!doctype html>
-
-<!-- this is a comment for human! -->
-
+<!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Styled Navigation</title>
+    <link rel="stylesheet" href="css/master.css">
+  </head>
+  <body>
+    <nav>
+      <a href="">Home</a>
+      <a href="">Projetcs</a>
+      <a href="">Resume</a>
+      <a href="">About Me</a>
 
-<header>
-  <!-- change the name to yours! -->
-  <title>Zahiruddin's Portal</title>
-  <!-- link to the master cascading stylesheet -->
-  <link rel="stylesheet" href="css/master.css">
-  <link rel="FaviconIcon" href="favicon.ico" type="image/x-icon">
-  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <meta name="name" content="Zahiruddin's Portal">
-  <!-- remove the following line after you are happy with your Website
-       so that search engines will index it! -->
-  <meta name="robots" content="noindex, nofollow">
-</header>
+    </nav>
+    <section>
+      <hr>
+      <h2>Data science</h2>
+<hr>
+      <p>Data science is an inter-disciplinary field that uses scientific methods, processes, algorithms and systems to extract knowledge and insights from many structural and unstructured data.Data science is related to data mining, deep learning and big data.</p>
 
-<body>
-  <!-- add the banner image here -->
-  <img class="hero" src="images/28.jpg" width="75%" alt="banner">
-
-  <!-- add the name for the website -->
-  <h1>Zahiruddin's Portal</h1>
-
-  <!-- add a section called "About Me" -->
-  <h2>About Me</h2>
-
-  <!-- add a few paragraph lines to describe you -->
-  <p>I am an Electrical Engineer specialised in Data Analyst.</p> <!-- where do you live? -->
-  <p>I graduated in Bachelor of Engineering (Electrical & Electronic) from the University Putra Malaysia in year 2000.</p> <!-- Where studying/studied? -->
-  <p>Currently, I'm pursuing my study in data analysis specialised in r and python programming.</p> <!-- current job or current school year? -->
-
-  <!-- add a section called "Credentials and Portofolio -->
-  <h2>Credentials and Portfolio</h2>
-
-  <!-- add two hyperlinks to resume page and github page separated by a vertical line -->
-  <p><a href="resume.html">My Resume</a> | <a href="https://github.com/zzahir1978" target="_blank">My GitHub</a></p>
-
-  <h2>Contact</h2>
-
-  <!-- add a link to let visitor to send you an email easily! -->
-  <p>Email: <a href="mailto:zzahir1978@gmail.com" target="_blank">zzahir1978@gmail.com</a></p>
-
-  <!-- don't post physical address, personal phone number or other personal information on the web! -->
+      <p>Data science is a "concept to unify statistics, data analysis, machine learning, domain knowledge and their related methods" in order to "understand and analyze actual phenomena" with data. It uses techniques and theories drawn from many fields within the context of mathematics, statistics, computer science, domain knowledge and information science. Turing award winner Jim Gray imagined data science as a "fourth paradigm" of science (empirical, theoretical, computational and now data-driven) and asserted that "everything about science is changing because of the impact of information technology" and the data deluge.</p>
+      <hr>
+      <script>
+      function startTime() {
+        var today = new Date();
+        var h = today.getHours();
+        var m = today.getMinutes();
+        var s = today.getSeconds();
+        m = checkTime(m);
+        s = checkTime(s);
+        document.getElementById('txt').innerHTML =
+        h + ":" + m + ":" + s;
+        var t = setTimeout(startTime, 500);
+      }
+      function checkTime(i) {
+        if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+        return i;
+      }
+    </script>
+    <body onload="startTime()">
+      <div id="txt"></div>
+    </body>
+    <hr>
+  </section>
 </body>
-
-<footer>
-  <hr>
-  <!-- change the name to yours! -->
-  <code>Copyright (C) 2020 Zahiruddin</code>
-</footer>
-
 </html>
