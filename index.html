@@ -35,7 +35,7 @@
     <link href="starter-template.css" rel="stylesheet">
   </head>
   <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark">  <!--fixed-top or nav-justified-->
   <a class="navbar-brand" href="#">Table of Contents</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse"
   data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
@@ -75,7 +75,33 @@
 
   <div class="starter-template">
     <h1>Data Science</h1>
+    <h2>"Using Data in Answering Question"</h2>
     <hr>
+
+    <script>
+    function startTime() {
+      var today = new Date();
+      var h = today.getHours();
+      var m = today.getMinutes();
+      var s = today.getSeconds();
+      m = checkTime(m);
+      s = checkTime(s);
+      document.getElementById('txt').innerHTML =
+      h + ":" + m + ":" + s;
+      var t = setTimeout(startTime, 500);
+    }
+    function checkTime(i) {
+      if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+      return i;
+    }
+
+    </script>
+    <body onload="startTime()">
+    <div id="txt"></div>
+    </body>
+    <hr>
+
+
     <p class="lead">Data science is an inter-disciplinary field that uses scientific methods,
       processes, algorithms and systems to extract knowledge and insights from many structural
       and unstructured data. Data science is related to data mining, deep learning and big data.
@@ -89,6 +115,7 @@
       theoretical, computational and now data-driven) and asserted that "everything about science is
       changing because of the impact of information technology" and the data deluge.
     </p>
+
 
   </div>
 
