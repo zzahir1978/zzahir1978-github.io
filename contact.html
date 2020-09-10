@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<title>Zahiruddin Portal</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body id="myPage">
+
+<!-- Sidebar on click -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
+    <i class="fa fa-remove"></i>
+  </a>
+  <a href="#" class="w3-bar-item w3-button">Link 1</a>
+  <a href="#" class="w3-bar-item w3-button">Link 2</a>
+  <a href="#" class="w3-bar-item w3-button">Link 3</a>
+  <a href="#" class="w3-bar-item w3-button">Link 4</a>
+  <a href="#" class="w3-bar-item w3-button">Link 5</a>
+</nav>
+
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="index.html" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Home</a>
+  <a href="resume.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">My Resume</a>
+  <a href="calendar.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">My Calendar</a>
+  <a href="https://twitter.com/zzahir1978?ref_src=twsrc%5Etfw" class="w3-bar-item w3-button w3-hide-small w3-hover-white">follow @zzahir1978</a>
+  <a href="contact.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">My Contact</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Notifications">My Projects <i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+      <a href="Capstone-ProjectNLP.html" class="w3-bar-item w3-button">Capstone Project: Natural Language Processing</a>
+      <a href="MyPopulation.html" class="w3-bar-item w3-button">Malaysian Population</a>
+      <a href="Project_Anomaly.html" class="w3-bar-item w3-button">Anomaly Detection in Time Series Data with Keras</a>
+      <a href="Analysis1.html" class="w3-bar-item w3-button">Data Analysis using Python Sample 1</a>
+      <a href="Analysis2.html" class="w3-bar-item w3-button">Data Analysis using Python Sample 2</a>
+      <a href="Analysis3.html" class="w3-bar-item w3-button">Data Analysis using Python Sample 3</a>
+      <a href="Analysis4.html" class="w3-bar-item w3-button">Data Analysis using Python Sample 4</a>
+      <a href="Pandas For Beginner.html" class="w3-bar-item w3-button">Panda Python Library for Beginner in Data Science</a>
+      <a href="TextMining.html" class="w3-bar-item w3-button">Text Mining Report : Al Quran in English Translation</a>
+      <a href="US Natural Disaster Report.html" class="w3-bar-item w3-button">US Natural Disaster Report 2011</a>
+      <a href="Week 1 _ Statistic in R.html" class="w3-bar-item w3-button">Statistic in R: Week 1 Report</a>
+      <a href="Example Exploratory Data Analysis.html" class="w3-bar-item w3-button">Statistic in R: EDA Example</a>
+      <a href="Data Analysis Project.html" class="w3-bar-item w3-button">Statistic in R: Data Analysis Project</a>
+      <a href="Foundations for inference.html" class="w3-bar-item w3-button">Inference Statistic: Foundations for Inference</a>
+      <a href="Confidence intervals.html" class="w3-bar-item w3-button">Inference Statistic: Confidence Interval</a>
+      <a href="Inference numerical data.html" class="w3-bar-item w3-button">Inference Statistic: Inference For Numerical Data</a>
+      <a href="Statistical inference Final Report.html" class="w3-bar-item w3-button">Inference Statistic: Statistical inference Final 	 Report</a>
+      <a href="Introduction to linear regression.htm" class="w3-bar-item w3-button">Linear Regression: Introduction to linear regression</a>
+      <a href="Multiple linear regression.htm" class="w3-bar-item w3-button">Linear Regression: Multiple linear regression</a>
+      <a href="Movies Prediction Rating.html" class="w3-bar-item w3-button">Linear Regression: Movies Prediction Rating Report</a>
+    </div>
+  </div>
+  <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal" title="Search"><i class="fa fa-search"></i></a>
+ </div>
+
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+  <a href="resume.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">My Resume</a>
+  <a href="calendar.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">My Calendar</a>
+  <a href="https://twitter.com/zzahir1978?ref_src=twsrc%5Etfw" class="w3-bar-item w3-button w3-hide-small w3-hover-white">follow @zzahir1978</a>
+  <a href="#contact" class="w3-bar-item w3-button w3-hide-small w3-hover-white">My Contact</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Notifications">My Projects <i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+      <a href="Capstone-ProjectNLP.html" class="w3-bar-item w3-button">Capstone Project: Natural Language Processing</a>
+      <a href="MyPopulation.html" class="w3-bar-item w3-button">Malaysian Population</a>
+      <a href="Project_Anomaly.html" class="w3-bar-item w3-button">Anomaly Detection in Time Series Data with Keras</a>
+      <a href="Analysis1.html" class="w3-bar-item w3-button">Data Analysis using Python Sample 1</a>
+      <a href="Analysis2.html" class="w3-bar-item w3-button">Data Analysis using Python Sample 2</a>
+      <a href="Analysis3.html" class="w3-bar-item w3-button">Data Analysis using Python Sample 3</a>
+      <a href="Analysis4.html" class="w3-bar-item w3-button">Data Analysis using Python Sample 4</a>
+      <a href="Pandas For Beginner.html" class="w3-bar-item w3-button">Panda Python Library for Beginner in Data Science</a>
+      <a href="TextMining.html" class="w3-bar-item w3-button">Text Mining Report : Al Quran in English Translation</a>
+      <a href="US Natural Disaster Report.html" class="w3-bar-item w3-button">US Natural Disaster Report 2011</a>
+      <a href="Week 1 _ Statistic in R.html" class="w3-bar-item w3-button">Statistic in R: Week 1 Report</a>
+      <a href="Example Exploratory Data Analysis.html" class="w3-bar-item w3-button">Statistic in R: EDA Example</a>
+      <a href="Data Analysis Project.html" class="w3-bar-item w3-button">Statistic in R: Data Analysis Project</a>
+      <a href="Foundations for inference.html" class="w3-bar-item w3-button">Inference Statistic: Foundations for Inference</a>
+      <a href="Confidence intervals.html" class="w3-bar-item w3-button">Inference Statistic: Confidence Interval</a>
+      <a href="Inference numerical data.html" class="w3-bar-item w3-button">Inference Statistic: Inference For Numerical Data</a>
+      <a href="Statistical inference Final Report.html" class="w3-bar-item w3-button">Inference Statistic: Statistical inference Final 	 Report</a>
+      <a href="Introduction to linear regression.htm" class="w3-bar-item w3-button">Linear Regression: Introduction to linear regression</a>
+      <a href="Multiple linear regression.htm" class="w3-bar-item w3-button">Linear Regression: Multiple linear regression</a>
+      <a href="Movies Prediction Rating.html" class="w3-bar-item w3-button">Linear Regression: Movies Prediction Rating Report</a>
+    </div>
+  </div>
+</div>
+
+<!-- Contact Container -->
+<div class="w3-container w3-padding-64 w3-theme-l5" id="contact">
+  <div class="w3-row">
+    <div class="w3-col m5">
+    <div class="w3-padding-16"><span class="w3-xlarge w3-border-teal w3-bottombar">Contact Me</span></div>
+      <h3>Address</h3>
+      <p>For any inquiry on my services, feel free to contact me.</p>
+      <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  Selangor, MY</p>
+      <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  +60132682910</p>
+      <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  zzahir1978@gmail.com</p>
+    </div>
+  </div>
+</div>
+
+<!-- Image of location/map -->
+<img src="map.jpg" class="w3-image w3-greyscale-min" style="width:100%;">
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-32 w3-theme-d1 w3-center">
+  <h4>Follow Us</h4>
+  <a class="w3-button w3-large w3-teal" href="https://www.facebook.com/zahiruddin.zahidanishah.90" title="Facebook"><i class="fa fa-facebook"></i></a>
+  <a class="w3-button w3-large w3-teal" href="https://twitter.com/zzahir1978" title="Twitter"><i class="fa fa-twitter"></i></a>
+  <a class="w3-button w3-large w3-teal" href="https://www.instagram.com/" title="Instagram"><i class="fa fa-instagram"></i></a>
+  <a class="w3-button w3-large w3-teal w3-hide-small" href="https://www.linkedin.com/in/zahiruddin-zahidanishah-%F0%9F%87%B2%F0%9F%87%BE-2bb93a79/" title="Linkedin"><i class="fa fa-linkedin"></i></a>
+
+  <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+    <span class="w3-text w3-padding w3-teal w3-hide-small">Go To Top</span>   
+    <a class="w3-button w3-theme" href="#myPage"><span class="w3-xlarge">
+    <i class="fa fa-chevron-circle-up"></i></span></a>
+  </div>
+</footer>
+
+<script>
+// Script for side navigation
+function w3_open() {
+  var x = document.getElementById("mySidebar");
+  x.style.width = "300px";
+  x.style.paddingTop = "10%";
+  x.style.display = "block";
+}
+
+// Close side navigation
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+}
+
+// Used to toggle the menu on smaller screens when clicking on the menu button
+function openNav() {
+  var x = document.getElementById("navDemo");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+</script>
+
+</body>
+</html>
