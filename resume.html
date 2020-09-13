@@ -1,95 +1,143 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Jekyll v4.0.1">
-    <link rel="icon" type="image/png" href="malaysia-flag-icon-32.png"/>
-    <title>Zahiruddin's Portal</title>
+<!DOCTYPE html>
+<html>
+  <link rel="icon" type="image/png" href="malaysia-flag-icon-32.png"/>
+<title>Zahiruddin Portal</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body id="myPage">
 
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/starter-template/">
-
-    <!-- Bootstrap core CSS -->
-    <link href="../assets/dist/css/bootstrap.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
-    crossorigin="anonymous">
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
-    <!-- Custom styles for this template -->
-    <link href="starter-template.css" rel="stylesheet">
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">  <!--fixed-top or nav-justified-->
-  <button class="navbar-toggler" type="button" data-toggle="collapse"
-  data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
-  aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-
-  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item active">
-        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="resume.html">My Resume</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="calendar.html">My Calendar</a>
-      </li>
-    </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-      <button class="btn btn-secondary my-2 my-sm-0" type="submit">Search</button>
-    </form>
-  </div>
+<!-- Sidebar on click -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-card w3-animate-left w3-xxlarge" style="display:none;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-display-topright w3-text-teal">Close
+    <i class="fa fa-remove"></i>
+  </a>
+  <a href="resume.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">My Resume</a>
+  <a href="calendar.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">My Calendar</a>
+  <a href="https://twitter.com/zzahir1978?ref_src=twsrc%5Etfw" class="w3-bar-item w3-button w3-hide-small w3-hover-white">follow @zzahir1978</a>
+  <a href="contact.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">My Contact</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Notifications">My Python Projects <i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+      <a href="projects/Project_Anomaly.html" class="w3-bar-item w3-button">Anomaly Detection in Time Series Data with Keras</a>
+      <a href="projects/Analysis1.html" class="w3-bar-item w3-button">Data Analysis using Python Sample 1</a>
+      <a href="projects/Analysis2.html" class="w3-bar-item w3-button">Data Analysis using Python Sample 2</a>
+      <a href="projects/Analysis3.html" class="w3-bar-item w3-button">Data Analysis using Python Sample 3</a>
+      <a href="projects/Analysis4.html" class="w3-bar-item w3-button">Data Analysis using Python Sample 4</a>
+      <a href="projects/Pandas For Beginner.html" class="w3-bar-item w3-button">Panda Python Library for Beginner in Data Science</a>
+      <a href="projects/covid19dashboard.html" class="w3-bar-item w3-button">Dashboard Sample: Covid19 World Map</a>
+      <a href="projects/PythonGeospatialAnalysis.html" class="w3-bar-item w3-button">Dashboard Sample: Python Geospatial Map Analysis</a>
+      <a href="projects/Graduate_Admission_Prediction.html" class="w3-bar-item w3-button">Graduate Admission Prediction Report</a>
+    </div>
+   </div>
+    <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Notifications">My R Projects <i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+      <a href="projects/Capstone-ProjectNLP.html" class="w3-bar-item w3-button">Capstone Project: Natural Language Processing</a>
+      <a href="projects/MyPopulation.html" class="w3-bar-item w3-button">Malaysian Population</a>
+      <a href="projects/TextMining.html" class="w3-bar-item w3-button">Text Mining Report : Al Quran in English Translation</a>
+      <a href="projects/US Natural Disaster Report.html" class="w3-bar-item w3-button">US Natural Disaster Report 2011</a>
+      <a href="projects/Week 1 _ Statistic in R.html" class="w3-bar-item w3-button">Statistic in R: Week 1 Report</a>
+      <a href="projects/Example Exploratory Data Analysis.html" class="w3-bar-item w3-button">Statistic in R: EDA Example</a>
+      <a href="projects/Data Analysis Project.html" class="w3-bar-item w3-button">Statistic in R: Data Analysis Project</a>
+      <a href="projects/Foundations for inference.html" class="w3-bar-item w3-button">Inference Statistic: Foundations for Inference</a>
+       <a href="projects/Confidence intervals.html" class="w3-bar-item w3-button">Inference Statistic: Confidence Interval</a>
+      <a href="projects/Inference numerical data.html" class="w3-bar-item w3-button">Inference Statistic: Inference For Numerical Data</a>
+      <a href="projects/Statistical inference Final Report.html" class="w3-bar-item w3-button">Inference Statistic: Statistical inference Final Report</a>
+      <a href="projects/Introduction to linear regression.htm" class="w3-bar-item w3-button">Linear Regression: Introduction to linear regression</a>
+      <a href="projects/Multiple linear regression.htm" class="w3-bar-item w3-button">Linear Regression: Multiple linear regression</a>
+      <a href="projects/Movies Prediction Rating.html" class="w3-bar-item w3-button">Linear Regression: Movies Prediction Rating Report</a>
+     </div> 
+    </div>
 </nav>
 
-<main role="main" class="container">
+<!-- Navbar -->
+<div class="w3-top">
+ <div class="w3-bar w3-theme-d2 w3-left-align">
+  <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+  <a href="index.html" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Home</a>
+  <a href="resume.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">My Resume</a>
+  <a href="calendar.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">My Calendar</a>
+  <a href="https://twitter.com/zzahir1978?ref_src=twsrc%5Etfw" class="w3-bar-item w3-button w3-hide-small w3-hover-white">follow @zzahir1978</a>
+  <a href="contact.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">My Contact</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Notifications">My Python Projects <i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+      <a href="projects/Project_Anomaly.html" class="w3-bar-item w3-button">Anomaly Detection in Time Series Data with Keras</a>
+      <a href="projects/Analysis1.html" class="w3-bar-item w3-button">Data Analysis using Python Sample 1</a>
+      <a href="projects/Analysis2.html" class="w3-bar-item w3-button">Data Analysis using Python Sample 2</a>
+      <a href="projects/Analysis3.html" class="w3-bar-item w3-button">Data Analysis using Python Sample 3</a>
+      <a href="projects/Analysis4.html" class="w3-bar-item w3-button">Data Analysis using Python Sample 4</a>
+      <a href="projects/Pandas For Beginner.html" class="w3-bar-item w3-button">Panda Python Library for Beginner in Data Science</a>
+      <a href="projects/covid19dashboard.html" class="w3-bar-item w3-button">Dashboard Sample: Covid19 World Map</a>
+      <a href="projects/PythonGeospatialAnalysis.html" class="w3-bar-item w3-button">Dashboard Sample: Python Geospatial Map Analysis</a>
+      <a href="projects/Graduate_Admission_Prediction.html" class="w3-bar-item w3-button">Graduate Admission Prediction Report</a>
+    </div>
+   </div>
+    <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Notifications">My R Projects <i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+      <a href="projects/Capstone-ProjectNLP.html" class="w3-bar-item w3-button">Capstone Project: Natural Language Processing</a>
+      <a href="projects/MyPopulation.html" class="w3-bar-item w3-button">Malaysian Population</a>
+      <a href="projects/TextMining.html" class="w3-bar-item w3-button">Text Mining Report : Al Quran in English Translation</a>
+      <a href="projects/US Natural Disaster Report.html" class="w3-bar-item w3-button">US Natural Disaster Report 2011</a>
+      <a href="projects/Week 1 _ Statistic in R.html" class="w3-bar-item w3-button">Statistic in R: Week 1 Report</a>
+      <a href="projects/Example Exploratory Data Analysis.html" class="w3-bar-item w3-button">Statistic in R: EDA Example</a>
+      <a href="projects/Data Analysis Project.html" class="w3-bar-item w3-button">Statistic in R: Data Analysis Project</a>
+      <a href="projects/Foundations for inference.html" class="w3-bar-item w3-button">Inference Statistic: Foundations for Inference</a>
+       <a href="projects/Confidence intervals.html" class="w3-bar-item w3-button">Inference Statistic: Confidence Interval</a>
+      <a href="projects/Inference numerical data.html" class="w3-bar-item w3-button">Inference Statistic: Inference For Numerical Data</a>
+      <a href="projects/Statistical inference Final Report.html" class="w3-bar-item w3-button">Inference Statistic: Statistical inference Final Report</a>
+      <a href="projects/Introduction to linear regression.htm" class="w3-bar-item w3-button">Linear Regression: Introduction to linear regression</a>
+      <a href="projects/Multiple linear regression.htm" class="w3-bar-item w3-button">Linear Regression: Multiple linear regression</a>
+      <a href="projects/Movies Prediction Rating.html" class="w3-bar-item w3-button">Linear Regression: Movies Prediction Rating Report</a>
+     </div> 
+    </div>
+  </div>
+ </div>
 
-  <div class="starter-template">
-    <h1>Resume</h1>
-    <h2>Zahiruddin Zahidanishah</h2>
-    <hr>
-
-    <script>
-    function startTime() {
-      var today = new Date();
-      var h = today.getHours();
-      var m = today.getMinutes();
-      var s = today.getSeconds();
-      m = checkTime(m);
-      s = checkTime(s);
-      document.getElementById('txt').innerHTML =
-      h + ":" + m + ":" + s;
-      var t = setTimeout(startTime, 500);
-    }
-    function checkTime(i) {
-      if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-      return i;
-    }
-
-    </script>
-    <body onload="startTime()">
-    <div id="txt"></div>
-    </body>
-    <hr>
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+  <a href="resume.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">My Resume</a>
+  <a href="calendar.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">My Calendar</a>
+  <a href="https://twitter.com/zzahir1978?ref_src=twsrc%5Etfw" class="w3-bar-item w3-button w3-hide-small w3-hover-white">follow @zzahir1978</a>
+  <a href="contact.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">My Contact</a>
+    <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Notifications">My Python Projects <i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+      <a href="projects/Project_Anomaly.html" class="w3-bar-item w3-button">Anomaly Detection in Time Series Data with Keras</a>
+      <a href="projects/Analysis1.html" class="w3-bar-item w3-button">Data Analysis using Python Sample 1</a>
+      <a href="projects/Analysis2.html" class="w3-bar-item w3-button">Data Analysis using Python Sample 2</a>
+      <a href="projects/Analysis3.html" class="w3-bar-item w3-button">Data Analysis using Python Sample 3</a>
+      <a href="projects/Analysis4.html" class="w3-bar-item w3-button">Data Analysis using Python Sample 4</a>
+      <a href="projects/Pandas For Beginner.html" class="w3-bar-item w3-button">Panda Python Library for Beginner in Data Science</a>
+      <a href="projects/covid19dashboard.html" class="w3-bar-item w3-button">Dashboard Sample: Covid19 World Map</a>
+      <a href="projects/PythonGeospatialAnalysis.html" class="w3-bar-item w3-button">Dashboard Sample: Python Geospatial Map Analysis</a>
+      <a href="projects/Graduate_Admission_Prediction.html" class="w3-bar-item w3-button">Graduate Admission Prediction Report</a>
+    </div>
+   </div>
+    <div class="w3-dropdown-hover w3-hide-small">
+    <button class="w3-button" title="Notifications">My R Projects <i class="fa fa-caret-down"></i></button>     
+    <div class="w3-dropdown-content w3-card-4 w3-bar-block">
+      <a href="projects/Capstone-ProjectNLP.html" class="w3-bar-item w3-button">Capstone Project: Natural Language Processing</a>
+      <a href="projects/MyPopulation.html" class="w3-bar-item w3-button">Malaysian Population</a>
+      <a href="projects/TextMining.html" class="w3-bar-item w3-button">Text Mining Report : Al Quran in English Translation</a>
+      <a href="projects/US Natural Disaster Report.html" class="w3-bar-item w3-button">US Natural Disaster Report 2011</a>
+      <a href="projects/Week 1 _ Statistic in R.html" class="w3-bar-item w3-button">Statistic in R: Week 1 Report</a>
+      <a href="projects/Example Exploratory Data Analysis.html" class="w3-bar-item w3-button">Statistic in R: EDA Example</a>
+      <a href="projects/Data Analysis Project.html" class="w3-bar-item w3-button">Statistic in R: Data Analysis Project</a>
+      <a href="projects/Foundations for inference.html" class="w3-bar-item w3-button">Inference Statistic: Foundations for Inference</a>
+       <a href="projects/Confidence intervals.html" class="w3-bar-item w3-button">Inference Statistic: Confidence Interval</a>
+      <a href="projects/Inference numerical data.html" class="w3-bar-item w3-button">Inference Statistic: Inference For Numerical Data</a>
+      <a href="projects/Statistical inference Final Report.html" class="w3-bar-item w3-button">Inference Statistic: Statistical inference Final Report</a>
+      <a href="projects/Introduction to linear regression.htm" class="w3-bar-item w3-button">Linear Regression: Introduction to linear regression</a>
+      <a href="projects/Multiple linear regression.htm" class="w3-bar-item w3-button">Linear Regression: Multiple linear regression</a>
+      <a href="projects/Movies Prediction Rating.html" class="w3-bar-item w3-button">Linear Regression: Movies Prediction Rating Report</a>
+     </div> 
+    </div>
+</div>
 
     <p class="lead">
       Personal Information:-
@@ -142,6 +190,7 @@
         <li>Data Science (2020)</li>
         <li>Executive Data Science (2020)</li>
         <li>Python for Everybody (2020)</li>
+        <li>Django for Everybody (2020)</li>
         <li>Web Applications for Everybody (2020)</li>
         <li>Web Design for Everybody (2020)</li>
         </ol>
@@ -269,15 +318,7 @@
         </ol>
     </p>
     <hr>
-
   </div>
-
-</main><!-- /.container -->
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="../assets/dist/js/bootstrap.bundle.js"></script>
 
 <footer>
   <code>Copyright (C) 2020 ZahiruddinZ</code>
