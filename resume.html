@@ -1,56 +1,38 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
-    <meta name="generator" content="Jekyll v4.0.1">
-    <title>Zahiruddin Portal</title>
-    <link rel="icon" type="image/png" href="photos/malaysia-flag-icon-32.png"/>
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.5/examples/cover/">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!-- Bootstrap core CSS -->
-    <link href="../assets/dist/css/bootstrap.css" rel="stylesheet">
+<!DOCTYPE html>
+<html>
+  <link rel="icon" type="image/png" href="malaysia-flag-icon-32.png"/>
+<title>Zahiruddin Portal</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<body id="myPage">
 
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
+<!-- Navbar -->
+<div class="w3-top">
+  <div class="w3-bar w3-theme-d2 w3-left-align">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-hover-white w3-theme-d2" href="javascript:void(0);" onclick="openNav()"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-teal"><i class="fa fa-home w3-margin-right"></i>Home</a>
+    <a href="resume.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">My Resume</a>
+    <a href="https://twitter.com/zzahir1978?ref_src=twsrc%5Etfw" class="w3-bar-item w3-button w3-hide-small w3-hover-white">follow @zzahir1978</a>
+    <a href="contact.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">My Contact</a>
+  </div>
+</div>
 
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
-    <!-- Custom styles for this template -->
-    <link href="cover.css" rel="stylesheet">
-  </head>
-  <body class="text-center">
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
-  <header class="masthead mb-auto">
-    <div class="inner">
-      <h3 class="masthead-brand">My Portal</h3>
-      <nav class="nav nav-masthead justify-content-center">
-        <a class="nav-link active" href="index.html">Home</a>
-        <a class="nav-link active" href="resume.html">My Resume</a>
-        <a class="nav-link active" href="contact.html">My Contact</a>
-      </nav>
-    </div>
-  </header>
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-theme-d2 w3-hide w3-hide-large w3-hide-medium">
+    <a href="resume.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">My Resume</a>
+    <a href="https://twitter.com/zzahir1978?ref_src=twsrc%5Etfw" class="w3-bar-item w3-button w3-hide-small w3-hover-white">follow @zzahir1978</a>
+    <a href="contact.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">My Contact</a>
+  </div>
 
-  <main class="inner cover">
-    <h1 class="cover-heading">My Resume</h1>
-    <hr class="w3-border-white" style="margin:auto;width:100%">
-    <p text-align=left>Personal Information:-
+    <p class="lead">
+      <p class="w3-large w3-center">Zahiruddin Zahiruddin</p>
+      <hr class="w3-border-black" style="margin:auto;width:60%">
+      <p class="w3-large w3-center">Resume</p>
+      <hr class="w3-border-black" style="margin:auto;width:60%">
+      Personal Information:-
       <ul>
         <li>Name: Zahiruddin Zahidanishah</li>
         <li>Date Of Birth: 13 Jan. 1978</li>
@@ -75,7 +57,6 @@
       </ul>
     </p>
     <hr>
-    </p>
 
     <p class="lead">
       Education:-
@@ -109,7 +90,8 @@
   </p>
   <hr>
 
-    <p>Working Experience:-
+    <p class="lead">
+      Working Experience:-
       <ol>
         <li>Ranhill Bersekutu Sdn Bhd (May 2000 - Jan 2011)</li>
         <ul>
@@ -197,7 +179,7 @@
             </p>
             <hr>
 
-    <p>
+    <p class="lead">
       Skills & Expertise:-
       <ol>
         <li><label for="course1">Microsoft Word:</label>
@@ -219,7 +201,7 @@
     </p>
     <hr>
 
-    <p>
+    <p class="lead">
       Languages:-
       <ol>
         <li><label for="course1">Bahasa Melayu:</label>
@@ -230,13 +212,10 @@
     </p>
     <hr>
   </div>
-  </main>
 
-  <footer class="mastfoot mt-auto">
-    <div class="inner">
-      <p>Created by Zahiruddin Zahidanishah (2020), follow me <a href="https://twitter.com/zzahir1978">@zzahir1978</a>.</p>
-    </div>
-  </footer>
-</div>
-</body>
+<footer>
+  <code>Copyright (C) 2020 ZahiruddinZ</code>
+</footer>
+
+    </body>
 </html>
