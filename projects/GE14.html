@@ -13388,9 +13388,25 @@ div#notebook {
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>This report is prepared based on dataset retrieved from Kaggle website. The link of the dataset are as follow:-<a href="https://www.kaggle.com/terenctb/malaysia-ge14-election-results-parliament">https://www.kaggle.com/terenctb/malaysia-ge14-election-results-parliament</a>.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The following shows the dataset first three rows.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;Election-Results-2018 - Parlimen_Results_By_Candidate.csv&#39;</span><span class="p">)</span>
@@ -13410,7 +13426,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[26]:</div>
+    <div class="prompt output_prompt">Out[5]:</div>
 
 
 
@@ -13504,9 +13520,17 @@ div#notebook {
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The following shows the statistical summary of each columns of the datasets</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df1</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
@@ -13522,7 +13546,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[27]:</div>
+    <div class="prompt output_prompt">Out[6]:</div>
 
 
 
@@ -13619,9 +13643,17 @@ div#notebook {
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The following tables shows the GE14 parlimentary results after grouped by the Candidate Party</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;Election-Results-2018 - Parlimen_Results_By_Candidate.csv&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;Coalition&#39;</span><span class="p">,</span><span class="s1">&#39;Seat ID&#39;</span><span class="p">,</span> <span class="s1">&#39;Seat Name&#39;</span><span class="p">,</span><span class="s1">&#39;Candidate Name&#39;</span><span class="p">,</span><span class="s1">&#39;Gender&#39;</span><span class="p">,</span><span class="s1">&#39;Status&#39;</span><span class="p">,</span><span class="s1">&#39;Pekerjaan&#39;</span><span class="p">],</span><span class="mi">1</span><span class="p">)</span>
@@ -13645,7 +13677,7 @@ div#notebook {
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[5]:</div>
+    <div class="prompt output_prompt">Out[7]:</div>
 
 
 
@@ -13761,7 +13793,7 @@ div#notebook {
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;Election-Results-2018 - Parlimen_Results_By_Candidate.csv&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;Coalition&#39;</span><span class="p">,</span><span class="s1">&#39;Seat ID&#39;</span><span class="p">,</span> <span class="s1">&#39;Seat Name&#39;</span><span class="p">,</span><span class="s1">&#39;Candidate Name&#39;</span><span class="p">,</span><span class="s1">&#39;Gender&#39;</span><span class="p">,</span><span class="s1">&#39;Status&#39;</span><span class="p">,</span><span class="s1">&#39;Pekerjaan&#39;</span><span class="p">],</span><span class="mi">1</span><span class="p">)</span>
@@ -13823,20 +13855,20 @@ div#notebook {
 <div>
         
         
-            <div id="24710ea8-984f-4867-8834-d43623f19a71" class="plotly-graph-div" style="height:525px; width:100%;"></div>
+            <div id="f2011ae4-6ede-4e96-bb5f-a1c02d8c8b27" class="plotly-graph-div" style="height:525px; width:100%;"></div>
             <script type="text/javascript">
                 require(["plotly"], function(Plotly) {
                     window.PLOTLYENV=window.PLOTLYENV || {};
                     
-                if (document.getElementById("24710ea8-984f-4867-8834-d43623f19a71")) {
+                if (document.getElementById("f2011ae4-6ede-4e96-bb5f-a1c02d8c8b27")) {
                     Plotly.newPlot(
-                        '24710ea8-984f-4867-8834-d43623f19a71',
+                        'f2011ae4-6ede-4e96-bb5f-a1c02d8c8b27',
                         [{"alignmentgroup": "True", "hoverlabel": {"namelength": 0}, "hovertemplate": "Candidate Party=%{x}<br>Candidate Win=%{y}", "legendgroup": "", "marker": {"color": "#636efa"}, "name": "", "offsetgroup": "", "orientation": "v", "showlegend": false, "textposition": "auto", "type": "bar", "x": ["BN", "PKR", "BN", "PKR", "PKR", "PKR", "BN", "PKR", "PKR", "PKR", "PAS", "PAS", "PAS", "PKR", "PKR", "BN", "PKR", "PKR", "PAS", "PAS", "PAS", "PAS", "PAS", "PAS", "PAS", "BN", "BN", "PAS", "BN", "BN", "PAS", "BN", "BN", "PAS", "PAS", "PAS", "PAS", "BN", "PAS", "PAS", "BN", "BN", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "BN", "BN", "BN", "PKR", "BN", "BN", "PKR", "BN", "PKR", "PKR", "PKR", "PKR", "PKR", "BN", "PKR", "BN", "PKR", "PKR", "BN", "BN", "PKR", "BN", "PKR", "PKR", "BN", "BN", "PKR", "BN", "PKR", "PKR", "BN", "BN", "BN", "BN", "PKR", "PKR", "BN", "BN", "BN", "PKR", "PKR", "BN", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "BEBAS - KUNCI", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "BN", "BN", "BN", "PKR", "PKR", "PKR", "BN", "PKR", "PKR", "BN", "PKR", "PKR", "PKR", "PKR", "BN", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "BN", "BN", "PKR", "PKR", "PKR", "PKR", "BN", "BN", "BN", "BN", "BN", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "BN", "PKR", "BN", "BN", "BN", "WARISAN", "BN", "WARISAN", "DAP", "PKR", "WARISAN", "WARISAN", "BN", "BN", "BN", "PKR", "SOLIDARITI", "DAP", "BN", "BN", "BN", "WARISAN", "DAP", "BN", "WARISAN", "WARISAN", "PKR", "WARISAN", "DAP", "BN", "BN", "DAP", "DAP", "BN", "PKR", "BN", "BN", "BN", "BN", "BEBAS - KUNCI", "BN", "PKR", "BN", "BN", "DAP", "BEBAS - KERUSI", "BN", "DAP", "DAP", "BN", "PKR", "BN", "BN", "BN", "BN", "PKR", "BN", "BN", "BN"], "xaxis": "x", "y": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], "yaxis": "y"}],
                         {"barmode": "relative", "legend": {"tracegroupgap": 0}, "template": {"data": {"bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "bar"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "barpolar"}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "choropleth": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "choropleth"}], "contour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "contour"}], "contourcarpet": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "contourcarpet"}], "heatmap": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmap"}], "heatmapgl": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmapgl"}], "histogram": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "histogram"}], "histogram2d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2d"}], "histogram2dcontour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2dcontour"}], "mesh3d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "mesh3d"}], "parcoords": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "parcoords"}], "pie": [{"automargin": true, "type": "pie"}], "scatter": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter"}], "scatter3d": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter3d"}], "scattercarpet": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattercarpet"}], "scattergeo": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergeo"}], "scattergl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergl"}], "scattermapbox": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattermapbox"}], "scatterpolar": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolar"}], "scatterpolargl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolargl"}], "scatterternary": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterternary"}], "surface": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "surface"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}]}, "layout": {"annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]], "sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}, "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "geo": {"bgcolor": "white", "lakecolor": "white", "landcolor": "#E5ECF6", "showlakes": true, "showland": true, "subunitcolor": "white"}, "hoverlabel": {"align": "left"}, "hovermode": "closest", "mapbox": {"style": "light"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "ternary": {"aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "title": {"x": 0.05}, "xaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}, "yaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}}}, "title": {"text": "GE14 : Parliementary Seats Summary By Candidate Party"}, "xaxis": {"anchor": "y", "domain": [0.0, 1.0], "title": {"text": "Candidate Party"}}, "yaxis": {"anchor": "x", "domain": [0.0, 1.0], "title": {"text": "Candidate Win"}}},
                         {"responsive": true}
                     ).then(function(){
                             
-var gd = document.getElementById('24710ea8-984f-4867-8834-d43623f19a71');
+var gd = document.getElementById('f2011ae4-6ede-4e96-bb5f-a1c02d8c8b27');
 var x = new MutationObserver(function (mutations, observer) {{
         var display = window.getComputedStyle(gd).display;
         if (!display || display === 'none') {{
@@ -13878,9 +13910,17 @@ if (outputEl) {{
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The following tables shows the GE14 parlimentary results after grouped by the Coalition Party</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;Election-Results-2018 - Parlimen_Results_By_Candidate.csv&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;Candidate Party&#39;</span><span class="p">,</span><span class="s1">&#39;Seat ID&#39;</span><span class="p">,</span> <span class="s1">&#39;Seat Name&#39;</span><span class="p">,</span><span class="s1">&#39;Candidate Name&#39;</span><span class="p">,</span><span class="s1">&#39;Gender&#39;</span><span class="p">,</span><span class="s1">&#39;Status&#39;</span><span class="p">,</span><span class="s1">&#39;Pekerjaan&#39;</span><span class="p">],</span><span class="mi">1</span><span class="p">)</span>
@@ -13904,7 +13944,7 @@ if (outputEl) {{
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[7]:</div>
+    <div class="prompt output_prompt">Out[9]:</div>
 
 
 
@@ -13988,7 +14028,7 @@ if (outputEl) {{
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[8]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df1</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;Election-Results-2018 - Parlimen_Results_By_Candidate.csv&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;Candidate Party&#39;</span><span class="p">,</span><span class="s1">&#39;Seat ID&#39;</span><span class="p">,</span> <span class="s1">&#39;Seat Name&#39;</span><span class="p">,</span><span class="s1">&#39;Candidate Name&#39;</span><span class="p">,</span><span class="s1">&#39;Gender&#39;</span><span class="p">,</span><span class="s1">&#39;Status&#39;</span><span class="p">,</span><span class="s1">&#39;Pekerjaan&#39;</span><span class="p">],</span><span class="mi">1</span><span class="p">)</span>
@@ -14019,20 +14059,20 @@ if (outputEl) {{
 <div>
         
         
-            <div id="68cf41dc-cb98-4483-8d8c-36b69423ce11" class="plotly-graph-div" style="height:525px; width:100%;"></div>
+            <div id="117313ee-2826-4031-b56f-da3f3c6322b7" class="plotly-graph-div" style="height:525px; width:100%;"></div>
             <script type="text/javascript">
                 require(["plotly"], function(Plotly) {
                     window.PLOTLYENV=window.PLOTLYENV || {};
                     
-                if (document.getElementById("68cf41dc-cb98-4483-8d8c-36b69423ce11")) {
+                if (document.getElementById("117313ee-2826-4031-b56f-da3f3c6322b7")) {
                     Plotly.newPlot(
-                        '68cf41dc-cb98-4483-8d8c-36b69423ce11',
+                        '117313ee-2826-4031-b56f-da3f3c6322b7',
                         [{"alignmentgroup": "True", "hoverlabel": {"namelength": 0}, "hovertemplate": "Coalition=%{x}<br>Candidate Win=%{y}", "legendgroup": "", "marker": {"color": "#636efa"}, "name": "", "offsetgroup": "", "orientation": "v", "showlegend": false, "textposition": "auto", "type": "bar", "x": ["BN", "Harapan", "BN", "Harapan", "Harapan", "Harapan", "BN", "Harapan", "Harapan", "Harapan", "PAS", "PAS", "PAS", "Harapan", "Harapan", "BN", "Harapan", "Harapan", "PAS", "PAS", "PAS", "PAS", "PAS", "PAS", "PAS", "BN", "BN", "PAS", "BN", "BN", "PAS", "BN", "BN", "PAS", "PAS", "PAS", "PAS", "BN", "PAS", "PAS", "BN", "BN", "Harapan", "Harapan", "Harapan", "Harapan", "Harapan", "Harapan", "Harapan", "Harapan", "Harapan", "Harapan", "Harapan", "BN", "BN", "BN", "Harapan", "BN", "BN", "Harapan", "BN", "Harapan", "Harapan", "Harapan", "Harapan", "Harapan", "BN", "Harapan", "BN", "Harapan", "Harapan", "BN", "BN", "Harapan", "BN", "Harapan", "Harapan", "BN", "BN", "Harapan", "BN", "Harapan", "Harapan", "BN", "BN", "BN", "BN", "Harapan", "Harapan", "BN", "BN", "BN", "Harapan", "Harapan", "BN", "Harapan", "Harapan", "Harapan", "Harapan", "Harapan", "Harapan", "Harapan", "Harapan", "Harapan", "Harapan", "Harapan", "Harapan", "Harapan", "Harapan", "Harapan", "Harapan", "Harapan", "Harapan", "Harapan", "BEBAS", "Harapan", "Harapan", "Harapan", "Harapan", "Harapan", "Harapan", "Harapan", "Harapan", "Harapan", "BN", "BN", "BN", "Harapan", "Harapan", "Harapan", "BN", "Harapan", "Harapan", "BN", "Harapan", "Harapan", "Harapan", "Harapan", "BN", "Harapan", "Harapan", "Harapan", "Harapan", "Harapan", "Harapan", "Harapan", "BN", "BN", "Harapan", "Harapan", "Harapan", "Harapan", "BN", "BN", "BN", "BN", "BN", "Harapan", "Harapan", "Harapan", "Harapan", "Harapan", "Harapan", "BN", "Harapan", "BN", "BN", "BN", "Harapan", "BN", "Harapan", "Harapan", "Harapan", "Harapan", "Harapan", "BN", "BN", "BN", "Harapan", "Harapan", "Harapan", "BN", "BN", "BN", "Harapan", "Harapan", "BN", "Harapan", "Harapan", "Harapan", "Harapan", "Harapan", "BN", "BN", "Harapan", "Harapan", "BN", "Harapan", "BN", "BN", "BN", "BN", "BEBAS", "BN", "Harapan", "BN", "BN", "Harapan", "BEBAS", "BN", "Harapan", "Harapan", "BN", "Harapan", "BN", "BN", "BN", "BN", "Harapan", "BN", "BN", "BN"], "xaxis": "x", "y": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], "yaxis": "y"}],
                         {"barmode": "relative", "legend": {"tracegroupgap": 0}, "template": {"data": {"bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "bar"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "barpolar"}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "choropleth": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "choropleth"}], "contour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "contour"}], "contourcarpet": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "contourcarpet"}], "heatmap": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmap"}], "heatmapgl": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmapgl"}], "histogram": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "histogram"}], "histogram2d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2d"}], "histogram2dcontour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2dcontour"}], "mesh3d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "mesh3d"}], "parcoords": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "parcoords"}], "pie": [{"automargin": true, "type": "pie"}], "scatter": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter"}], "scatter3d": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter3d"}], "scattercarpet": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattercarpet"}], "scattergeo": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergeo"}], "scattergl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergl"}], "scattermapbox": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattermapbox"}], "scatterpolar": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolar"}], "scatterpolargl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolargl"}], "scatterternary": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterternary"}], "surface": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "surface"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}]}, "layout": {"annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]], "sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}, "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "geo": {"bgcolor": "white", "lakecolor": "white", "landcolor": "#E5ECF6", "showlakes": true, "showland": true, "subunitcolor": "white"}, "hoverlabel": {"align": "left"}, "hovermode": "closest", "mapbox": {"style": "light"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "ternary": {"aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "title": {"x": 0.05}, "xaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}, "yaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}}}, "title": {"text": "GE14 : Parliementary Seats Summary By Coalition Party"}, "xaxis": {"anchor": "y", "domain": [0.0, 1.0], "title": {"text": "Coalition"}}, "yaxis": {"anchor": "x", "domain": [0.0, 1.0], "title": {"text": "Candidate Win"}}},
                         {"responsive": true}
                     ).then(function(){
                             
-var gd = document.getElementById('68cf41dc-cb98-4483-8d8c-36b69423ce11');
+var gd = document.getElementById('117313ee-2826-4031-b56f-da3f3c6322b7');
 var x = new MutationObserver(function (mutations, observer) {{
         var display = window.getComputedStyle(gd).display;
         if (!display || display === 'none') {{
@@ -14074,16 +14114,25 @@ if (outputEl) {{
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The following table shows the first three rows of the datasets.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="prompt input_prompt">In&nbsp;[82]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df2</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;Election-Results-2018 - State_Results_By_Candidate.csv&#39;</span><span class="p">)</span>
 <span class="n">df2</span><span class="p">[</span><span class="s1">&#39;Votes for Candidate&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df2</span><span class="p">[</span><span class="s1">&#39;Votes for Candidate&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+<span class="n">df2</span><span class="p">[</span><span class="s1">&#39;Total Votes Cast&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df2</span><span class="p">[</span><span class="s1">&#39;Total Votes Cast&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+<span class="n">df2</span><span class="p">[</span><span class="s1">&#39;Total Votes Cast&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df2</span><span class="p">[</span><span class="s1">&#39;Total Votes Cast&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span>
 <span class="n">df2</span><span class="p">[</span><span class="s1">&#39;Votes for Candidate&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_numeric</span><span class="p">(</span><span class="n">df2</span><span class="p">[</span><span class="s1">&#39;Votes for Candidate&#39;</span><span class="p">],</span> <span class="n">errors</span><span class="o">=</span><span class="s1">&#39;coerce&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 <span class="n">df2</span><span class="p">[</span><span class="s1">&#39;Votes for Candidate&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df2</span><span class="p">[</span><span class="s1">&#39;Votes for Candidate&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span>
-<span class="n">df2</span><span class="p">[</span><span class="s1">&#39;Total Votes Cast&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df2</span><span class="p">[</span><span class="s1">&#39;Total Votes Cast&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span>
 <span class="n">df2</span><span class="p">[</span><span class="s1">&#39;</span><span class="si">% o</span><span class="s1">f total Votes&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df2</span><span class="p">[</span><span class="s1">&#39;</span><span class="si">% o</span><span class="s1">f total Votes&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;%&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span>
 <span class="n">df2</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
 </pre></div>
@@ -14098,7 +14147,7 @@ if (outputEl) {{
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[38]:</div>
+    <div class="prompt output_prompt">Out[82]:</div>
 
 
 
@@ -14192,9 +14241,17 @@ if (outputEl) {{
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The following table shows the summary of main statistical information of the datasets.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[39]:</div>
+<div class="prompt input_prompt">In&nbsp;[83]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df2</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
@@ -14210,7 +14267,7 @@ if (outputEl) {{
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[39]:</div>
+    <div class="prompt output_prompt">Out[83]:</div>
 
 
 
@@ -14307,9 +14364,17 @@ if (outputEl) {{
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The following table shows the GE14 States results after grouped by Candidate Party.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[85]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df2</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;Election-Results-2018 - State_Results_By_Candidate.csv&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;State&#39;</span><span class="p">,</span> <span class="s1">&#39;Seat ID&#39;</span><span class="p">,</span><span class="s1">&#39;Seat Name&#39;</span><span class="p">,</span><span class="s1">&#39;Candidate Name&#39;</span><span class="p">,</span><span class="s1">&#39;Gender&#39;</span><span class="p">,</span><span class="s1">&#39;Status&#39;</span><span class="p">,</span><span class="s1">&#39;Pekerjaan&#39;</span><span class="p">],</span><span class="mi">1</span><span class="p">)</span>
@@ -14336,7 +14401,7 @@ if (outputEl) {{
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[10]:</div>
+    <div class="prompt output_prompt">Out[85]:</div>
 
 
 
@@ -14436,7 +14501,7 @@ if (outputEl) {{
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df2</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;Election-Results-2018 - State_Results_By_Candidate.csv&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">drop</span><span class="p">([</span><span class="s1">&#39;State&#39;</span><span class="p">,</span> <span class="s1">&#39;Seat ID&#39;</span><span class="p">,</span><span class="s1">&#39;Seat Name&#39;</span><span class="p">,</span><span class="s1">&#39;Candidate Name&#39;</span><span class="p">,</span><span class="s1">&#39;Gender&#39;</span><span class="p">,</span><span class="s1">&#39;Status&#39;</span><span class="p">,</span><span class="s1">&#39;Pekerjaan&#39;</span><span class="p">],</span><span class="mi">1</span><span class="p">)</span>
@@ -14469,20 +14534,20 @@ if (outputEl) {{
 <div>
         
         
-            <div id="c157fca4-cad0-46b3-ac4c-49201eb48277" class="plotly-graph-div" style="height:525px; width:100%;"></div>
+            <div id="1a17da4a-a9f3-4e82-8300-4ec5884d5058" class="plotly-graph-div" style="height:525px; width:100%;"></div>
             <script type="text/javascript">
                 require(["plotly"], function(Plotly) {
                     window.PLOTLYENV=window.PLOTLYENV || {};
                     
-                if (document.getElementById("c157fca4-cad0-46b3-ac4c-49201eb48277")) {
+                if (document.getElementById("1a17da4a-a9f3-4e82-8300-4ec5884d5058")) {
                     Plotly.newPlot(
-                        'c157fca4-cad0-46b3-ac4c-49201eb48277',
+                        '1a17da4a-a9f3-4e82-8300-4ec5884d5058',
                         [{"alignmentgroup": "True", "hoverlabel": {"namelength": 0}, "hovertemplate": "Candidate Party=%{x}<br>Candidate Win=%{y}", "legendgroup": "", "marker": {"color": "#636efa"}, "name": "", "offsetgroup": "", "orientation": "v", "showlegend": false, "textposition": "auto", "type": "bar", "x": ["BN", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PAS", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "BN", "PKR", "BN", "PKR", "BN", "PKR", "BN", "PKR", "PKR", "BN", "BN", "BN", "PKR", "PKR", "PKR", "BN", "BN", "BN", "BN", "BN", "BN", "BN", "BN", "BN", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "BN", "PKR", "PKR", "BN", "PKR", "PKR", "PKR", "PAS", "PKR", "PKR", "PAS", "PAS", "PAS", "PAS", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PAS", "BN", "PAS", "BN", "PKR", "PAS", "PAS", "PKR", "PAS", "PAS", "PKR", "PKR", "PAS", "PAS", "PAS", "PAS", "PKR", "PKR", "BN", "PAS", "PAS", "PAS", "PAS", "PAS", "PAS", "PAS", "PAS", "PAS", "PAS", "PAS", "PAS", "PAS", "PAS", "PAS", "PAS", "PAS", "PAS", "PAS", "PAS", "PAS", "PAS", "PAS", "PAS", "BN", "PAS", "BN", "PAS", "PAS", "PAS", "PAS", "PAS", "PAS", "PAS", "PAS", "BN", "BN", "BN", "PAS", "PAS", "PAS", "PAS", "BN", "BN", "BN", "BN", "BN", "BN", "BN", "BN", "PKR", "PKR", "PKR", "PKR", "BN", "BN", "BN", "PKR", "PKR", "PKR", "PKR", "PKR", "BN", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "BN", "BN", "BN", "BN", "PKR", "BN", "BN", "PKR", "BN", "BN", "BN", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "BN", "BN", "BN", "PKR", "BN", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "BN", "BN", "BN", "PKR", "PKR", "BN", "BN", "PKR", "BN", "BN", "PKR", "PKR", "BN", "BN", "BN", "BN", "BN", "PKR", "BN", "PAS", "PAS", "BN", "PAS", "PKR", "PKR", "PAS", "BN", "BN", "BN", "PAS", "BN", "BN", "BN", "BN", "PAS", "BN", "PAS", "BN", "BN", "PAS", "PKR", "BN", "BN", "PKR", "PKR", "PKR", "BN", "BN", "PKR", "BN", "BN", "BN", "BN", "PAS", "PKR", "PKR", "BN", "BN", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "BN", "BN", "BN", "BN", "PAS", "PAS", "BN", "PKR", "PKR", "BN", "PAS", "BN", "BN", "BN", "BN", "PKR", "PKR", "PKR", "BN", "BN", "BN", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "BN", "BN", "BN", "PKR", "PKR", "BN", "BN", "PKR", "PKR", "BN", "PKR", "PKR", "PKR", "PKR", "BN", "BN", "BN", "PKR", "BN", "BN", "BN", "PKR", "BN", "PKR", "BN", "PKR", "BN", "BN", "BN", "BN", "BN", "BN", "PKR", "PKR", "PKR", "BN", "BN", "BN", "PAS", "BN", "PAS", "BN", "PKR", "BN", "PKR", "BN", "PKR", "PKR", "BN", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PAS", "PKR", "PKR", "PKR", "PKR", "PKR", "BN", "PAS", "BN", "BN", "PAS", "BN", "BN", "BN", "PAS", "PAS", "BN", "PAS", "PAS", "PAS", "PAS", "PAS", "PAS", "PAS", "PAS", "PAS", "BN", "PAS", "PAS", "PAS", "BN", "PAS", "PAS", "PAS", "PAS", "BN", "PAS", "PAS", "WARISAN", "WARISAN", "BN", "BN", "BN", "BN", "BN", "BN", "BN", "BN", "BN", "WARISAN", "PKR", "DAP", "PKR", "DAP", "WARISAN", "WARISAN", "DAP", "WARISAN", "BN", "WARISAN", "WARISAN", "BN", "BN", "BN", "BN", "WARISAN", "BN", "BN", "BN", "SOLIDARITI", "SOLIDARITI", "WARISAN", "WARISAN", "BN", "BN", "BN", "BN", "BN", "WARISAN", "BN", "WARISAN", "WARISAN", "DAP", "DAP", "BN", "BN", "WARISAN", "WARISAN", "WARISAN", "WARISAN", "WARISAN", "WARISAN", "BN", "BN", "DAP", "WARISAN", "BN", "BN"], "xaxis": "x", "y": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], "yaxis": "y"}],
                         {"barmode": "relative", "legend": {"tracegroupgap": 0}, "template": {"data": {"bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "bar"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "barpolar"}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "choropleth": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "choropleth"}], "contour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "contour"}], "contourcarpet": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "contourcarpet"}], "heatmap": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmap"}], "heatmapgl": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmapgl"}], "histogram": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "histogram"}], "histogram2d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2d"}], "histogram2dcontour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2dcontour"}], "mesh3d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "mesh3d"}], "parcoords": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "parcoords"}], "pie": [{"automargin": true, "type": "pie"}], "scatter": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter"}], "scatter3d": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter3d"}], "scattercarpet": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattercarpet"}], "scattergeo": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergeo"}], "scattergl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergl"}], "scattermapbox": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattermapbox"}], "scatterpolar": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolar"}], "scatterpolargl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolargl"}], "scatterternary": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterternary"}], "surface": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "surface"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}]}, "layout": {"annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]], "sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}, "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "geo": {"bgcolor": "white", "lakecolor": "white", "landcolor": "#E5ECF6", "showlakes": true, "showland": true, "subunitcolor": "white"}, "hoverlabel": {"align": "left"}, "hovermode": "closest", "mapbox": {"style": "light"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "ternary": {"aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "title": {"x": 0.05}, "xaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}, "yaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}}}, "title": {"text": "GE14 : State Seats Summary By Candidate Party"}, "xaxis": {"anchor": "y", "domain": [0.0, 1.0], "title": {"text": "Candidate Party"}}, "yaxis": {"anchor": "x", "domain": [0.0, 1.0], "title": {"text": "Candidate Win"}}},
                         {"responsive": true}
                     ).then(function(){
                             
-var gd = document.getElementById('c157fca4-cad0-46b3-ac4c-49201eb48277');
+var gd = document.getElementById('1a17da4a-a9f3-4e82-8300-4ec5884d5058');
 var x = new MutationObserver(function (mutations, observer) {{
         var display = window.getComputedStyle(gd).display;
         if (!display || display === 'none') {{
@@ -14524,9 +14589,17 @@ if (outputEl) {{
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The following table shows the first three rows of the datasets.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[41]:</div>
+<div class="prompt input_prompt">In&nbsp;[53]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df3</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;Election-Results-2018 - Total_Votes_by_Seat.csv&#39;</span><span class="p">)</span>
@@ -14546,7 +14619,7 @@ if (outputEl) {{
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[41]:</div>
+    <div class="prompt output_prompt">Out[53]:</div>
 
 
 
@@ -14624,9 +14697,17 @@ if (outputEl) {{
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The following table shows the summary of main statistical information of the datasets.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[42]:</div>
+<div class="prompt input_prompt">In&nbsp;[54]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df3</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
@@ -14642,7 +14723,7 @@ if (outputEl) {{
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[42]:</div>
+    <div class="prompt output_prompt">Out[54]:</div>
 
 
 
@@ -14730,9 +14811,17 @@ if (outputEl) {{
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The following table shows the summary of votes after grouped by Parlimen and DUN</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df3</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;Election-Results-2018 - Total_Votes_by_Seat.csv&#39;</span><span class="p">)</span><span class="c1">#.drop([&#39;Seat ID&#39;,&#39;Seat&#39;],1)</span>
@@ -14753,7 +14842,7 @@ if (outputEl) {{
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[13]:</div>
+    <div class="prompt output_prompt">Out[17]:</div>
 
 
 
@@ -14811,9 +14900,17 @@ if (outputEl) {{
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>The following table shows the summary of voters based on states.</p>
+
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df3</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;Election-Results-2018 - Total_Votes_by_Seat.csv&#39;</span><span class="p">)</span><span class="c1">#.drop([&#39;Seat ID&#39;,&#39;Seat&#39;],1)</span>
@@ -14834,7 +14931,7 @@ if (outputEl) {{
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[14]:</div>
+    <div class="prompt output_prompt">Out[18]:</div>
 
 
 
@@ -14983,16 +15080,33 @@ if (outputEl) {{
 </div>
 </div>
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Prediction-of-Results-for-Parlimentary-Seats">Prediction of Results for Parlimentary Seats<a class="anchor-link" href="#Prediction-of-Results-for-Parlimentary-Seats">&#182;</a></h1>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[74]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df4</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;Election-Results-2018 - Parlimen_Results_By_Candidate.csv&#39;</span><span class="p">)</span>
 <span class="n">df4</span><span class="p">[</span><span class="s1">&#39;Votes for Candidate&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df4</span><span class="p">[</span><span class="s1">&#39;Votes for Candidate&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span>
 <span class="n">df4</span><span class="p">[</span><span class="s1">&#39;Total Votes Cast&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df4</span><span class="p">[</span><span class="s1">&#39;Total Votes Cast&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span>
 <span class="n">df4</span><span class="p">[</span><span class="s1">&#39;</span><span class="si">% o</span><span class="s1">f total Votes&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df4</span><span class="p">[</span><span class="s1">&#39;</span><span class="si">% o</span><span class="s1">f total Votes&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;%&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span>
-<span class="n">df4</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="c1"># Step 1 - import the model </span>
+<span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LogisticRegression</span>
+<span class="c1"># Step 2 - Define your training data</span>
+<span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Votes for Candidate&#39;</span><span class="p">,</span><span class="s1">&#39;Total Votes Cast&#39;</span><span class="p">,</span><span class="s1">&#39;</span><span class="si">% o</span><span class="s1">f total Votes&#39;</span><span class="p">]</span>
+<span class="c1"># Step 3 - create training dataset</span>
+<span class="n">X</span> <span class="o">=</span> <span class="n">df4</span><span class="p">[</span><span class="n">columns</span><span class="p">]</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">df4</span><span class="p">[</span><span class="s1">&#39;Candidate Win&#39;</span><span class="p">]</span>
+<span class="c1"># initialize our model</span>
+<span class="n">logmodel</span> <span class="o">=</span> <span class="n">LogisticRegression</span><span class="p">()</span>
+<span class="c1"># Step 4 - Train our model, using our training data</span>
+<span class="n">logmodel</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -15005,7 +15119,117 @@ if (outputEl) {{
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[15]:</div>
+    <div class="prompt output_prompt">Out[74]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>LogisticRegression()</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[95]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span>
+
+<span class="n">predictions</span> <span class="o">=</span> <span class="n">logmodel</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+<span class="n">accuracy_score</span><span class="p">(</span><span class="n">y</span><span class="p">,</span><span class="n">predictions</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[95]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>0.9258809234507898</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[96]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The following table shows the prediction results with&#39;</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">accuracy_score</span><span class="p">(</span><span class="n">y</span><span class="p">,</span><span class="n">predictions</span><span class="p">)</span><span class="o">*</span><span class="mi">100</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span><span class="s1">&#39;%&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>The following table shows the prediction results with 92.6 %
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[107]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Use our model to make predictions</span>
+<span class="c1"># Load the dataset into a new dataframe call `predict`</span>
+<span class="c1">#predict = pd.read_csv(&#39;Election-Results-2018 - Parlimen_Results_By_Candidate.csv&#39;)</span>
+<span class="n">predict</span> <span class="o">=</span> <span class="n">df4</span>
+<span class="n">X_predict</span> <span class="o">=</span> <span class="n">predict</span><span class="p">[</span><span class="n">columns</span><span class="p">]</span>
+<span class="c1"># predict the results using our model</span>
+<span class="n">predictions</span> <span class="o">=</span> <span class="n">logmodel</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_predict</span><span class="p">)</span>
+<span class="n">predict</span><span class="p">[</span><span class="s1">&#39;results_predict&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">predictions</span>
+<span class="n">predict</span> <span class="o">=</span> <span class="n">predict</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;Coalition&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;Candidate Win&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">predict</span><span class="p">[</span><span class="s1">&#39;Different&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">predict</span><span class="p">[</span><span class="s1">&#39;results_predict&#39;</span><span class="p">]</span> <span class="o">-</span> <span class="n">predict</span><span class="p">[</span><span class="s1">&#39;Candidate Win&#39;</span><span class="p">]</span> <span class="c1">#New - Old</span>
+<span class="n">predict</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[107]:</div>
 
 
 
@@ -15028,65 +15252,59 @@ if (outputEl) {{
   <thead>
     <tr style="text-align: right;">
       <th></th>
-      <th>Seat ID</th>
-      <th>Seat Name</th>
-      <th>Candidate Name</th>
-      <th>Candidate Party</th>
-      <th>Coalition</th>
       <th>Votes for Candidate</th>
       <th>Total Votes Cast</th>
       <th>% of total Votes</th>
       <th>Candidate Win</th>
-      <th>Gender</th>
-      <th>Status</th>
-      <th>Pekerjaan</th>
+      <th>results_predict</th>
+      <th>Different</th>
+    </tr>
+    <tr>
+      <th>Coalition</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>0</th>
-      <td>P.001</td>
-      <td>PADANG BESAR</td>
-      <td>IZIZAM BIN IBRAHIM</td>
-      <td>PKR</td>
-      <td>Harapan</td>
-      <td>13594.0</td>
-      <td>36500.0</td>
-      <td>37.24</td>
-      <td>0</td>
-      <td>L</td>
-      <td>KLH</td>
-      <td>AHLI PERNIAGAAN</td>
+      <th>Harapan</th>
+      <td>5820519.0</td>
+      <td>12201011.0</td>
+      <td>9889.42</td>
+      <td>122</td>
+      <td>131</td>
+      <td>9</td>
     </tr>
     <tr>
-      <th>1</th>
-      <td>P.001</td>
-      <td>PADANG BESAR</td>
-      <td>DATUK ZAHIDI BIN ZAINUL ABIDIN</td>
-      <td>BN</td>
-      <td>BN</td>
-      <td>15032.0</td>
-      <td>36500.0</td>
-      <td>41.18</td>
-      <td>1</td>
-      <td>L</td>
-      <td>MNG</td>
-      <td>TIADA</td>
+      <th>BN</th>
+      <td>4080797.0</td>
+      <td>12082431.0</td>
+      <td>8545.17</td>
+      <td>79</td>
+      <td>95</td>
+      <td>16</td>
     </tr>
     <tr>
-      <th>2</th>
-      <td>P.001</td>
-      <td>PADANG BESAR</td>
-      <td>USTAZ MOKHTAR SENIK</td>
-      <td>PAS</td>
-      <td>PAS</td>
-      <td>7874.0</td>
-      <td>36500.0</td>
-      <td>21.57</td>
-      <td>0</td>
-      <td>L</td>
-      <td>KLH</td>
-      <td>USAHAWAN</td>
+      <th>PAS</th>
+      <td>2041105.0</td>
+      <td>9394609.0</td>
+      <td>3365.57</td>
+      <td>18</td>
+      <td>22</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>BEBAS</th>
+      <td>140010.0</td>
+      <td>4215587.0</td>
+      <td>399.82</td>
+      <td>3</td>
+      <td>2</td>
+      <td>-1</td>
     </tr>
   </tbody>
 </table>
@@ -15099,81 +15317,262 @@ if (outputEl) {{
 </div>
 
 </div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h1 id="Prediction-of-Results-for-States-Seats">Prediction of Results for States Seats<a class="anchor-link" href="#Prediction-of-Results-for-States-Seats">&#182;</a></h1>
+</div>
+</div>
+</div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[98]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Loading and cleaning dataset</span>
-<span class="c1">#df4 = pd.read_csv(&#39;Election-Results-2018 - Parlimen_Results_By_Candidate.csv&#39;)</span>
-<span class="c1">#df4[&#39;Votes for Candidate&#39;] = df4[&#39;Votes for Candidate&#39;].str.replace(&#39;,&#39;,&#39;&#39;).astype(float)</span>
-<span class="c1">#df4[&#39;Total Votes Cast&#39;] = df4[&#39;Total Votes Cast&#39;].str.replace(&#39;,&#39;,&#39;&#39;).astype(float)</span>
-<span class="c1">#df4[&#39;% of total Votes&#39;] = df4[&#39;% of total Votes&#39;].str.replace(&#39;%&#39;,&#39;&#39;).astype(float)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df5</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;Election-Results-2018 - State_Results_By_Candidate.csv&#39;</span><span class="p">)</span>
+<span class="n">df5</span><span class="p">[</span><span class="s1">&#39;Votes for Candidate&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df5</span><span class="p">[</span><span class="s1">&#39;Votes for Candidate&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+<span class="n">df5</span><span class="p">[</span><span class="s1">&#39;Total Votes Cast&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df5</span><span class="p">[</span><span class="s1">&#39;Total Votes Cast&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">)</span>
+<span class="n">df5</span><span class="p">[</span><span class="s1">&#39;Total Votes Cast&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df5</span><span class="p">[</span><span class="s1">&#39;Total Votes Cast&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span>
+<span class="n">df5</span><span class="p">[</span><span class="s1">&#39;Votes for Candidate&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_numeric</span><span class="p">(</span><span class="n">df5</span><span class="p">[</span><span class="s1">&#39;Votes for Candidate&#39;</span><span class="p">],</span> <span class="n">errors</span><span class="o">=</span><span class="s1">&#39;coerce&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
+<span class="n">df5</span><span class="p">[</span><span class="s1">&#39;Votes for Candidate&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df5</span><span class="p">[</span><span class="s1">&#39;Votes for Candidate&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span>
+<span class="n">df5</span><span class="p">[</span><span class="s1">&#39;</span><span class="si">% o</span><span class="s1">f total Votes&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df5</span><span class="p">[</span><span class="s1">&#39;</span><span class="si">% o</span><span class="s1">f total Votes&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;%&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span>
 <span class="c1"># Step 1 - import the model </span>
-<span class="c1">#from sklearn.linear_model import LogisticRegression</span>
+<span class="kn">from</span> <span class="nn">sklearn.linear_model</span> <span class="kn">import</span> <span class="n">LogisticRegression</span>
 <span class="c1"># Step 2 - Define your training data</span>
-<span class="c1">#columns = [&#39;Candidate Party&#39;, &#39;Votes for Candidate&#39;]</span>
+<span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;Total Votes Cast&#39;</span><span class="p">,</span> <span class="s1">&#39;Votes for Candidate&#39;</span><span class="p">,</span><span class="s1">&#39;</span><span class="si">% o</span><span class="s1">f total Votes&#39;</span><span class="p">]</span>
 <span class="c1"># Step 3 - create training dataset</span>
-<span class="c1">#X = df[columns]</span>
-<span class="c1">#y = df[&#39;New Results&#39;]</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># initialize our model</span>
-<span class="c1">#logmodel = LogisticRegression()</span>
-
+<span class="n">X</span> <span class="o">=</span> <span class="n">df5</span><span class="p">[</span><span class="n">columns</span><span class="p">]</span>
+<span class="n">y</span> <span class="o">=</span> <span class="n">df5</span><span class="p">[</span><span class="s1">&#39;Candidate Win&#39;</span><span class="p">]</span>
+<span class="c1"># initialize our model</span>
+<span class="n">logmodel</span> <span class="o">=</span> <span class="n">LogisticRegression</span><span class="p">()</span>
 <span class="c1"># Step 4 - Train our model, using our training data</span>
-<span class="c1">#logmodel.fit(X,y)</span>
+<span class="n">logmodel</span><span class="o">.</span><span class="n">fit</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">y</span><span class="p">)</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[98]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>LogisticRegression()</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[99]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#from sklearn.metrics import accuracy_score</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">sklearn.metrics</span> <span class="kn">import</span> <span class="n">accuracy_score</span>
 
-<span class="c1">#predictions = logmodel.predict(X)</span>
-<span class="c1">#accuracy_score(y,predictions)</span>
+<span class="n">predictions</span> <span class="o">=</span> <span class="n">logmodel</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X</span><span class="p">)</span>
+<span class="n">accuracy_score</span><span class="p">(</span><span class="n">y</span><span class="p">,</span><span class="n">predictions</span><span class="p">)</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[99]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>0.9258809234507898</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[100]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The following table shows the prediction results with&#39;</span><span class="p">,</span> <span class="nb">round</span><span class="p">(</span><span class="n">accuracy_score</span><span class="p">(</span><span class="n">y</span><span class="p">,</span><span class="n">predictions</span><span class="p">)</span><span class="o">*</span><span class="mi">100</span><span class="p">,</span><span class="mi">1</span><span class="p">),</span><span class="s1">&#39;%&#39;</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>The following table shows the prediction results with 92.6 %
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[108]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Use our model to make predictions</span>
-
 <span class="c1"># Load the dataset into a new dataframe call `predict`</span>
 <span class="c1">#predict = pd.read_csv(&#39;Election-Results-2018 - Parlimen_Results_By_Candidate.csv&#39;)</span>
-<span class="c1">#X_predict = predict[columns]</span>
-
+<span class="n">predict</span> <span class="o">=</span> <span class="n">df5</span>
+<span class="n">X_predict</span> <span class="o">=</span> <span class="n">predict</span><span class="p">[</span><span class="n">columns</span><span class="p">]</span>
 <span class="c1"># predict the results using our model</span>
-<span class="c1">#predictions = logmodel.predict(X_predict)</span>
-<span class="c1">#predict[&#39;left_predict&#39;] = predictions</span>
-<span class="c1">#predict.sample(10)</span>
+<span class="n">predictions</span> <span class="o">=</span> <span class="n">logmodel</span><span class="o">.</span><span class="n">predict</span><span class="p">(</span><span class="n">X_predict</span><span class="p">)</span>
+<span class="n">predict</span><span class="p">[</span><span class="s1">&#39;results_predict&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">predictions</span>
+<span class="n">predict</span> <span class="o">=</span> <span class="n">predict</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;Candidate Party&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;Candidate Win&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="n">indexNames</span> <span class="o">=</span> <span class="n">predict</span><span class="p">[(</span><span class="n">predict</span><span class="p">[</span><span class="s1">&#39;Candidate Win&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)]</span><span class="o">.</span><span class="n">index</span>
+<span class="n">predict</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">indexNames</span> <span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">predict</span><span class="p">[</span><span class="s1">&#39;Different&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">predict</span><span class="p">[</span><span class="s1">&#39;results_predict&#39;</span><span class="p">]</span> <span class="o">-</span> <span class="n">predict</span><span class="p">[</span><span class="s1">&#39;Candidate Win&#39;</span><span class="p">]</span> <span class="c1">#New - Old</span>
+<span class="n">predict</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[108]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Votes for Candidate</th>
+      <th>Total Votes Cast</th>
+      <th>% of total Votes</th>
+      <th>Candidate Win</th>
+      <th>results_predict</th>
+      <th>Different</th>
+    </tr>
+    <tr>
+      <th>Candidate Party</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>PKR</th>
+      <td>4455338.0</td>
+      <td>9648961.0</td>
+      <td>18603.56</td>
+      <td>220</td>
+      <td>219</td>
+      <td>-1</td>
+    </tr>
+    <tr>
+      <th>BN</th>
+      <td>3471044.0</td>
+      <td>10441168.0</td>
+      <td>18419.17</td>
+      <td>166</td>
+      <td>171</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <th>PAS</th>
+      <td>2058818.0</td>
+      <td>8241335.0</td>
+      <td>10193.58</td>
+      <td>90</td>
+      <td>89</td>
+      <td>-1</td>
+    </tr>
+    <tr>
+      <th>WARISAN</th>
+      <td>271446.0</td>
+      <td>606786.0</td>
+      <td>2008.02</td>
+      <td>21</td>
+      <td>25</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <th>DAP</th>
+      <td>78901.0</td>
+      <td>116001.0</td>
+      <td>466.65</td>
+      <td>6</td>
+      <td>6</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>SOLIDARITI</th>
+      <td>39803.0</td>
+      <td>253763.0</td>
+      <td>290.83</td>
+      <td>2</td>
+      <td>1</td>
+      <td>-1</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</div>
+
+</div>
+
 </div>
 </div>
 
