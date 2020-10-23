@@ -13197,7 +13197,7 @@ div#notebook {
         <span class="s1">&#39;Polling Date&#39;</span><span class="p">:[</span><span class="s1">&#39;19 Aug 1959&#39;</span><span class="p">,</span><span class="s1">&#39;25 Apr 1964&#39;</span><span class="p">,</span><span class="s1">&#39;10 May 1969&#39;</span><span class="p">,</span><span class="s1">&#39;24 Aug 1974&#39;</span><span class="p">,</span><span class="s1">&#39;8 Jul 1978&#39;</span><span class="p">,</span><span class="s1">&#39;22 Apr 1982&#39;</span><span class="p">,</span><span class="s1">&#39;3 Aug 1986&#39;</span><span class="p">,</span><span class="s1">&#39;21 Oct 1990&#39;</span><span class="p">,</span><span class="s1">&#39;25 Apr 1995&#39;</span><span class="p">,</span><span class="s1">&#39;29 Nov 1999&#39;</span><span class="p">,</span><span class="s1">&#39;21 Mac 2004&#39;</span><span class="p">,</span><span class="s1">&#39;8 Mac 2008&#39;</span><span class="p">,</span><span class="s1">&#39;5 May 2013&#39;</span><span class="p">,</span><span class="s1">&#39;9 May 2018&#39;</span><span class="p">,</span><span class="s1">&#39;TBA&#39;</span><span class="p">],</span>
         <span class="s1">&#39;Day&#39;</span><span class="p">:[</span><span class="s1">&#39;Wednesday&#39;</span><span class="p">,</span><span class="s1">&#39;Saturday&#39;</span><span class="p">,</span><span class="s1">&#39;Saturday&#39;</span><span class="p">,</span><span class="s1">&#39;Saturday&#39;</span><span class="p">,</span><span class="s1">&#39;Saturday&#39;</span><span class="p">,</span><span class="s1">&#39;Thursday&#39;</span><span class="p">,</span><span class="s1">&#39;Sunday&#39;</span><span class="p">,</span><span class="s1">&#39;Sunday&#39;</span><span class="p">,</span><span class="s1">&#39;Tuesday&#39;</span><span class="p">,</span><span class="s1">&#39;Monday&#39;</span><span class="p">,</span><span class="s1">&#39;Sunday&#39;</span><span class="p">,</span><span class="s1">&#39;Sunday&#39;</span><span class="p">,</span><span class="s1">&#39;Sunday&#39;</span><span class="p">,</span><span class="s1">&#39;Wednesday&#39;</span><span class="p">,</span><span class="s1">&#39;TBA&#39;</span><span class="p">]}</span>
 <span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="p">,</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;Year&#39;</span><span class="p">,</span><span class="s1">&#39;GE&#39;</span><span class="p">,</span><span class="s1">&#39;Dissolution&#39;</span><span class="p">,</span><span class="s1">&#39;Nomination&#39;</span><span class="p">,</span><span class="s1">&#39;Polling Date&#39;</span><span class="p">,</span><span class="s1">&#39;Day&#39;</span><span class="p">])</span>
-<span class="n">df</span>
+<span class="n">df</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">set_caption</span><span class="p">(</span><span class="s2">&quot;Malaysian General Election General Facts&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13215,171 +13215,144 @@ div#notebook {
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Year</th>
-      <th>GE</th>
-      <th>Dissolution</th>
-      <th>Nomination</th>
-      <th>Polling Date</th>
-      <th>Day</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>1959</td>
-      <td>GE1</td>
-      <td>27 Jun 1959</td>
-      <td>15 Jul 1959</td>
-      <td>19 Aug 1959</td>
-      <td>Wednesday</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>1964</td>
-      <td>GE2</td>
-      <td>1 Mac 1964</td>
-      <td>21 Mac 1964</td>
-      <td>25 Apr 1964</td>
-      <td>Saturday</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>1969</td>
-      <td>GE3</td>
-      <td>20 Mac 1969</td>
-      <td>5 Apr 1969</td>
-      <td>10 May 1969</td>
-      <td>Saturday</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>1974</td>
-      <td>GE4</td>
-      <td>31 Jul 1974</td>
-      <td>8 Aug 1974</td>
-      <td>24 Aug 1974</td>
-      <td>Saturday</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>1978</td>
-      <td>GE5</td>
-      <td>12 Jun 1978</td>
-      <td>21 Jun 1978</td>
-      <td>8 Jul 1978</td>
-      <td>Saturday</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>1982</td>
-      <td>GE6</td>
-      <td>29 Mac 1982</td>
-      <td>7 Apr 1982</td>
-      <td>22 Apr 1982</td>
-      <td>Thursday</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>1986</td>
-      <td>GE7</td>
-      <td>19 Jul 1986</td>
-      <td>24 Jul 1986</td>
-      <td>3 Aug 1986</td>
-      <td>Sunday</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>1990</td>
-      <td>GE8</td>
-      <td>4 Oct 1990</td>
-      <td>11 Oct 1990</td>
-      <td>21 Oct 1990</td>
-      <td>Sunday</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>1995</td>
-      <td>GE9</td>
-      <td>6 Apr 1995</td>
-      <td>15 Apr 1995</td>
-      <td>25 Apr 1995</td>
-      <td>Tuesday</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>1999</td>
-      <td>GE10</td>
-      <td>10 Nov 1999</td>
-      <td>20 Nov 1999</td>
-      <td>29 Nov 1999</td>
-      <td>Monday</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>2004</td>
-      <td>GE11</td>
-      <td>4 Mac 2004</td>
-      <td>13 Mac 2004</td>
-      <td>21 Mac 2004</td>
-      <td>Sunday</td>
-    </tr>
-    <tr>
-      <th>11</th>
-      <td>2008</td>
-      <td>GE12</td>
-      <td>13 Feb 2008</td>
-      <td>24 Feb 2008</td>
-      <td>8 Mac 2008</td>
-      <td>Sunday</td>
-    </tr>
-    <tr>
-      <th>12</th>
-      <td>2013</td>
-      <td>GE13</td>
-      <td>3 Apr 2013</td>
-      <td>20 Apr 2013</td>
-      <td>5 May 2013</td>
-      <td>Sunday</td>
-    </tr>
-    <tr>
-      <th>13</th>
-      <td>2018</td>
-      <td>GE14</td>
-      <td>7 Apr 2018</td>
-      <td>28 Apr 2018</td>
-      <td>9 May 2018</td>
-      <td>Wednesday</td>
-    </tr>
-    <tr>
-      <th>14</th>
-      <td>2023</td>
-      <td>GE15</td>
-      <td>TBA</td>
-      <td>TBA</td>
-      <td>TBA</td>
-      <td>TBA</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+<style  type="text/css" >
+</style><table id="T_d7800fd8_1586_11eb_9455_68a86d10ab2a" ><caption>Malaysian General Election General Facts</caption><thead>    <tr>        <th class="blank level0" ></th>        <th class="col_heading level0 col0" >Year</th>        <th class="col_heading level0 col1" >GE</th>        <th class="col_heading level0 col2" >Dissolution</th>        <th class="col_heading level0 col3" >Nomination</th>        <th class="col_heading level0 col4" >Polling Date</th>        <th class="col_heading level0 col5" >Day</th>    </tr></thead><tbody>
+                <tr>
+                        <th id="T_d7800fd8_1586_11eb_9455_68a86d10ab2alevel0_row0" class="row_heading level0 row0" >0</th>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow0_col0" class="data row0 col0" >1959</td>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow0_col1" class="data row0 col1" >GE1</td>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow0_col2" class="data row0 col2" >27 Jun 1959</td>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow0_col3" class="data row0 col3" >15 Jul 1959</td>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow0_col4" class="data row0 col4" >19 Aug 1959</td>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow0_col5" class="data row0 col5" >Wednesday</td>
+            </tr>
+            <tr>
+                        <th id="T_d7800fd8_1586_11eb_9455_68a86d10ab2alevel0_row1" class="row_heading level0 row1" >1</th>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow1_col0" class="data row1 col0" >1964</td>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow1_col1" class="data row1 col1" >GE2</td>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow1_col2" class="data row1 col2" >1 Mac 1964</td>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow1_col3" class="data row1 col3" >21 Mac 1964</td>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow1_col4" class="data row1 col4" >25 Apr 1964</td>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow1_col5" class="data row1 col5" >Saturday</td>
+            </tr>
+            <tr>
+                        <th id="T_d7800fd8_1586_11eb_9455_68a86d10ab2alevel0_row2" class="row_heading level0 row2" >2</th>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow2_col0" class="data row2 col0" >1969</td>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow2_col1" class="data row2 col1" >GE3</td>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow2_col2" class="data row2 col2" >20 Mac 1969</td>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow2_col3" class="data row2 col3" >5 Apr 1969</td>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow2_col4" class="data row2 col4" >10 May 1969</td>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow2_col5" class="data row2 col5" >Saturday</td>
+            </tr>
+            <tr>
+                        <th id="T_d7800fd8_1586_11eb_9455_68a86d10ab2alevel0_row3" class="row_heading level0 row3" >3</th>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow3_col0" class="data row3 col0" >1974</td>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow3_col1" class="data row3 col1" >GE4</td>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow3_col2" class="data row3 col2" >31 Jul 1974</td>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow3_col3" class="data row3 col3" >8 Aug 1974</td>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow3_col4" class="data row3 col4" >24 Aug 1974</td>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow3_col5" class="data row3 col5" >Saturday</td>
+            </tr>
+            <tr>
+                        <th id="T_d7800fd8_1586_11eb_9455_68a86d10ab2alevel0_row4" class="row_heading level0 row4" >4</th>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow4_col0" class="data row4 col0" >1978</td>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow4_col1" class="data row4 col1" >GE5</td>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow4_col2" class="data row4 col2" >12 Jun 1978</td>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow4_col3" class="data row4 col3" >21 Jun 1978</td>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow4_col4" class="data row4 col4" >8 Jul 1978</td>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow4_col5" class="data row4 col5" >Saturday</td>
+            </tr>
+            <tr>
+                        <th id="T_d7800fd8_1586_11eb_9455_68a86d10ab2alevel0_row5" class="row_heading level0 row5" >5</th>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow5_col0" class="data row5 col0" >1982</td>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow5_col1" class="data row5 col1" >GE6</td>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow5_col2" class="data row5 col2" >29 Mac 1982</td>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow5_col3" class="data row5 col3" >7 Apr 1982</td>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow5_col4" class="data row5 col4" >22 Apr 1982</td>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow5_col5" class="data row5 col5" >Thursday</td>
+            </tr>
+            <tr>
+                        <th id="T_d7800fd8_1586_11eb_9455_68a86d10ab2alevel0_row6" class="row_heading level0 row6" >6</th>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow6_col0" class="data row6 col0" >1986</td>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow6_col1" class="data row6 col1" >GE7</td>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow6_col2" class="data row6 col2" >19 Jul 1986</td>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow6_col3" class="data row6 col3" >24 Jul 1986</td>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow6_col4" class="data row6 col4" >3 Aug 1986</td>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow6_col5" class="data row6 col5" >Sunday</td>
+            </tr>
+            <tr>
+                        <th id="T_d7800fd8_1586_11eb_9455_68a86d10ab2alevel0_row7" class="row_heading level0 row7" >7</th>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow7_col0" class="data row7 col0" >1990</td>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow7_col1" class="data row7 col1" >GE8</td>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow7_col2" class="data row7 col2" >4 Oct 1990</td>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow7_col3" class="data row7 col3" >11 Oct 1990</td>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow7_col4" class="data row7 col4" >21 Oct 1990</td>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow7_col5" class="data row7 col5" >Sunday</td>
+            </tr>
+            <tr>
+                        <th id="T_d7800fd8_1586_11eb_9455_68a86d10ab2alevel0_row8" class="row_heading level0 row8" >8</th>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow8_col0" class="data row8 col0" >1995</td>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow8_col1" class="data row8 col1" >GE9</td>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow8_col2" class="data row8 col2" >6 Apr 1995</td>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow8_col3" class="data row8 col3" >15 Apr 1995</td>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow8_col4" class="data row8 col4" >25 Apr 1995</td>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow8_col5" class="data row8 col5" >Tuesday</td>
+            </tr>
+            <tr>
+                        <th id="T_d7800fd8_1586_11eb_9455_68a86d10ab2alevel0_row9" class="row_heading level0 row9" >9</th>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow9_col0" class="data row9 col0" >1999</td>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow9_col1" class="data row9 col1" >GE10</td>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow9_col2" class="data row9 col2" >10 Nov 1999</td>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow9_col3" class="data row9 col3" >20 Nov 1999</td>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow9_col4" class="data row9 col4" >29 Nov 1999</td>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow9_col5" class="data row9 col5" >Monday</td>
+            </tr>
+            <tr>
+                        <th id="T_d7800fd8_1586_11eb_9455_68a86d10ab2alevel0_row10" class="row_heading level0 row10" >10</th>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow10_col0" class="data row10 col0" >2004</td>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow10_col1" class="data row10 col1" >GE11</td>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow10_col2" class="data row10 col2" >4 Mac 2004</td>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow10_col3" class="data row10 col3" >13 Mac 2004</td>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow10_col4" class="data row10 col4" >21 Mac 2004</td>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow10_col5" class="data row10 col5" >Sunday</td>
+            </tr>
+            <tr>
+                        <th id="T_d7800fd8_1586_11eb_9455_68a86d10ab2alevel0_row11" class="row_heading level0 row11" >11</th>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow11_col0" class="data row11 col0" >2008</td>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow11_col1" class="data row11 col1" >GE12</td>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow11_col2" class="data row11 col2" >13 Feb 2008</td>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow11_col3" class="data row11 col3" >24 Feb 2008</td>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow11_col4" class="data row11 col4" >8 Mac 2008</td>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow11_col5" class="data row11 col5" >Sunday</td>
+            </tr>
+            <tr>
+                        <th id="T_d7800fd8_1586_11eb_9455_68a86d10ab2alevel0_row12" class="row_heading level0 row12" >12</th>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow12_col0" class="data row12 col0" >2013</td>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow12_col1" class="data row12 col1" >GE13</td>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow12_col2" class="data row12 col2" >3 Apr 2013</td>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow12_col3" class="data row12 col3" >20 Apr 2013</td>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow12_col4" class="data row12 col4" >5 May 2013</td>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow12_col5" class="data row12 col5" >Sunday</td>
+            </tr>
+            <tr>
+                        <th id="T_d7800fd8_1586_11eb_9455_68a86d10ab2alevel0_row13" class="row_heading level0 row13" >13</th>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow13_col0" class="data row13 col0" >2018</td>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow13_col1" class="data row13 col1" >GE14</td>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow13_col2" class="data row13 col2" >7 Apr 2018</td>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow13_col3" class="data row13 col3" >28 Apr 2018</td>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow13_col4" class="data row13 col4" >9 May 2018</td>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow13_col5" class="data row13 col5" >Wednesday</td>
+            </tr>
+            <tr>
+                        <th id="T_d7800fd8_1586_11eb_9455_68a86d10ab2alevel0_row14" class="row_heading level0 row14" >14</th>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow14_col0" class="data row14 col0" >2023</td>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow14_col1" class="data row14 col1" >GE15</td>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow14_col2" class="data row14 col2" >TBA</td>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow14_col3" class="data row14 col3" >TBA</td>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow14_col4" class="data row14 col4" >TBA</td>
+                        <td id="T_d7800fd8_1586_11eb_9455_68a86d10ab2arow14_col5" class="data row14 col5" >TBA</td>
+            </tr>
+    </tbody></table>
 </div>
 
 </div>
@@ -13420,7 +13393,7 @@ div#notebook {
 <span class="n">df1</span><span class="p">[</span><span class="s1">&#39;Votes for Candidate&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df1</span><span class="p">[</span><span class="s1">&#39;Votes for Candidate&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span>
 <span class="n">df1</span><span class="p">[</span><span class="s1">&#39;Total Votes Cast&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df1</span><span class="p">[</span><span class="s1">&#39;Total Votes Cast&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span>
 <span class="n">df1</span><span class="p">[</span><span class="s1">&#39;</span><span class="si">% o</span><span class="s1">f total Votes&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df1</span><span class="p">[</span><span class="s1">&#39;</span><span class="si">% o</span><span class="s1">f total Votes&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;%&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span>
-<span class="n">df1</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">df1</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">set_caption</span><span class="p">(</span><span class="s2">&quot;Malaysian General Election Dataset Showing The First Three Rows Information&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13438,87 +13411,54 @@ div#notebook {
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Seat ID</th>
-      <th>Seat Name</th>
-      <th>Candidate Name</th>
-      <th>Candidate Party</th>
-      <th>Coalition</th>
-      <th>Votes for Candidate</th>
-      <th>Total Votes Cast</th>
-      <th>% of total Votes</th>
-      <th>Candidate Win</th>
-      <th>Gender</th>
-      <th>Status</th>
-      <th>Pekerjaan</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>P.001</td>
-      <td>PADANG BESAR</td>
-      <td>IZIZAM BIN IBRAHIM</td>
-      <td>PKR</td>
-      <td>Harapan</td>
-      <td>13594.0</td>
-      <td>36500.0</td>
-      <td>37.24</td>
-      <td>0</td>
-      <td>L</td>
-      <td>KLH</td>
-      <td>AHLI PERNIAGAAN</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>P.001</td>
-      <td>PADANG BESAR</td>
-      <td>DATUK ZAHIDI BIN ZAINUL ABIDIN</td>
-      <td>BN</td>
-      <td>BN</td>
-      <td>15032.0</td>
-      <td>36500.0</td>
-      <td>41.18</td>
-      <td>1</td>
-      <td>L</td>
-      <td>MNG</td>
-      <td>TIADA</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>P.001</td>
-      <td>PADANG BESAR</td>
-      <td>USTAZ MOKHTAR SENIK</td>
-      <td>PAS</td>
-      <td>PAS</td>
-      <td>7874.0</td>
-      <td>36500.0</td>
-      <td>21.57</td>
-      <td>0</td>
-      <td>L</td>
-      <td>KLH</td>
-      <td>USAHAWAN</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+<style  type="text/css" >
+</style><table id="T_d78b7c6a_1586_11eb_9455_68a86d10ab2a" ><caption>Malaysian General Election Dataset Showing The First Three Rows Information</caption><thead>    <tr>        <th class="blank level0" ></th>        <th class="col_heading level0 col0" >Seat ID</th>        <th class="col_heading level0 col1" >Seat Name</th>        <th class="col_heading level0 col2" >Candidate Name</th>        <th class="col_heading level0 col3" >Candidate Party</th>        <th class="col_heading level0 col4" >Coalition</th>        <th class="col_heading level0 col5" >Votes for Candidate</th>        <th class="col_heading level0 col6" >Total Votes Cast</th>        <th class="col_heading level0 col7" >% of total Votes</th>        <th class="col_heading level0 col8" >Candidate Win</th>        <th class="col_heading level0 col9" >Gender</th>        <th class="col_heading level0 col10" >Status</th>        <th class="col_heading level0 col11" >Pekerjaan</th>    </tr></thead><tbody>
+                <tr>
+                        <th id="T_d78b7c6a_1586_11eb_9455_68a86d10ab2alevel0_row0" class="row_heading level0 row0" >0</th>
+                        <td id="T_d78b7c6a_1586_11eb_9455_68a86d10ab2arow0_col0" class="data row0 col0" >P.001</td>
+                        <td id="T_d78b7c6a_1586_11eb_9455_68a86d10ab2arow0_col1" class="data row0 col1" >PADANG BESAR</td>
+                        <td id="T_d78b7c6a_1586_11eb_9455_68a86d10ab2arow0_col2" class="data row0 col2" >IZIZAM BIN IBRAHIM</td>
+                        <td id="T_d78b7c6a_1586_11eb_9455_68a86d10ab2arow0_col3" class="data row0 col3" >PKR</td>
+                        <td id="T_d78b7c6a_1586_11eb_9455_68a86d10ab2arow0_col4" class="data row0 col4" >Harapan</td>
+                        <td id="T_d78b7c6a_1586_11eb_9455_68a86d10ab2arow0_col5" class="data row0 col5" >13594.000000</td>
+                        <td id="T_d78b7c6a_1586_11eb_9455_68a86d10ab2arow0_col6" class="data row0 col6" >36500.000000</td>
+                        <td id="T_d78b7c6a_1586_11eb_9455_68a86d10ab2arow0_col7" class="data row0 col7" >37.240000</td>
+                        <td id="T_d78b7c6a_1586_11eb_9455_68a86d10ab2arow0_col8" class="data row0 col8" >0</td>
+                        <td id="T_d78b7c6a_1586_11eb_9455_68a86d10ab2arow0_col9" class="data row0 col9" >L</td>
+                        <td id="T_d78b7c6a_1586_11eb_9455_68a86d10ab2arow0_col10" class="data row0 col10" >KLH</td>
+                        <td id="T_d78b7c6a_1586_11eb_9455_68a86d10ab2arow0_col11" class="data row0 col11" >AHLI PERNIAGAAN</td>
+            </tr>
+            <tr>
+                        <th id="T_d78b7c6a_1586_11eb_9455_68a86d10ab2alevel0_row1" class="row_heading level0 row1" >1</th>
+                        <td id="T_d78b7c6a_1586_11eb_9455_68a86d10ab2arow1_col0" class="data row1 col0" >P.001</td>
+                        <td id="T_d78b7c6a_1586_11eb_9455_68a86d10ab2arow1_col1" class="data row1 col1" >PADANG BESAR</td>
+                        <td id="T_d78b7c6a_1586_11eb_9455_68a86d10ab2arow1_col2" class="data row1 col2" >DATUK ZAHIDI BIN ZAINUL ABIDIN</td>
+                        <td id="T_d78b7c6a_1586_11eb_9455_68a86d10ab2arow1_col3" class="data row1 col3" >BN</td>
+                        <td id="T_d78b7c6a_1586_11eb_9455_68a86d10ab2arow1_col4" class="data row1 col4" >BN</td>
+                        <td id="T_d78b7c6a_1586_11eb_9455_68a86d10ab2arow1_col5" class="data row1 col5" >15032.000000</td>
+                        <td id="T_d78b7c6a_1586_11eb_9455_68a86d10ab2arow1_col6" class="data row1 col6" >36500.000000</td>
+                        <td id="T_d78b7c6a_1586_11eb_9455_68a86d10ab2arow1_col7" class="data row1 col7" >41.180000</td>
+                        <td id="T_d78b7c6a_1586_11eb_9455_68a86d10ab2arow1_col8" class="data row1 col8" >1</td>
+                        <td id="T_d78b7c6a_1586_11eb_9455_68a86d10ab2arow1_col9" class="data row1 col9" >L</td>
+                        <td id="T_d78b7c6a_1586_11eb_9455_68a86d10ab2arow1_col10" class="data row1 col10" >MNG</td>
+                        <td id="T_d78b7c6a_1586_11eb_9455_68a86d10ab2arow1_col11" class="data row1 col11" >TIADA</td>
+            </tr>
+            <tr>
+                        <th id="T_d78b7c6a_1586_11eb_9455_68a86d10ab2alevel0_row2" class="row_heading level0 row2" >2</th>
+                        <td id="T_d78b7c6a_1586_11eb_9455_68a86d10ab2arow2_col0" class="data row2 col0" >P.001</td>
+                        <td id="T_d78b7c6a_1586_11eb_9455_68a86d10ab2arow2_col1" class="data row2 col1" >PADANG BESAR</td>
+                        <td id="T_d78b7c6a_1586_11eb_9455_68a86d10ab2arow2_col2" class="data row2 col2" >USTAZ MOKHTAR SENIK</td>
+                        <td id="T_d78b7c6a_1586_11eb_9455_68a86d10ab2arow2_col3" class="data row2 col3" >PAS</td>
+                        <td id="T_d78b7c6a_1586_11eb_9455_68a86d10ab2arow2_col4" class="data row2 col4" >PAS</td>
+                        <td id="T_d78b7c6a_1586_11eb_9455_68a86d10ab2arow2_col5" class="data row2 col5" >7874.000000</td>
+                        <td id="T_d78b7c6a_1586_11eb_9455_68a86d10ab2arow2_col6" class="data row2 col6" >36500.000000</td>
+                        <td id="T_d78b7c6a_1586_11eb_9455_68a86d10ab2arow2_col7" class="data row2 col7" >21.570000</td>
+                        <td id="T_d78b7c6a_1586_11eb_9455_68a86d10ab2arow2_col8" class="data row2 col8" >0</td>
+                        <td id="T_d78b7c6a_1586_11eb_9455_68a86d10ab2arow2_col9" class="data row2 col9" >L</td>
+                        <td id="T_d78b7c6a_1586_11eb_9455_68a86d10ab2arow2_col10" class="data row2 col10" >KLH</td>
+                        <td id="T_d78b7c6a_1586_11eb_9455_68a86d10ab2arow2_col11" class="data row2 col11" >USAHAWAN</td>
+            </tr>
+    </tbody></table>
 </div>
 
 </div>
@@ -13540,7 +13480,7 @@ div#notebook {
 <div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df1</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df1</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">set_caption</span><span class="p">(</span><span class="s2">&quot;Malaysian General Election Dataset Summary of Statistical Information&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13558,90 +13498,65 @@ div#notebook {
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Votes for Candidate</th>
-      <th>Total Votes Cast</th>
-      <th>% of total Votes</th>
-      <th>Candidate Win</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>count</th>
-      <td>687.000000</td>
-      <td>687.000000</td>
-      <td>687.000000</td>
-      <td>687.000000</td>
-    </tr>
-    <tr>
-      <th>mean</th>
-      <td>17587.235808</td>
-      <td>55158.133916</td>
-      <td>32.314381</td>
-      <td>0.323144</td>
-    </tr>
-    <tr>
-      <th>std</th>
-      <td>16055.488909</td>
-      <td>26085.456294</td>
-      <td>21.535183</td>
-      <td>0.468018</td>
-    </tr>
-    <tr>
-      <th>min</th>
-      <td>46.000000</td>
-      <td>12581.000000</td>
-      <td>0.080000</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <th>25%</th>
-      <td>6816.000000</td>
-      <td>36806.000000</td>
-      <td>12.805000</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <th>50%</th>
-      <td>14428.000000</td>
-      <td>51170.000000</td>
-      <td>32.600000</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <th>75%</th>
-      <td>22700.000000</td>
-      <td>70206.000000</td>
-      <td>47.215000</td>
-      <td>1.000000</td>
-    </tr>
-    <tr>
-      <th>max</th>
-      <td>121283.000000</td>
-      <td>156327.000000</td>
-      <td>92.040000</td>
-      <td>1.000000</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+<style  type="text/css" >
+</style><table id="T_d796025c_1586_11eb_9455_68a86d10ab2a" ><caption>Malaysian General Election Dataset Summary of Statistical Information</caption><thead>    <tr>        <th class="blank level0" ></th>        <th class="col_heading level0 col0" >Votes for Candidate</th>        <th class="col_heading level0 col1" >Total Votes Cast</th>        <th class="col_heading level0 col2" >% of total Votes</th>        <th class="col_heading level0 col3" >Candidate Win</th>    </tr></thead><tbody>
+                <tr>
+                        <th id="T_d796025c_1586_11eb_9455_68a86d10ab2alevel0_row0" class="row_heading level0 row0" >count</th>
+                        <td id="T_d796025c_1586_11eb_9455_68a86d10ab2arow0_col0" class="data row0 col0" >687.000000</td>
+                        <td id="T_d796025c_1586_11eb_9455_68a86d10ab2arow0_col1" class="data row0 col1" >687.000000</td>
+                        <td id="T_d796025c_1586_11eb_9455_68a86d10ab2arow0_col2" class="data row0 col2" >687.000000</td>
+                        <td id="T_d796025c_1586_11eb_9455_68a86d10ab2arow0_col3" class="data row0 col3" >687.000000</td>
+            </tr>
+            <tr>
+                        <th id="T_d796025c_1586_11eb_9455_68a86d10ab2alevel0_row1" class="row_heading level0 row1" >mean</th>
+                        <td id="T_d796025c_1586_11eb_9455_68a86d10ab2arow1_col0" class="data row1 col0" >17587.235808</td>
+                        <td id="T_d796025c_1586_11eb_9455_68a86d10ab2arow1_col1" class="data row1 col1" >55158.133916</td>
+                        <td id="T_d796025c_1586_11eb_9455_68a86d10ab2arow1_col2" class="data row1 col2" >32.314381</td>
+                        <td id="T_d796025c_1586_11eb_9455_68a86d10ab2arow1_col3" class="data row1 col3" >0.323144</td>
+            </tr>
+            <tr>
+                        <th id="T_d796025c_1586_11eb_9455_68a86d10ab2alevel0_row2" class="row_heading level0 row2" >std</th>
+                        <td id="T_d796025c_1586_11eb_9455_68a86d10ab2arow2_col0" class="data row2 col0" >16055.488909</td>
+                        <td id="T_d796025c_1586_11eb_9455_68a86d10ab2arow2_col1" class="data row2 col1" >26085.456294</td>
+                        <td id="T_d796025c_1586_11eb_9455_68a86d10ab2arow2_col2" class="data row2 col2" >21.535183</td>
+                        <td id="T_d796025c_1586_11eb_9455_68a86d10ab2arow2_col3" class="data row2 col3" >0.468018</td>
+            </tr>
+            <tr>
+                        <th id="T_d796025c_1586_11eb_9455_68a86d10ab2alevel0_row3" class="row_heading level0 row3" >min</th>
+                        <td id="T_d796025c_1586_11eb_9455_68a86d10ab2arow3_col0" class="data row3 col0" >46.000000</td>
+                        <td id="T_d796025c_1586_11eb_9455_68a86d10ab2arow3_col1" class="data row3 col1" >12581.000000</td>
+                        <td id="T_d796025c_1586_11eb_9455_68a86d10ab2arow3_col2" class="data row3 col2" >0.080000</td>
+                        <td id="T_d796025c_1586_11eb_9455_68a86d10ab2arow3_col3" class="data row3 col3" >0.000000</td>
+            </tr>
+            <tr>
+                        <th id="T_d796025c_1586_11eb_9455_68a86d10ab2alevel0_row4" class="row_heading level0 row4" >25%</th>
+                        <td id="T_d796025c_1586_11eb_9455_68a86d10ab2arow4_col0" class="data row4 col0" >6816.000000</td>
+                        <td id="T_d796025c_1586_11eb_9455_68a86d10ab2arow4_col1" class="data row4 col1" >36806.000000</td>
+                        <td id="T_d796025c_1586_11eb_9455_68a86d10ab2arow4_col2" class="data row4 col2" >12.805000</td>
+                        <td id="T_d796025c_1586_11eb_9455_68a86d10ab2arow4_col3" class="data row4 col3" >0.000000</td>
+            </tr>
+            <tr>
+                        <th id="T_d796025c_1586_11eb_9455_68a86d10ab2alevel0_row5" class="row_heading level0 row5" >50%</th>
+                        <td id="T_d796025c_1586_11eb_9455_68a86d10ab2arow5_col0" class="data row5 col0" >14428.000000</td>
+                        <td id="T_d796025c_1586_11eb_9455_68a86d10ab2arow5_col1" class="data row5 col1" >51170.000000</td>
+                        <td id="T_d796025c_1586_11eb_9455_68a86d10ab2arow5_col2" class="data row5 col2" >32.600000</td>
+                        <td id="T_d796025c_1586_11eb_9455_68a86d10ab2arow5_col3" class="data row5 col3" >0.000000</td>
+            </tr>
+            <tr>
+                        <th id="T_d796025c_1586_11eb_9455_68a86d10ab2alevel0_row6" class="row_heading level0 row6" >75%</th>
+                        <td id="T_d796025c_1586_11eb_9455_68a86d10ab2arow6_col0" class="data row6 col0" >22700.000000</td>
+                        <td id="T_d796025c_1586_11eb_9455_68a86d10ab2arow6_col1" class="data row6 col1" >70206.000000</td>
+                        <td id="T_d796025c_1586_11eb_9455_68a86d10ab2arow6_col2" class="data row6 col2" >47.215000</td>
+                        <td id="T_d796025c_1586_11eb_9455_68a86d10ab2arow6_col3" class="data row6 col3" >1.000000</td>
+            </tr>
+            <tr>
+                        <th id="T_d796025c_1586_11eb_9455_68a86d10ab2alevel0_row7" class="row_heading level0 row7" >max</th>
+                        <td id="T_d796025c_1586_11eb_9455_68a86d10ab2arow7_col0" class="data row7 col0" >121283.000000</td>
+                        <td id="T_d796025c_1586_11eb_9455_68a86d10ab2arow7_col1" class="data row7 col1" >156327.000000</td>
+                        <td id="T_d796025c_1586_11eb_9455_68a86d10ab2arow7_col2" class="data row7 col2" >92.040000</td>
+                        <td id="T_d796025c_1586_11eb_9455_68a86d10ab2arow7_col3" class="data row7 col3" >1.000000</td>
+            </tr>
+    </tbody></table>
 </div>
 
 </div>
@@ -13671,7 +13586,7 @@ div#notebook {
 <span class="n">df1</span> <span class="o">=</span> <span class="n">df1</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;Candidate Party&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;Candidate Win&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 <span class="n">df1</span><span class="p">[</span><span class="s1">&#39;% Votes For Candidate&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">df1</span><span class="p">[</span><span class="s1">&#39;Votes for Candidate&#39;</span><span class="p">]</span><span class="o">/</span><span class="n">df1</span><span class="p">[</span><span class="s1">&#39;Total Votes Cast&#39;</span><span class="p">]</span><span class="o">*</span><span class="mi">100</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">df1</span><span class="p">[</span><span class="s1">&#39;% Seats Win&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">df1</span><span class="p">[</span><span class="s1">&#39;Candidate Win&#39;</span><span class="p">]</span><span class="o">/</span><span class="n">df1</span><span class="p">[</span><span class="s1">&#39;Candidate Win&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">*</span><span class="mi">100</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">df1</span>
+<span class="n">df1</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">set_caption</span><span class="p">(</span><span class="s2">&quot;Malaysian General Election Parlimentary Results Grouped By Party&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13689,107 +13604,73 @@ div#notebook {
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Votes for Candidate</th>
-      <th>Total Votes Cast</th>
-      <th>Candidate Win</th>
-      <th>% Votes For Candidate</th>
-      <th>% Seats Win</th>
-    </tr>
-    <tr>
-      <th>Candidate Party</th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>PKR</th>
-      <td>4362525.0</td>
-      <td>7129313.0</td>
-      <td>104</td>
-      <td>61.2</td>
-      <td>46.8</td>
-    </tr>
-    <tr>
-      <th>BN</th>
-      <td>1480944.0</td>
-      <td>2914002.0</td>
-      <td>79</td>
-      <td>50.8</td>
-      <td>35.6</td>
-    </tr>
-    <tr>
-      <th>PAS</th>
-      <td>612998.0</td>
-      <td>1232570.0</td>
-      <td>18</td>
-      <td>49.7</td>
-      <td>8.1</td>
-    </tr>
-    <tr>
-      <th>DAP</th>
-      <td>236511.0</td>
-      <td>361299.0</td>
-      <td>9</td>
-      <td>65.5</td>
-      <td>4.1</td>
-    </tr>
-    <tr>
-      <th>WARISAN</th>
-      <td>183336.0</td>
-      <td>309463.0</td>
-      <td>8</td>
-      <td>59.2</td>
-      <td>3.6</td>
-    </tr>
-    <tr>
-      <th>BEBAS - KUNCI</th>
-      <td>43959.0</td>
-      <td>77356.0</td>
-      <td>2</td>
-      <td>56.8</td>
-      <td>0.9</td>
-    </tr>
-    <tr>
-      <th>BEBAS - KERUSI</th>
-      <td>10105.0</td>
-      <td>18279.0</td>
-      <td>1</td>
-      <td>55.3</td>
-      <td>0.5</td>
-    </tr>
-    <tr>
-      <th>SOLIDARITI</th>
-      <td>13286.0</td>
-      <td>40149.0</td>
-      <td>1</td>
-      <td>33.1</td>
-      <td>0.5</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+<style  type="text/css" >
+</style><table id="T_d7a7db08_1586_11eb_9455_68a86d10ab2a" ><caption>Malaysian General Election Parlimentary Results Grouped By Party</caption><thead>    <tr>        <th class="blank level0" ></th>        <th class="col_heading level0 col0" >Votes for Candidate</th>        <th class="col_heading level0 col1" >Total Votes Cast</th>        <th class="col_heading level0 col2" >Candidate Win</th>        <th class="col_heading level0 col3" >% Votes For Candidate</th>        <th class="col_heading level0 col4" >% Seats Win</th>    </tr>    <tr>        <th class="index_name level0" >Candidate Party</th>        <th class="blank" ></th>        <th class="blank" ></th>        <th class="blank" ></th>        <th class="blank" ></th>        <th class="blank" ></th>    </tr></thead><tbody>
+                <tr>
+                        <th id="T_d7a7db08_1586_11eb_9455_68a86d10ab2alevel0_row0" class="row_heading level0 row0" >PKR</th>
+                        <td id="T_d7a7db08_1586_11eb_9455_68a86d10ab2arow0_col0" class="data row0 col0" >4362525.000000</td>
+                        <td id="T_d7a7db08_1586_11eb_9455_68a86d10ab2arow0_col1" class="data row0 col1" >7129313.000000</td>
+                        <td id="T_d7a7db08_1586_11eb_9455_68a86d10ab2arow0_col2" class="data row0 col2" >104</td>
+                        <td id="T_d7a7db08_1586_11eb_9455_68a86d10ab2arow0_col3" class="data row0 col3" >61.200000</td>
+                        <td id="T_d7a7db08_1586_11eb_9455_68a86d10ab2arow0_col4" class="data row0 col4" >46.800000</td>
+            </tr>
+            <tr>
+                        <th id="T_d7a7db08_1586_11eb_9455_68a86d10ab2alevel0_row1" class="row_heading level0 row1" >BN</th>
+                        <td id="T_d7a7db08_1586_11eb_9455_68a86d10ab2arow1_col0" class="data row1 col0" >1480944.000000</td>
+                        <td id="T_d7a7db08_1586_11eb_9455_68a86d10ab2arow1_col1" class="data row1 col1" >2914002.000000</td>
+                        <td id="T_d7a7db08_1586_11eb_9455_68a86d10ab2arow1_col2" class="data row1 col2" >79</td>
+                        <td id="T_d7a7db08_1586_11eb_9455_68a86d10ab2arow1_col3" class="data row1 col3" >50.800000</td>
+                        <td id="T_d7a7db08_1586_11eb_9455_68a86d10ab2arow1_col4" class="data row1 col4" >35.600000</td>
+            </tr>
+            <tr>
+                        <th id="T_d7a7db08_1586_11eb_9455_68a86d10ab2alevel0_row2" class="row_heading level0 row2" >PAS</th>
+                        <td id="T_d7a7db08_1586_11eb_9455_68a86d10ab2arow2_col0" class="data row2 col0" >612998.000000</td>
+                        <td id="T_d7a7db08_1586_11eb_9455_68a86d10ab2arow2_col1" class="data row2 col1" >1232570.000000</td>
+                        <td id="T_d7a7db08_1586_11eb_9455_68a86d10ab2arow2_col2" class="data row2 col2" >18</td>
+                        <td id="T_d7a7db08_1586_11eb_9455_68a86d10ab2arow2_col3" class="data row2 col3" >49.700000</td>
+                        <td id="T_d7a7db08_1586_11eb_9455_68a86d10ab2arow2_col4" class="data row2 col4" >8.100000</td>
+            </tr>
+            <tr>
+                        <th id="T_d7a7db08_1586_11eb_9455_68a86d10ab2alevel0_row3" class="row_heading level0 row3" >DAP</th>
+                        <td id="T_d7a7db08_1586_11eb_9455_68a86d10ab2arow3_col0" class="data row3 col0" >236511.000000</td>
+                        <td id="T_d7a7db08_1586_11eb_9455_68a86d10ab2arow3_col1" class="data row3 col1" >361299.000000</td>
+                        <td id="T_d7a7db08_1586_11eb_9455_68a86d10ab2arow3_col2" class="data row3 col2" >9</td>
+                        <td id="T_d7a7db08_1586_11eb_9455_68a86d10ab2arow3_col3" class="data row3 col3" >65.500000</td>
+                        <td id="T_d7a7db08_1586_11eb_9455_68a86d10ab2arow3_col4" class="data row3 col4" >4.100000</td>
+            </tr>
+            <tr>
+                        <th id="T_d7a7db08_1586_11eb_9455_68a86d10ab2alevel0_row4" class="row_heading level0 row4" >WARISAN</th>
+                        <td id="T_d7a7db08_1586_11eb_9455_68a86d10ab2arow4_col0" class="data row4 col0" >183336.000000</td>
+                        <td id="T_d7a7db08_1586_11eb_9455_68a86d10ab2arow4_col1" class="data row4 col1" >309463.000000</td>
+                        <td id="T_d7a7db08_1586_11eb_9455_68a86d10ab2arow4_col2" class="data row4 col2" >8</td>
+                        <td id="T_d7a7db08_1586_11eb_9455_68a86d10ab2arow4_col3" class="data row4 col3" >59.200000</td>
+                        <td id="T_d7a7db08_1586_11eb_9455_68a86d10ab2arow4_col4" class="data row4 col4" >3.600000</td>
+            </tr>
+            <tr>
+                        <th id="T_d7a7db08_1586_11eb_9455_68a86d10ab2alevel0_row5" class="row_heading level0 row5" >BEBAS - KUNCI</th>
+                        <td id="T_d7a7db08_1586_11eb_9455_68a86d10ab2arow5_col0" class="data row5 col0" >43959.000000</td>
+                        <td id="T_d7a7db08_1586_11eb_9455_68a86d10ab2arow5_col1" class="data row5 col1" >77356.000000</td>
+                        <td id="T_d7a7db08_1586_11eb_9455_68a86d10ab2arow5_col2" class="data row5 col2" >2</td>
+                        <td id="T_d7a7db08_1586_11eb_9455_68a86d10ab2arow5_col3" class="data row5 col3" >56.800000</td>
+                        <td id="T_d7a7db08_1586_11eb_9455_68a86d10ab2arow5_col4" class="data row5 col4" >0.900000</td>
+            </tr>
+            <tr>
+                        <th id="T_d7a7db08_1586_11eb_9455_68a86d10ab2alevel0_row6" class="row_heading level0 row6" >BEBAS - KERUSI</th>
+                        <td id="T_d7a7db08_1586_11eb_9455_68a86d10ab2arow6_col0" class="data row6 col0" >10105.000000</td>
+                        <td id="T_d7a7db08_1586_11eb_9455_68a86d10ab2arow6_col1" class="data row6 col1" >18279.000000</td>
+                        <td id="T_d7a7db08_1586_11eb_9455_68a86d10ab2arow6_col2" class="data row6 col2" >1</td>
+                        <td id="T_d7a7db08_1586_11eb_9455_68a86d10ab2arow6_col3" class="data row6 col3" >55.300000</td>
+                        <td id="T_d7a7db08_1586_11eb_9455_68a86d10ab2arow6_col4" class="data row6 col4" >0.500000</td>
+            </tr>
+            <tr>
+                        <th id="T_d7a7db08_1586_11eb_9455_68a86d10ab2alevel0_row7" class="row_heading level0 row7" >SOLIDARITI</th>
+                        <td id="T_d7a7db08_1586_11eb_9455_68a86d10ab2arow7_col0" class="data row7 col0" >13286.000000</td>
+                        <td id="T_d7a7db08_1586_11eb_9455_68a86d10ab2arow7_col1" class="data row7 col1" >40149.000000</td>
+                        <td id="T_d7a7db08_1586_11eb_9455_68a86d10ab2arow7_col2" class="data row7 col2" >1</td>
+                        <td id="T_d7a7db08_1586_11eb_9455_68a86d10ab2arow7_col3" class="data row7 col3" >33.100000</td>
+                        <td id="T_d7a7db08_1586_11eb_9455_68a86d10ab2arow7_col4" class="data row7 col4" >0.500000</td>
+            </tr>
+    </tbody></table>
 </div>
 
 </div>
@@ -13862,20 +13743,20 @@ div#notebook {
 <div>
         
         
-            <div id="a52616a2-be1b-4faa-8095-f3a2623bfe20" class="plotly-graph-div" style="height:525px; width:100%;"></div>
+            <div id="c7232a53-281d-43fc-aad0-de040ee93bb4" class="plotly-graph-div" style="height:525px; width:100%;"></div>
             <script type="text/javascript">
                 require(["plotly"], function(Plotly) {
                     window.PLOTLYENV=window.PLOTLYENV || {};
                     
-                if (document.getElementById("a52616a2-be1b-4faa-8095-f3a2623bfe20")) {
+                if (document.getElementById("c7232a53-281d-43fc-aad0-de040ee93bb4")) {
                     Plotly.newPlot(
-                        'a52616a2-be1b-4faa-8095-f3a2623bfe20',
+                        'c7232a53-281d-43fc-aad0-de040ee93bb4',
                         [{"alignmentgroup": "True", "hoverlabel": {"namelength": 0}, "hovertemplate": "Candidate Party=%{x}<br>Candidate Win=%{y}", "legendgroup": "", "marker": {"color": "#636efa"}, "name": "", "offsetgroup": "", "orientation": "v", "showlegend": false, "textposition": "auto", "type": "bar", "x": ["BN", "PKR", "BN", "PKR", "PKR", "PKR", "BN", "PKR", "PKR", "PKR", "PAS", "PAS", "PAS", "PKR", "PKR", "BN", "PKR", "PKR", "PAS", "PAS", "PAS", "PAS", "PAS", "PAS", "PAS", "BN", "BN", "PAS", "BN", "BN", "PAS", "BN", "BN", "PAS", "PAS", "PAS", "PAS", "BN", "PAS", "PAS", "BN", "BN", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "BN", "BN", "BN", "PKR", "BN", "BN", "PKR", "BN", "PKR", "PKR", "PKR", "PKR", "PKR", "BN", "PKR", "BN", "PKR", "PKR", "BN", "BN", "PKR", "BN", "PKR", "PKR", "BN", "BN", "PKR", "BN", "PKR", "PKR", "BN", "BN", "BN", "BN", "PKR", "PKR", "BN", "BN", "BN", "PKR", "PKR", "BN", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "BEBAS - KUNCI", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "BN", "BN", "BN", "PKR", "PKR", "PKR", "BN", "PKR", "PKR", "BN", "PKR", "PKR", "PKR", "PKR", "BN", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "BN", "BN", "PKR", "PKR", "PKR", "PKR", "BN", "BN", "BN", "BN", "BN", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "BN", "PKR", "BN", "BN", "BN", "WARISAN", "BN", "WARISAN", "DAP", "PKR", "WARISAN", "WARISAN", "BN", "BN", "BN", "PKR", "SOLIDARITI", "DAP", "BN", "BN", "BN", "WARISAN", "DAP", "BN", "WARISAN", "WARISAN", "PKR", "WARISAN", "DAP", "BN", "BN", "DAP", "DAP", "BN", "PKR", "BN", "BN", "BN", "BN", "BEBAS - KUNCI", "BN", "PKR", "BN", "BN", "DAP", "BEBAS - KERUSI", "BN", "DAP", "DAP", "BN", "PKR", "BN", "BN", "BN", "BN", "PKR", "BN", "BN", "BN"], "xaxis": "x", "y": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], "yaxis": "y"}],
                         {"barmode": "relative", "legend": {"tracegroupgap": 0}, "template": {"data": {"bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "bar"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "barpolar"}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "choropleth": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "choropleth"}], "contour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "contour"}], "contourcarpet": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "contourcarpet"}], "heatmap": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmap"}], "heatmapgl": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmapgl"}], "histogram": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "histogram"}], "histogram2d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2d"}], "histogram2dcontour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2dcontour"}], "mesh3d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "mesh3d"}], "parcoords": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "parcoords"}], "pie": [{"automargin": true, "type": "pie"}], "scatter": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter"}], "scatter3d": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter3d"}], "scattercarpet": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattercarpet"}], "scattergeo": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergeo"}], "scattergl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergl"}], "scattermapbox": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattermapbox"}], "scatterpolar": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolar"}], "scatterpolargl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolargl"}], "scatterternary": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterternary"}], "surface": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "surface"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}]}, "layout": {"annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]], "sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}, "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "geo": {"bgcolor": "white", "lakecolor": "white", "landcolor": "#E5ECF6", "showlakes": true, "showland": true, "subunitcolor": "white"}, "hoverlabel": {"align": "left"}, "hovermode": "closest", "mapbox": {"style": "light"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "ternary": {"aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "title": {"x": 0.05}, "xaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}, "yaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}}}, "title": {"text": "GE14 : Parliementary Seats Summary By Candidate Party"}, "xaxis": {"anchor": "y", "domain": [0.0, 1.0], "title": {"text": "Candidate Party"}}, "yaxis": {"anchor": "x", "domain": [0.0, 1.0], "title": {"text": "Candidate Win"}}},
                         {"responsive": true}
                     ).then(function(){
                             
-var gd = document.getElementById('a52616a2-be1b-4faa-8095-f3a2623bfe20');
+var gd = document.getElementById('c7232a53-281d-43fc-aad0-de040ee93bb4');
 var x = new MutationObserver(function (mutations, observer) {{
         var display = window.getComputedStyle(gd).display;
         if (!display || display === 'none') {{
@@ -13938,7 +13819,7 @@ if (outputEl) {{
 <span class="n">df1</span> <span class="o">=</span> <span class="n">df1</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;Coalition&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;Candidate Win&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 <span class="n">df1</span><span class="p">[</span><span class="s1">&#39;% Votes For Candidate&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">df1</span><span class="p">[</span><span class="s1">&#39;Votes for Candidate&#39;</span><span class="p">]</span><span class="o">/</span><span class="n">df1</span><span class="p">[</span><span class="s1">&#39;Total Votes Cast&#39;</span><span class="p">]</span><span class="o">*</span><span class="mi">100</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">df1</span><span class="p">[</span><span class="s1">&#39;% Seats Win&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">df1</span><span class="p">[</span><span class="s1">&#39;Candidate Win&#39;</span><span class="p">]</span><span class="o">/</span><span class="n">df1</span><span class="p">[</span><span class="s1">&#39;Candidate Win&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">*</span><span class="mi">100</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">df1</span>
+<span class="n">df1</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">set_caption</span><span class="p">(</span><span class="s2">&quot;Malaysian General Election Parlimentary Results Grouped By Coalition Party&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13956,75 +13837,41 @@ if (outputEl) {{
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Votes for Candidate</th>
-      <th>Total Votes Cast</th>
-      <th>Candidate Win</th>
-      <th>% Votes For Candidate</th>
-      <th>% Seats Win</th>
-    </tr>
-    <tr>
-      <th>Coalition</th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>Harapan</th>
-      <td>4795658.0</td>
-      <td>7840224.0</td>
-      <td>122</td>
-      <td>61.2</td>
-      <td>55.0</td>
-    </tr>
-    <tr>
-      <th>BN</th>
-      <td>1480944.0</td>
-      <td>2914002.0</td>
-      <td>79</td>
-      <td>50.8</td>
-      <td>35.6</td>
-    </tr>
-    <tr>
-      <th>PAS</th>
-      <td>612998.0</td>
-      <td>1232570.0</td>
-      <td>18</td>
-      <td>49.7</td>
-      <td>8.1</td>
-    </tr>
-    <tr>
-      <th>BEBAS</th>
-      <td>54064.0</td>
-      <td>95635.0</td>
-      <td>3</td>
-      <td>56.5</td>
-      <td>1.4</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+<style  type="text/css" >
+</style><table id="T_d906b898_1586_11eb_9455_68a86d10ab2a" ><caption>Malaysian General Election Parlimentary Results Grouped By Coalition Party</caption><thead>    <tr>        <th class="blank level0" ></th>        <th class="col_heading level0 col0" >Votes for Candidate</th>        <th class="col_heading level0 col1" >Total Votes Cast</th>        <th class="col_heading level0 col2" >Candidate Win</th>        <th class="col_heading level0 col3" >% Votes For Candidate</th>        <th class="col_heading level0 col4" >% Seats Win</th>    </tr>    <tr>        <th class="index_name level0" >Coalition</th>        <th class="blank" ></th>        <th class="blank" ></th>        <th class="blank" ></th>        <th class="blank" ></th>        <th class="blank" ></th>    </tr></thead><tbody>
+                <tr>
+                        <th id="T_d906b898_1586_11eb_9455_68a86d10ab2alevel0_row0" class="row_heading level0 row0" >Harapan</th>
+                        <td id="T_d906b898_1586_11eb_9455_68a86d10ab2arow0_col0" class="data row0 col0" >4795658.000000</td>
+                        <td id="T_d906b898_1586_11eb_9455_68a86d10ab2arow0_col1" class="data row0 col1" >7840224.000000</td>
+                        <td id="T_d906b898_1586_11eb_9455_68a86d10ab2arow0_col2" class="data row0 col2" >122</td>
+                        <td id="T_d906b898_1586_11eb_9455_68a86d10ab2arow0_col3" class="data row0 col3" >61.200000</td>
+                        <td id="T_d906b898_1586_11eb_9455_68a86d10ab2arow0_col4" class="data row0 col4" >55.000000</td>
+            </tr>
+            <tr>
+                        <th id="T_d906b898_1586_11eb_9455_68a86d10ab2alevel0_row1" class="row_heading level0 row1" >BN</th>
+                        <td id="T_d906b898_1586_11eb_9455_68a86d10ab2arow1_col0" class="data row1 col0" >1480944.000000</td>
+                        <td id="T_d906b898_1586_11eb_9455_68a86d10ab2arow1_col1" class="data row1 col1" >2914002.000000</td>
+                        <td id="T_d906b898_1586_11eb_9455_68a86d10ab2arow1_col2" class="data row1 col2" >79</td>
+                        <td id="T_d906b898_1586_11eb_9455_68a86d10ab2arow1_col3" class="data row1 col3" >50.800000</td>
+                        <td id="T_d906b898_1586_11eb_9455_68a86d10ab2arow1_col4" class="data row1 col4" >35.600000</td>
+            </tr>
+            <tr>
+                        <th id="T_d906b898_1586_11eb_9455_68a86d10ab2alevel0_row2" class="row_heading level0 row2" >PAS</th>
+                        <td id="T_d906b898_1586_11eb_9455_68a86d10ab2arow2_col0" class="data row2 col0" >612998.000000</td>
+                        <td id="T_d906b898_1586_11eb_9455_68a86d10ab2arow2_col1" class="data row2 col1" >1232570.000000</td>
+                        <td id="T_d906b898_1586_11eb_9455_68a86d10ab2arow2_col2" class="data row2 col2" >18</td>
+                        <td id="T_d906b898_1586_11eb_9455_68a86d10ab2arow2_col3" class="data row2 col3" >49.700000</td>
+                        <td id="T_d906b898_1586_11eb_9455_68a86d10ab2arow2_col4" class="data row2 col4" >8.100000</td>
+            </tr>
+            <tr>
+                        <th id="T_d906b898_1586_11eb_9455_68a86d10ab2alevel0_row3" class="row_heading level0 row3" >BEBAS</th>
+                        <td id="T_d906b898_1586_11eb_9455_68a86d10ab2arow3_col0" class="data row3 col0" >54064.000000</td>
+                        <td id="T_d906b898_1586_11eb_9455_68a86d10ab2arow3_col1" class="data row3 col1" >95635.000000</td>
+                        <td id="T_d906b898_1586_11eb_9455_68a86d10ab2arow3_col2" class="data row3 col2" >3</td>
+                        <td id="T_d906b898_1586_11eb_9455_68a86d10ab2arow3_col3" class="data row3 col3" >56.500000</td>
+                        <td id="T_d906b898_1586_11eb_9455_68a86d10ab2arow3_col4" class="data row3 col4" >1.400000</td>
+            </tr>
+    </tbody></table>
 </div>
 
 </div>
@@ -14066,20 +13913,20 @@ if (outputEl) {{
 <div>
         
         
-            <div id="76012a09-2300-4053-a435-2c7dadd9175a" class="plotly-graph-div" style="height:525px; width:100%;"></div>
+            <div id="ab541923-1030-4ed4-83ab-9086252d8567" class="plotly-graph-div" style="height:525px; width:100%;"></div>
             <script type="text/javascript">
                 require(["plotly"], function(Plotly) {
                     window.PLOTLYENV=window.PLOTLYENV || {};
                     
-                if (document.getElementById("76012a09-2300-4053-a435-2c7dadd9175a")) {
+                if (document.getElementById("ab541923-1030-4ed4-83ab-9086252d8567")) {
                     Plotly.newPlot(
-                        '76012a09-2300-4053-a435-2c7dadd9175a',
+                        'ab541923-1030-4ed4-83ab-9086252d8567',
                         [{"alignmentgroup": "True", "hoverlabel": {"namelength": 0}, "hovertemplate": "Coalition=%{x}<br>Candidate Win=%{y}", "legendgroup": "", "marker": {"color": "#636efa"}, "name": "", "offsetgroup": "", "orientation": "v", "showlegend": false, "textposition": "auto", "type": "bar", "x": ["BN", "Harapan", "BN", "Harapan", "Harapan", "Harapan", "BN", "Harapan", "Harapan", "Harapan", "PAS", "PAS", "PAS", "Harapan", "Harapan", "BN", "Harapan", "Harapan", "PAS", "PAS", "PAS", "PAS", "PAS", "PAS", "PAS", "BN", "BN", "PAS", "BN", "BN", "PAS", "BN", "BN", "PAS", "PAS", "PAS", "PAS", "BN", "PAS", "PAS", "BN", "BN", "Harapan", "Harapan", "Harapan", "Harapan", "Harapan", "Harapan", "Harapan", "Harapan", "Harapan", "Harapan", "Harapan", "BN", "BN", "BN", "Harapan", "BN", "BN", "Harapan", "BN", "Harapan", "Harapan", "Harapan", "Harapan", "Harapan", "BN", "Harapan", "BN", "Harapan", "Harapan", "BN", "BN", "Harapan", "BN", "Harapan", "Harapan", "BN", "BN", "Harapan", "BN", "Harapan", "Harapan", "BN", "BN", "BN", "BN", "Harapan", "Harapan", "BN", "BN", "BN", "Harapan", "Harapan", "BN", "Harapan", "Harapan", "Harapan", "Harapan", "Harapan", "Harapan", "Harapan", "Harapan", "Harapan", "Harapan", "Harapan", "Harapan", "Harapan", "Harapan", "Harapan", "Harapan", "Harapan", "Harapan", "Harapan", "BEBAS", "Harapan", "Harapan", "Harapan", "Harapan", "Harapan", "Harapan", "Harapan", "Harapan", "Harapan", "BN", "BN", "BN", "Harapan", "Harapan", "Harapan", "BN", "Harapan", "Harapan", "BN", "Harapan", "Harapan", "Harapan", "Harapan", "BN", "Harapan", "Harapan", "Harapan", "Harapan", "Harapan", "Harapan", "Harapan", "BN", "BN", "Harapan", "Harapan", "Harapan", "Harapan", "BN", "BN", "BN", "BN", "BN", "Harapan", "Harapan", "Harapan", "Harapan", "Harapan", "Harapan", "BN", "Harapan", "BN", "BN", "BN", "Harapan", "BN", "Harapan", "Harapan", "Harapan", "Harapan", "Harapan", "BN", "BN", "BN", "Harapan", "Harapan", "Harapan", "BN", "BN", "BN", "Harapan", "Harapan", "BN", "Harapan", "Harapan", "Harapan", "Harapan", "Harapan", "BN", "BN", "Harapan", "Harapan", "BN", "Harapan", "BN", "BN", "BN", "BN", "BEBAS", "BN", "Harapan", "BN", "BN", "Harapan", "BEBAS", "BN", "Harapan", "Harapan", "BN", "Harapan", "BN", "BN", "BN", "BN", "Harapan", "BN", "BN", "BN"], "xaxis": "x", "y": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], "yaxis": "y"}],
                         {"barmode": "relative", "legend": {"tracegroupgap": 0}, "template": {"data": {"bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "bar"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "barpolar"}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "choropleth": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "choropleth"}], "contour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "contour"}], "contourcarpet": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "contourcarpet"}], "heatmap": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmap"}], "heatmapgl": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmapgl"}], "histogram": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "histogram"}], "histogram2d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2d"}], "histogram2dcontour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2dcontour"}], "mesh3d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "mesh3d"}], "parcoords": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "parcoords"}], "pie": [{"automargin": true, "type": "pie"}], "scatter": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter"}], "scatter3d": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter3d"}], "scattercarpet": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattercarpet"}], "scattergeo": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergeo"}], "scattergl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergl"}], "scattermapbox": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattermapbox"}], "scatterpolar": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolar"}], "scatterpolargl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolargl"}], "scatterternary": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterternary"}], "surface": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "surface"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}]}, "layout": {"annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]], "sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}, "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "geo": {"bgcolor": "white", "lakecolor": "white", "landcolor": "#E5ECF6", "showlakes": true, "showland": true, "subunitcolor": "white"}, "hoverlabel": {"align": "left"}, "hovermode": "closest", "mapbox": {"style": "light"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "ternary": {"aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "title": {"x": 0.05}, "xaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}, "yaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}}}, "title": {"text": "GE14 : Parliementary Seats Summary By Coalition Party"}, "xaxis": {"anchor": "y", "domain": [0.0, 1.0], "title": {"text": "Coalition"}}, "yaxis": {"anchor": "x", "domain": [0.0, 1.0], "title": {"text": "Candidate Win"}}},
                         {"responsive": true}
                     ).then(function(){
                             
-var gd = document.getElementById('76012a09-2300-4053-a435-2c7dadd9175a');
+var gd = document.getElementById('ab541923-1030-4ed4-83ab-9086252d8567');
 var x = new MutationObserver(function (mutations, observer) {{
         var display = window.getComputedStyle(gd).display;
         if (!display || display === 'none') {{
@@ -14141,7 +13988,7 @@ if (outputEl) {{
 <span class="n">df2</span><span class="p">[</span><span class="s1">&#39;Votes for Candidate&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_numeric</span><span class="p">(</span><span class="n">df2</span><span class="p">[</span><span class="s1">&#39;Votes for Candidate&#39;</span><span class="p">],</span> <span class="n">errors</span><span class="o">=</span><span class="s1">&#39;coerce&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">fillna</span><span class="p">(</span><span class="mi">0</span><span class="p">)</span>
 <span class="n">df2</span><span class="p">[</span><span class="s1">&#39;Votes for Candidate&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df2</span><span class="p">[</span><span class="s1">&#39;Votes for Candidate&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span>
 <span class="n">df2</span><span class="p">[</span><span class="s1">&#39;</span><span class="si">% o</span><span class="s1">f total Votes&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df2</span><span class="p">[</span><span class="s1">&#39;</span><span class="si">% o</span><span class="s1">f total Votes&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;%&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span>
-<span class="n">df2</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">df2</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">set_caption</span><span class="p">(</span><span class="s2">&quot;Malaysian General Election Dataset Showing The First Three Rows Information&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -14159,87 +14006,54 @@ if (outputEl) {{
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>State</th>
-      <th>Seat ID</th>
-      <th>Seat Name</th>
-      <th>Candidate Name</th>
-      <th>Candidate Party</th>
-      <th>Votes for Candidate</th>
-      <th>Total Votes Cast</th>
-      <th>% of total Votes</th>
-      <th>Candidate Win</th>
-      <th>Gender</th>
-      <th>Status</th>
-      <th>Pekerjaan</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>Johor</td>
-      <td>N.01</td>
-      <td>BULOH KASAP</td>
-      <td>ZAHARI SARIP</td>
-      <td>BN</td>
-      <td>9186.0</td>
-      <td>17495.0</td>
-      <td>52.51</td>
-      <td>1</td>
-      <td>L</td>
-      <td>MNG</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>Johor</td>
-      <td>N.01</td>
-      <td>BULOH KASAP</td>
-      <td>NORSAMSU MOHD YUSOF</td>
-      <td>PKR</td>
-      <td>8309.0</td>
-      <td>17495.0</td>
-      <td>47.49</td>
-      <td>0</td>
-      <td>L</td>
-      <td>KLH</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>Johor</td>
-      <td>N.02</td>
-      <td>JEMENTAH</td>
-      <td>CHIAM YOK MENG</td>
-      <td>BN</td>
-      <td>9335.0</td>
-      <td>27657.0</td>
-      <td>33.75</td>
-      <td>0</td>
-      <td>L</td>
-      <td>KLH</td>
-      <td>0</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+<style  type="text/css" >
+</style><table id="T_d9a2bf86_1586_11eb_9455_68a86d10ab2a" ><caption>Malaysian General Election Dataset Showing The First Three Rows Information</caption><thead>    <tr>        <th class="blank level0" ></th>        <th class="col_heading level0 col0" >State</th>        <th class="col_heading level0 col1" >Seat ID</th>        <th class="col_heading level0 col2" >Seat Name</th>        <th class="col_heading level0 col3" >Candidate Name</th>        <th class="col_heading level0 col4" >Candidate Party</th>        <th class="col_heading level0 col5" >Votes for Candidate</th>        <th class="col_heading level0 col6" >Total Votes Cast</th>        <th class="col_heading level0 col7" >% of total Votes</th>        <th class="col_heading level0 col8" >Candidate Win</th>        <th class="col_heading level0 col9" >Gender</th>        <th class="col_heading level0 col10" >Status</th>        <th class="col_heading level0 col11" >Pekerjaan</th>    </tr></thead><tbody>
+                <tr>
+                        <th id="T_d9a2bf86_1586_11eb_9455_68a86d10ab2alevel0_row0" class="row_heading level0 row0" >0</th>
+                        <td id="T_d9a2bf86_1586_11eb_9455_68a86d10ab2arow0_col0" class="data row0 col0" >Johor</td>
+                        <td id="T_d9a2bf86_1586_11eb_9455_68a86d10ab2arow0_col1" class="data row0 col1" >N.01</td>
+                        <td id="T_d9a2bf86_1586_11eb_9455_68a86d10ab2arow0_col2" class="data row0 col2" >BULOH KASAP</td>
+                        <td id="T_d9a2bf86_1586_11eb_9455_68a86d10ab2arow0_col3" class="data row0 col3" >ZAHARI SARIP</td>
+                        <td id="T_d9a2bf86_1586_11eb_9455_68a86d10ab2arow0_col4" class="data row0 col4" >BN</td>
+                        <td id="T_d9a2bf86_1586_11eb_9455_68a86d10ab2arow0_col5" class="data row0 col5" >9186.000000</td>
+                        <td id="T_d9a2bf86_1586_11eb_9455_68a86d10ab2arow0_col6" class="data row0 col6" >17495.000000</td>
+                        <td id="T_d9a2bf86_1586_11eb_9455_68a86d10ab2arow0_col7" class="data row0 col7" >52.510000</td>
+                        <td id="T_d9a2bf86_1586_11eb_9455_68a86d10ab2arow0_col8" class="data row0 col8" >1</td>
+                        <td id="T_d9a2bf86_1586_11eb_9455_68a86d10ab2arow0_col9" class="data row0 col9" >L</td>
+                        <td id="T_d9a2bf86_1586_11eb_9455_68a86d10ab2arow0_col10" class="data row0 col10" >MNG</td>
+                        <td id="T_d9a2bf86_1586_11eb_9455_68a86d10ab2arow0_col11" class="data row0 col11" >0</td>
+            </tr>
+            <tr>
+                        <th id="T_d9a2bf86_1586_11eb_9455_68a86d10ab2alevel0_row1" class="row_heading level0 row1" >1</th>
+                        <td id="T_d9a2bf86_1586_11eb_9455_68a86d10ab2arow1_col0" class="data row1 col0" >Johor</td>
+                        <td id="T_d9a2bf86_1586_11eb_9455_68a86d10ab2arow1_col1" class="data row1 col1" >N.01</td>
+                        <td id="T_d9a2bf86_1586_11eb_9455_68a86d10ab2arow1_col2" class="data row1 col2" >BULOH KASAP</td>
+                        <td id="T_d9a2bf86_1586_11eb_9455_68a86d10ab2arow1_col3" class="data row1 col3" >NORSAMSU MOHD YUSOF</td>
+                        <td id="T_d9a2bf86_1586_11eb_9455_68a86d10ab2arow1_col4" class="data row1 col4" >PKR</td>
+                        <td id="T_d9a2bf86_1586_11eb_9455_68a86d10ab2arow1_col5" class="data row1 col5" >8309.000000</td>
+                        <td id="T_d9a2bf86_1586_11eb_9455_68a86d10ab2arow1_col6" class="data row1 col6" >17495.000000</td>
+                        <td id="T_d9a2bf86_1586_11eb_9455_68a86d10ab2arow1_col7" class="data row1 col7" >47.490000</td>
+                        <td id="T_d9a2bf86_1586_11eb_9455_68a86d10ab2arow1_col8" class="data row1 col8" >0</td>
+                        <td id="T_d9a2bf86_1586_11eb_9455_68a86d10ab2arow1_col9" class="data row1 col9" >L</td>
+                        <td id="T_d9a2bf86_1586_11eb_9455_68a86d10ab2arow1_col10" class="data row1 col10" >KLH</td>
+                        <td id="T_d9a2bf86_1586_11eb_9455_68a86d10ab2arow1_col11" class="data row1 col11" >0</td>
+            </tr>
+            <tr>
+                        <th id="T_d9a2bf86_1586_11eb_9455_68a86d10ab2alevel0_row2" class="row_heading level0 row2" >2</th>
+                        <td id="T_d9a2bf86_1586_11eb_9455_68a86d10ab2arow2_col0" class="data row2 col0" >Johor</td>
+                        <td id="T_d9a2bf86_1586_11eb_9455_68a86d10ab2arow2_col1" class="data row2 col1" >N.02</td>
+                        <td id="T_d9a2bf86_1586_11eb_9455_68a86d10ab2arow2_col2" class="data row2 col2" >JEMENTAH</td>
+                        <td id="T_d9a2bf86_1586_11eb_9455_68a86d10ab2arow2_col3" class="data row2 col3" >CHIAM YOK MENG</td>
+                        <td id="T_d9a2bf86_1586_11eb_9455_68a86d10ab2arow2_col4" class="data row2 col4" >BN</td>
+                        <td id="T_d9a2bf86_1586_11eb_9455_68a86d10ab2arow2_col5" class="data row2 col5" >9335.000000</td>
+                        <td id="T_d9a2bf86_1586_11eb_9455_68a86d10ab2arow2_col6" class="data row2 col6" >27657.000000</td>
+                        <td id="T_d9a2bf86_1586_11eb_9455_68a86d10ab2arow2_col7" class="data row2 col7" >33.750000</td>
+                        <td id="T_d9a2bf86_1586_11eb_9455_68a86d10ab2arow2_col8" class="data row2 col8" >0</td>
+                        <td id="T_d9a2bf86_1586_11eb_9455_68a86d10ab2arow2_col9" class="data row2 col9" >L</td>
+                        <td id="T_d9a2bf86_1586_11eb_9455_68a86d10ab2arow2_col10" class="data row2 col10" >KLH</td>
+                        <td id="T_d9a2bf86_1586_11eb_9455_68a86d10ab2arow2_col11" class="data row2 col11" >0</td>
+            </tr>
+    </tbody></table>
 </div>
 
 </div>
@@ -14261,7 +14075,7 @@ if (outputEl) {{
 <div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df2</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df2</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">set_caption</span><span class="p">(</span><span class="s2">&quot;Malaysian General Election Dataset Summary of Statistical Information&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -14279,90 +14093,65 @@ if (outputEl) {{
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Votes for Candidate</th>
-      <th>Total Votes Cast</th>
-      <th>% of total Votes</th>
-      <th>Candidate Win</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>count</th>
-      <td>1646.000000</td>
-      <td>1646.000000</td>
-      <td>1646.000000</td>
-      <td>1646.000000</td>
-    </tr>
-    <tr>
-      <th>mean</th>
-      <td>6343.358445</td>
-      <td>20578.614216</td>
-      <td>30.619678</td>
-      <td>0.306804</td>
-    </tr>
-    <tr>
-      <th>std</th>
-      <td>6347.864893</td>
-      <td>10374.399191</td>
-      <td>21.650024</td>
-      <td>0.461308</td>
-    </tr>
-    <tr>
-      <th>min</th>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <th>25%</th>
-      <td>1957.750000</td>
-      <td>13670.250000</td>
-      <td>11.160000</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <th>50%</th>
-      <td>5194.000000</td>
-      <td>18139.000000</td>
-      <td>30.630000</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <th>75%</th>
-      <td>8433.750000</td>
-      <td>23419.000000</td>
-      <td>45.635000</td>
-      <td>1.000000</td>
-    </tr>
-    <tr>
-      <th>max</th>
-      <td>55354.000000</td>
-      <td>62934.000000</td>
-      <td>92.060000</td>
-      <td>1.000000</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+<style  type="text/css" >
+</style><table id="T_d9a9ebbc_1586_11eb_9455_68a86d10ab2a" ><caption>Malaysian General Election Dataset Summary of Statistical Information</caption><thead>    <tr>        <th class="blank level0" ></th>        <th class="col_heading level0 col0" >Votes for Candidate</th>        <th class="col_heading level0 col1" >Total Votes Cast</th>        <th class="col_heading level0 col2" >% of total Votes</th>        <th class="col_heading level0 col3" >Candidate Win</th>    </tr></thead><tbody>
+                <tr>
+                        <th id="T_d9a9ebbc_1586_11eb_9455_68a86d10ab2alevel0_row0" class="row_heading level0 row0" >count</th>
+                        <td id="T_d9a9ebbc_1586_11eb_9455_68a86d10ab2arow0_col0" class="data row0 col0" >1646.000000</td>
+                        <td id="T_d9a9ebbc_1586_11eb_9455_68a86d10ab2arow0_col1" class="data row0 col1" >1646.000000</td>
+                        <td id="T_d9a9ebbc_1586_11eb_9455_68a86d10ab2arow0_col2" class="data row0 col2" >1646.000000</td>
+                        <td id="T_d9a9ebbc_1586_11eb_9455_68a86d10ab2arow0_col3" class="data row0 col3" >1646.000000</td>
+            </tr>
+            <tr>
+                        <th id="T_d9a9ebbc_1586_11eb_9455_68a86d10ab2alevel0_row1" class="row_heading level0 row1" >mean</th>
+                        <td id="T_d9a9ebbc_1586_11eb_9455_68a86d10ab2arow1_col0" class="data row1 col0" >6343.358445</td>
+                        <td id="T_d9a9ebbc_1586_11eb_9455_68a86d10ab2arow1_col1" class="data row1 col1" >20578.614216</td>
+                        <td id="T_d9a9ebbc_1586_11eb_9455_68a86d10ab2arow1_col2" class="data row1 col2" >30.619678</td>
+                        <td id="T_d9a9ebbc_1586_11eb_9455_68a86d10ab2arow1_col3" class="data row1 col3" >0.306804</td>
+            </tr>
+            <tr>
+                        <th id="T_d9a9ebbc_1586_11eb_9455_68a86d10ab2alevel0_row2" class="row_heading level0 row2" >std</th>
+                        <td id="T_d9a9ebbc_1586_11eb_9455_68a86d10ab2arow2_col0" class="data row2 col0" >6347.864893</td>
+                        <td id="T_d9a9ebbc_1586_11eb_9455_68a86d10ab2arow2_col1" class="data row2 col1" >10374.399191</td>
+                        <td id="T_d9a9ebbc_1586_11eb_9455_68a86d10ab2arow2_col2" class="data row2 col2" >21.650024</td>
+                        <td id="T_d9a9ebbc_1586_11eb_9455_68a86d10ab2arow2_col3" class="data row2 col3" >0.461308</td>
+            </tr>
+            <tr>
+                        <th id="T_d9a9ebbc_1586_11eb_9455_68a86d10ab2alevel0_row3" class="row_heading level0 row3" >min</th>
+                        <td id="T_d9a9ebbc_1586_11eb_9455_68a86d10ab2arow3_col0" class="data row3 col0" >0.000000</td>
+                        <td id="T_d9a9ebbc_1586_11eb_9455_68a86d10ab2arow3_col1" class="data row3 col1" >0.000000</td>
+                        <td id="T_d9a9ebbc_1586_11eb_9455_68a86d10ab2arow3_col2" class="data row3 col2" >0.000000</td>
+                        <td id="T_d9a9ebbc_1586_11eb_9455_68a86d10ab2arow3_col3" class="data row3 col3" >0.000000</td>
+            </tr>
+            <tr>
+                        <th id="T_d9a9ebbc_1586_11eb_9455_68a86d10ab2alevel0_row4" class="row_heading level0 row4" >25%</th>
+                        <td id="T_d9a9ebbc_1586_11eb_9455_68a86d10ab2arow4_col0" class="data row4 col0" >1957.750000</td>
+                        <td id="T_d9a9ebbc_1586_11eb_9455_68a86d10ab2arow4_col1" class="data row4 col1" >13670.250000</td>
+                        <td id="T_d9a9ebbc_1586_11eb_9455_68a86d10ab2arow4_col2" class="data row4 col2" >11.160000</td>
+                        <td id="T_d9a9ebbc_1586_11eb_9455_68a86d10ab2arow4_col3" class="data row4 col3" >0.000000</td>
+            </tr>
+            <tr>
+                        <th id="T_d9a9ebbc_1586_11eb_9455_68a86d10ab2alevel0_row5" class="row_heading level0 row5" >50%</th>
+                        <td id="T_d9a9ebbc_1586_11eb_9455_68a86d10ab2arow5_col0" class="data row5 col0" >5194.000000</td>
+                        <td id="T_d9a9ebbc_1586_11eb_9455_68a86d10ab2arow5_col1" class="data row5 col1" >18139.000000</td>
+                        <td id="T_d9a9ebbc_1586_11eb_9455_68a86d10ab2arow5_col2" class="data row5 col2" >30.630000</td>
+                        <td id="T_d9a9ebbc_1586_11eb_9455_68a86d10ab2arow5_col3" class="data row5 col3" >0.000000</td>
+            </tr>
+            <tr>
+                        <th id="T_d9a9ebbc_1586_11eb_9455_68a86d10ab2alevel0_row6" class="row_heading level0 row6" >75%</th>
+                        <td id="T_d9a9ebbc_1586_11eb_9455_68a86d10ab2arow6_col0" class="data row6 col0" >8433.750000</td>
+                        <td id="T_d9a9ebbc_1586_11eb_9455_68a86d10ab2arow6_col1" class="data row6 col1" >23419.000000</td>
+                        <td id="T_d9a9ebbc_1586_11eb_9455_68a86d10ab2arow6_col2" class="data row6 col2" >45.635000</td>
+                        <td id="T_d9a9ebbc_1586_11eb_9455_68a86d10ab2arow6_col3" class="data row6 col3" >1.000000</td>
+            </tr>
+            <tr>
+                        <th id="T_d9a9ebbc_1586_11eb_9455_68a86d10ab2alevel0_row7" class="row_heading level0 row7" >max</th>
+                        <td id="T_d9a9ebbc_1586_11eb_9455_68a86d10ab2arow7_col0" class="data row7 col0" >55354.000000</td>
+                        <td id="T_d9a9ebbc_1586_11eb_9455_68a86d10ab2arow7_col1" class="data row7 col1" >62934.000000</td>
+                        <td id="T_d9a9ebbc_1586_11eb_9455_68a86d10ab2arow7_col2" class="data row7 col2" >92.060000</td>
+                        <td id="T_d9a9ebbc_1586_11eb_9455_68a86d10ab2arow7_col3" class="data row7 col3" >1.000000</td>
+            </tr>
+    </tbody></table>
 </div>
 
 </div>
@@ -14395,7 +14184,7 @@ if (outputEl) {{
 <span class="n">df2</span> <span class="o">=</span> <span class="n">df2</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;Candidate Party&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;Candidate Win&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 <span class="n">df2</span><span class="p">[</span><span class="s1">&#39;% Votes For Candidate&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">df2</span><span class="p">[</span><span class="s1">&#39;Votes for Candidate&#39;</span><span class="p">]</span><span class="o">/</span><span class="n">df2</span><span class="p">[</span><span class="s1">&#39;Total Votes Cast&#39;</span><span class="p">]</span><span class="o">*</span><span class="mi">100</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
 <span class="n">df2</span><span class="p">[</span><span class="s1">&#39;% Seats Win&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">df2</span><span class="p">[</span><span class="s1">&#39;Candidate Win&#39;</span><span class="p">]</span><span class="o">/</span><span class="n">df2</span><span class="p">[</span><span class="s1">&#39;Candidate Win&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">*</span><span class="mi">100</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">df2</span>
+<span class="n">df2</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">set_caption</span><span class="p">(</span><span class="s2">&quot;Malaysian General Election States DUN Results Grouped By Party&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -14413,91 +14202,57 @@ if (outputEl) {{
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Votes for Candidate</th>
-      <th>Total Votes Cast</th>
-      <th>Candidate Win</th>
-      <th>% Votes For Candidate</th>
-      <th>% Seats Win</th>
-    </tr>
-    <tr>
-      <th>Candidate Party</th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>PKR</th>
-      <td>3630863.0</td>
-      <td>5786569.0</td>
-      <td>220</td>
-      <td>62.7</td>
-      <td>43.6</td>
-    </tr>
-    <tr>
-      <th>BN</th>
-      <td>1201287.0</td>
-      <td>2420456.0</td>
-      <td>166</td>
-      <td>49.6</td>
-      <td>32.9</td>
-    </tr>
-    <tr>
-      <th>PAS</th>
-      <td>906151.0</td>
-      <td>1816453.0</td>
-      <td>90</td>
-      <td>49.9</td>
-      <td>17.8</td>
-    </tr>
-    <tr>
-      <th>WARISAN</th>
-      <td>161579.0</td>
-      <td>288571.0</td>
-      <td>21</td>
-      <td>56.0</td>
-      <td>4.2</td>
-    </tr>
-    <tr>
-      <th>DAP</th>
-      <td>74668.0</td>
-      <td>102288.0</td>
-      <td>6</td>
-      <td>73.0</td>
-      <td>1.2</td>
-    </tr>
-    <tr>
-      <th>SOLIDARITI</th>
-      <td>10688.0</td>
-      <td>26831.0</td>
-      <td>2</td>
-      <td>39.8</td>
-      <td>0.4</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+<style  type="text/css" >
+</style><table id="T_d9bf858a_1586_11eb_9455_68a86d10ab2a" ><caption>Malaysian General Election States DUN Results Grouped By Party</caption><thead>    <tr>        <th class="blank level0" ></th>        <th class="col_heading level0 col0" >Votes for Candidate</th>        <th class="col_heading level0 col1" >Total Votes Cast</th>        <th class="col_heading level0 col2" >Candidate Win</th>        <th class="col_heading level0 col3" >% Votes For Candidate</th>        <th class="col_heading level0 col4" >% Seats Win</th>    </tr>    <tr>        <th class="index_name level0" >Candidate Party</th>        <th class="blank" ></th>        <th class="blank" ></th>        <th class="blank" ></th>        <th class="blank" ></th>        <th class="blank" ></th>    </tr></thead><tbody>
+                <tr>
+                        <th id="T_d9bf858a_1586_11eb_9455_68a86d10ab2alevel0_row0" class="row_heading level0 row0" >PKR</th>
+                        <td id="T_d9bf858a_1586_11eb_9455_68a86d10ab2arow0_col0" class="data row0 col0" >3630863.000000</td>
+                        <td id="T_d9bf858a_1586_11eb_9455_68a86d10ab2arow0_col1" class="data row0 col1" >5786569.000000</td>
+                        <td id="T_d9bf858a_1586_11eb_9455_68a86d10ab2arow0_col2" class="data row0 col2" >220</td>
+                        <td id="T_d9bf858a_1586_11eb_9455_68a86d10ab2arow0_col3" class="data row0 col3" >62.700000</td>
+                        <td id="T_d9bf858a_1586_11eb_9455_68a86d10ab2arow0_col4" class="data row0 col4" >43.600000</td>
+            </tr>
+            <tr>
+                        <th id="T_d9bf858a_1586_11eb_9455_68a86d10ab2alevel0_row1" class="row_heading level0 row1" >BN</th>
+                        <td id="T_d9bf858a_1586_11eb_9455_68a86d10ab2arow1_col0" class="data row1 col0" >1201287.000000</td>
+                        <td id="T_d9bf858a_1586_11eb_9455_68a86d10ab2arow1_col1" class="data row1 col1" >2420456.000000</td>
+                        <td id="T_d9bf858a_1586_11eb_9455_68a86d10ab2arow1_col2" class="data row1 col2" >166</td>
+                        <td id="T_d9bf858a_1586_11eb_9455_68a86d10ab2arow1_col3" class="data row1 col3" >49.600000</td>
+                        <td id="T_d9bf858a_1586_11eb_9455_68a86d10ab2arow1_col4" class="data row1 col4" >32.900000</td>
+            </tr>
+            <tr>
+                        <th id="T_d9bf858a_1586_11eb_9455_68a86d10ab2alevel0_row2" class="row_heading level0 row2" >PAS</th>
+                        <td id="T_d9bf858a_1586_11eb_9455_68a86d10ab2arow2_col0" class="data row2 col0" >906151.000000</td>
+                        <td id="T_d9bf858a_1586_11eb_9455_68a86d10ab2arow2_col1" class="data row2 col1" >1816453.000000</td>
+                        <td id="T_d9bf858a_1586_11eb_9455_68a86d10ab2arow2_col2" class="data row2 col2" >90</td>
+                        <td id="T_d9bf858a_1586_11eb_9455_68a86d10ab2arow2_col3" class="data row2 col3" >49.900000</td>
+                        <td id="T_d9bf858a_1586_11eb_9455_68a86d10ab2arow2_col4" class="data row2 col4" >17.800000</td>
+            </tr>
+            <tr>
+                        <th id="T_d9bf858a_1586_11eb_9455_68a86d10ab2alevel0_row3" class="row_heading level0 row3" >WARISAN</th>
+                        <td id="T_d9bf858a_1586_11eb_9455_68a86d10ab2arow3_col0" class="data row3 col0" >161579.000000</td>
+                        <td id="T_d9bf858a_1586_11eb_9455_68a86d10ab2arow3_col1" class="data row3 col1" >288571.000000</td>
+                        <td id="T_d9bf858a_1586_11eb_9455_68a86d10ab2arow3_col2" class="data row3 col2" >21</td>
+                        <td id="T_d9bf858a_1586_11eb_9455_68a86d10ab2arow3_col3" class="data row3 col3" >56.000000</td>
+                        <td id="T_d9bf858a_1586_11eb_9455_68a86d10ab2arow3_col4" class="data row3 col4" >4.200000</td>
+            </tr>
+            <tr>
+                        <th id="T_d9bf858a_1586_11eb_9455_68a86d10ab2alevel0_row4" class="row_heading level0 row4" >DAP</th>
+                        <td id="T_d9bf858a_1586_11eb_9455_68a86d10ab2arow4_col0" class="data row4 col0" >74668.000000</td>
+                        <td id="T_d9bf858a_1586_11eb_9455_68a86d10ab2arow4_col1" class="data row4 col1" >102288.000000</td>
+                        <td id="T_d9bf858a_1586_11eb_9455_68a86d10ab2arow4_col2" class="data row4 col2" >6</td>
+                        <td id="T_d9bf858a_1586_11eb_9455_68a86d10ab2arow4_col3" class="data row4 col3" >73.000000</td>
+                        <td id="T_d9bf858a_1586_11eb_9455_68a86d10ab2arow4_col4" class="data row4 col4" >1.200000</td>
+            </tr>
+            <tr>
+                        <th id="T_d9bf858a_1586_11eb_9455_68a86d10ab2alevel0_row5" class="row_heading level0 row5" >SOLIDARITI</th>
+                        <td id="T_d9bf858a_1586_11eb_9455_68a86d10ab2arow5_col0" class="data row5 col0" >10688.000000</td>
+                        <td id="T_d9bf858a_1586_11eb_9455_68a86d10ab2arow5_col1" class="data row5 col1" >26831.000000</td>
+                        <td id="T_d9bf858a_1586_11eb_9455_68a86d10ab2arow5_col2" class="data row5 col2" >2</td>
+                        <td id="T_d9bf858a_1586_11eb_9455_68a86d10ab2arow5_col3" class="data row5 col3" >39.800000</td>
+                        <td id="T_d9bf858a_1586_11eb_9455_68a86d10ab2arow5_col4" class="data row5 col4" >0.400000</td>
+            </tr>
+    </tbody></table>
 </div>
 
 </div>
@@ -14541,20 +14296,20 @@ if (outputEl) {{
 <div>
         
         
-            <div id="b60c2d75-e4c7-4712-bda3-803664e43bf3" class="plotly-graph-div" style="height:525px; width:100%;"></div>
+            <div id="4e0f66bc-b55b-4ad5-96d4-d006d24818ba" class="plotly-graph-div" style="height:525px; width:100%;"></div>
             <script type="text/javascript">
                 require(["plotly"], function(Plotly) {
                     window.PLOTLYENV=window.PLOTLYENV || {};
                     
-                if (document.getElementById("b60c2d75-e4c7-4712-bda3-803664e43bf3")) {
+                if (document.getElementById("4e0f66bc-b55b-4ad5-96d4-d006d24818ba")) {
                     Plotly.newPlot(
-                        'b60c2d75-e4c7-4712-bda3-803664e43bf3',
+                        '4e0f66bc-b55b-4ad5-96d4-d006d24818ba',
                         [{"alignmentgroup": "True", "hoverlabel": {"namelength": 0}, "hovertemplate": "Candidate Party=%{x}<br>Candidate Win=%{y}", "legendgroup": "", "marker": {"color": "#636efa"}, "name": "", "offsetgroup": "", "orientation": "v", "showlegend": false, "textposition": "auto", "type": "bar", "x": ["BN", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PAS", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "BN", "PKR", "BN", "PKR", "BN", "PKR", "BN", "PKR", "PKR", "BN", "BN", "BN", "PKR", "PKR", "PKR", "BN", "BN", "BN", "BN", "BN", "BN", "BN", "BN", "BN", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "BN", "PKR", "PKR", "BN", "PKR", "PKR", "PKR", "PAS", "PKR", "PKR", "PAS", "PAS", "PAS", "PAS", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PAS", "BN", "PAS", "BN", "PKR", "PAS", "PAS", "PKR", "PAS", "PAS", "PKR", "PKR", "PAS", "PAS", "PAS", "PAS", "PKR", "PKR", "BN", "PAS", "PAS", "PAS", "PAS", "PAS", "PAS", "PAS", "PAS", "PAS", "PAS", "PAS", "PAS", "PAS", "PAS", "PAS", "PAS", "PAS", "PAS", "PAS", "PAS", "PAS", "PAS", "PAS", "PAS", "BN", "PAS", "BN", "PAS", "PAS", "PAS", "PAS", "PAS", "PAS", "PAS", "PAS", "BN", "BN", "BN", "PAS", "PAS", "PAS", "PAS", "BN", "BN", "BN", "BN", "BN", "BN", "BN", "BN", "PKR", "PKR", "PKR", "PKR", "BN", "BN", "BN", "PKR", "PKR", "PKR", "PKR", "PKR", "BN", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "BN", "BN", "BN", "BN", "PKR", "BN", "BN", "PKR", "BN", "BN", "BN", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "BN", "BN", "BN", "PKR", "BN", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "BN", "BN", "BN", "PKR", "PKR", "BN", "BN", "PKR", "BN", "BN", "PKR", "PKR", "BN", "BN", "BN", "BN", "BN", "PKR", "BN", "PAS", "PAS", "BN", "PAS", "PKR", "PKR", "PAS", "BN", "BN", "BN", "PAS", "BN", "BN", "BN", "BN", "PAS", "BN", "PAS", "BN", "BN", "PAS", "PKR", "BN", "BN", "PKR", "PKR", "PKR", "BN", "BN", "PKR", "BN", "BN", "BN", "BN", "PAS", "PKR", "PKR", "BN", "BN", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "BN", "BN", "BN", "BN", "PAS", "PAS", "BN", "PKR", "PKR", "BN", "PAS", "BN", "BN", "BN", "BN", "PKR", "PKR", "PKR", "BN", "BN", "BN", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "BN", "BN", "BN", "PKR", "PKR", "BN", "BN", "PKR", "PKR", "BN", "PKR", "PKR", "PKR", "PKR", "BN", "BN", "BN", "PKR", "BN", "BN", "BN", "PKR", "BN", "PKR", "BN", "PKR", "BN", "BN", "BN", "BN", "BN", "BN", "PKR", "PKR", "PKR", "BN", "BN", "BN", "PAS", "BN", "PAS", "BN", "PKR", "BN", "PKR", "BN", "PKR", "PKR", "BN", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PKR", "PAS", "PKR", "PKR", "PKR", "PKR", "PKR", "BN", "PAS", "BN", "BN", "PAS", "BN", "BN", "BN", "PAS", "PAS", "BN", "PAS", "PAS", "PAS", "PAS", "PAS", "PAS", "PAS", "PAS", "PAS", "BN", "PAS", "PAS", "PAS", "BN", "PAS", "PAS", "PAS", "PAS", "BN", "PAS", "PAS", "WARISAN", "WARISAN", "BN", "BN", "BN", "BN", "BN", "BN", "BN", "BN", "BN", "WARISAN", "PKR", "DAP", "PKR", "DAP", "WARISAN", "WARISAN", "DAP", "WARISAN", "BN", "WARISAN", "WARISAN", "BN", "BN", "BN", "BN", "WARISAN", "BN", "BN", "BN", "SOLIDARITI", "SOLIDARITI", "WARISAN", "WARISAN", "BN", "BN", "BN", "BN", "BN", "WARISAN", "BN", "WARISAN", "WARISAN", "DAP", "DAP", "BN", "BN", "WARISAN", "WARISAN", "WARISAN", "WARISAN", "WARISAN", "WARISAN", "BN", "BN", "DAP", "WARISAN", "BN", "BN"], "xaxis": "x", "y": [1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1], "yaxis": "y"}],
                         {"barmode": "relative", "legend": {"tracegroupgap": 0}, "template": {"data": {"bar": [{"error_x": {"color": "#2a3f5f"}, "error_y": {"color": "#2a3f5f"}, "marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "bar"}], "barpolar": [{"marker": {"line": {"color": "#E5ECF6", "width": 0.5}}, "type": "barpolar"}], "carpet": [{"aaxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "baxis": {"endlinecolor": "#2a3f5f", "gridcolor": "white", "linecolor": "white", "minorgridcolor": "white", "startlinecolor": "#2a3f5f"}, "type": "carpet"}], "choropleth": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "choropleth"}], "contour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "contour"}], "contourcarpet": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "contourcarpet"}], "heatmap": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmap"}], "heatmapgl": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "heatmapgl"}], "histogram": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "histogram"}], "histogram2d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2d"}], "histogram2dcontour": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "histogram2dcontour"}], "mesh3d": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "type": "mesh3d"}], "parcoords": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "parcoords"}], "pie": [{"automargin": true, "type": "pie"}], "scatter": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter"}], "scatter3d": [{"line": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatter3d"}], "scattercarpet": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattercarpet"}], "scattergeo": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergeo"}], "scattergl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattergl"}], "scattermapbox": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scattermapbox"}], "scatterpolar": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolar"}], "scatterpolargl": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterpolargl"}], "scatterternary": [{"marker": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "type": "scatterternary"}], "surface": [{"colorbar": {"outlinewidth": 0, "ticks": ""}, "colorscale": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "type": "surface"}], "table": [{"cells": {"fill": {"color": "#EBF0F8"}, "line": {"color": "white"}}, "header": {"fill": {"color": "#C8D4E3"}, "line": {"color": "white"}}, "type": "table"}]}, "layout": {"annotationdefaults": {"arrowcolor": "#2a3f5f", "arrowhead": 0, "arrowwidth": 1}, "coloraxis": {"colorbar": {"outlinewidth": 0, "ticks": ""}}, "colorscale": {"diverging": [[0, "#8e0152"], [0.1, "#c51b7d"], [0.2, "#de77ae"], [0.3, "#f1b6da"], [0.4, "#fde0ef"], [0.5, "#f7f7f7"], [0.6, "#e6f5d0"], [0.7, "#b8e186"], [0.8, "#7fbc41"], [0.9, "#4d9221"], [1, "#276419"]], "sequential": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]], "sequentialminus": [[0.0, "#0d0887"], [0.1111111111111111, "#46039f"], [0.2222222222222222, "#7201a8"], [0.3333333333333333, "#9c179e"], [0.4444444444444444, "#bd3786"], [0.5555555555555556, "#d8576b"], [0.6666666666666666, "#ed7953"], [0.7777777777777778, "#fb9f3a"], [0.8888888888888888, "#fdca26"], [1.0, "#f0f921"]]}, "colorway": ["#636efa", "#EF553B", "#00cc96", "#ab63fa", "#FFA15A", "#19d3f3", "#FF6692", "#B6E880", "#FF97FF", "#FECB52"], "font": {"color": "#2a3f5f"}, "geo": {"bgcolor": "white", "lakecolor": "white", "landcolor": "#E5ECF6", "showlakes": true, "showland": true, "subunitcolor": "white"}, "hoverlabel": {"align": "left"}, "hovermode": "closest", "mapbox": {"style": "light"}, "paper_bgcolor": "white", "plot_bgcolor": "#E5ECF6", "polar": {"angularaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "radialaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "scene": {"xaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "yaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}, "zaxis": {"backgroundcolor": "#E5ECF6", "gridcolor": "white", "gridwidth": 2, "linecolor": "white", "showbackground": true, "ticks": "", "zerolinecolor": "white"}}, "shapedefaults": {"line": {"color": "#2a3f5f"}}, "ternary": {"aaxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "baxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}, "bgcolor": "#E5ECF6", "caxis": {"gridcolor": "white", "linecolor": "white", "ticks": ""}}, "title": {"x": 0.05}, "xaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}, "yaxis": {"automargin": true, "gridcolor": "white", "linecolor": "white", "ticks": "", "title": {"standoff": 15}, "zerolinecolor": "white", "zerolinewidth": 2}}}, "title": {"text": "GE14 : State Seats Summary By Candidate Party"}, "xaxis": {"anchor": "y", "domain": [0.0, 1.0], "title": {"text": "Candidate Party"}}, "yaxis": {"anchor": "x", "domain": [0.0, 1.0], "title": {"text": "Candidate Win"}}},
                         {"responsive": true}
                     ).then(function(){
                             
-var gd = document.getElementById('b60c2d75-e4c7-4712-bda3-803664e43bf3');
+var gd = document.getElementById('4e0f66bc-b55b-4ad5-96d4-d006d24818ba');
 var x = new MutationObserver(function (mutations, observer) {{
         var display = window.getComputedStyle(gd).display;
         if (!display || display === 'none') {{
@@ -14613,7 +14368,7 @@ if (outputEl) {{
 <span class="n">df3</span><span class="p">[</span><span class="s1">&#39;Votes for ALL Candidate&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df3</span><span class="p">[</span><span class="s1">&#39;Votes for ALL Candidate&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span>
 <span class="n">df3</span><span class="p">[</span><span class="s1">&#39;Total Registered Votes&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df3</span><span class="p">[</span><span class="s1">&#39;Total Registered Votes&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span>
 <span class="n">df3</span><span class="p">[</span><span class="s1">&#39;Turn Out&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df3</span><span class="p">[</span><span class="s1">&#39;Turn Out&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;%&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span>
-<span class="n">df3</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">df3</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">set_caption</span><span class="p">(</span><span class="s2">&quot;Malaysian General Election Dataset Showing The First Three Rows Information&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -14631,71 +14386,42 @@ if (outputEl) {{
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>State</th>
-      <th>Seat</th>
-      <th>Type</th>
-      <th>Seat ID</th>
-      <th>Votes for ALL Candidate</th>
-      <th>Spoilt Votes</th>
-      <th>Total Registered Votes</th>
-      <th>Turn Out</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>Negeri Sembilan</td>
-      <td>RANTAU</td>
-      <td>DUN</td>
-      <td>N.27</td>
-      <td>0.0</td>
-      <td>0</td>
-      <td>20472.0</td>
-      <td>0.00</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>Sarawak</td>
-      <td>KAPIT</td>
-      <td>PARLIMEN</td>
-      <td>P.215</td>
-      <td>18125.0</td>
-      <td>278</td>
-      <td>30658.0</td>
-      <td>60.03</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>Sarawak</td>
-      <td>BARAM</td>
-      <td>PARLIMEN</td>
-      <td>P.220</td>
-      <td>22352.0</td>
-      <td>399</td>
-      <td>35685.0</td>
-      <td>63.76</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+<style  type="text/css" >
+</style><table id="T_da817622_1586_11eb_9455_68a86d10ab2a" ><caption>Malaysian General Election Dataset Showing The First Three Rows Information</caption><thead>    <tr>        <th class="blank level0" ></th>        <th class="col_heading level0 col0" >State</th>        <th class="col_heading level0 col1" >Seat</th>        <th class="col_heading level0 col2" >Type</th>        <th class="col_heading level0 col3" >Seat ID</th>        <th class="col_heading level0 col4" >Votes for ALL Candidate</th>        <th class="col_heading level0 col5" >Spoilt Votes</th>        <th class="col_heading level0 col6" >Total Registered Votes</th>        <th class="col_heading level0 col7" >Turn Out</th>    </tr></thead><tbody>
+                <tr>
+                        <th id="T_da817622_1586_11eb_9455_68a86d10ab2alevel0_row0" class="row_heading level0 row0" >0</th>
+                        <td id="T_da817622_1586_11eb_9455_68a86d10ab2arow0_col0" class="data row0 col0" >Negeri Sembilan</td>
+                        <td id="T_da817622_1586_11eb_9455_68a86d10ab2arow0_col1" class="data row0 col1" >RANTAU</td>
+                        <td id="T_da817622_1586_11eb_9455_68a86d10ab2arow0_col2" class="data row0 col2" >DUN</td>
+                        <td id="T_da817622_1586_11eb_9455_68a86d10ab2arow0_col3" class="data row0 col3" >N.27</td>
+                        <td id="T_da817622_1586_11eb_9455_68a86d10ab2arow0_col4" class="data row0 col4" >0.000000</td>
+                        <td id="T_da817622_1586_11eb_9455_68a86d10ab2arow0_col5" class="data row0 col5" >0</td>
+                        <td id="T_da817622_1586_11eb_9455_68a86d10ab2arow0_col6" class="data row0 col6" >20472.000000</td>
+                        <td id="T_da817622_1586_11eb_9455_68a86d10ab2arow0_col7" class="data row0 col7" >0.000000</td>
+            </tr>
+            <tr>
+                        <th id="T_da817622_1586_11eb_9455_68a86d10ab2alevel0_row1" class="row_heading level0 row1" >1</th>
+                        <td id="T_da817622_1586_11eb_9455_68a86d10ab2arow1_col0" class="data row1 col0" >Sarawak</td>
+                        <td id="T_da817622_1586_11eb_9455_68a86d10ab2arow1_col1" class="data row1 col1" >KAPIT</td>
+                        <td id="T_da817622_1586_11eb_9455_68a86d10ab2arow1_col2" class="data row1 col2" >PARLIMEN</td>
+                        <td id="T_da817622_1586_11eb_9455_68a86d10ab2arow1_col3" class="data row1 col3" >P.215</td>
+                        <td id="T_da817622_1586_11eb_9455_68a86d10ab2arow1_col4" class="data row1 col4" >18125.000000</td>
+                        <td id="T_da817622_1586_11eb_9455_68a86d10ab2arow1_col5" class="data row1 col5" >278</td>
+                        <td id="T_da817622_1586_11eb_9455_68a86d10ab2arow1_col6" class="data row1 col6" >30658.000000</td>
+                        <td id="T_da817622_1586_11eb_9455_68a86d10ab2arow1_col7" class="data row1 col7" >60.030000</td>
+            </tr>
+            <tr>
+                        <th id="T_da817622_1586_11eb_9455_68a86d10ab2alevel0_row2" class="row_heading level0 row2" >2</th>
+                        <td id="T_da817622_1586_11eb_9455_68a86d10ab2arow2_col0" class="data row2 col0" >Sarawak</td>
+                        <td id="T_da817622_1586_11eb_9455_68a86d10ab2arow2_col1" class="data row2 col1" >BARAM</td>
+                        <td id="T_da817622_1586_11eb_9455_68a86d10ab2arow2_col2" class="data row2 col2" >PARLIMEN</td>
+                        <td id="T_da817622_1586_11eb_9455_68a86d10ab2arow2_col3" class="data row2 col3" >P.220</td>
+                        <td id="T_da817622_1586_11eb_9455_68a86d10ab2arow2_col4" class="data row2 col4" >22352.000000</td>
+                        <td id="T_da817622_1586_11eb_9455_68a86d10ab2arow2_col5" class="data row2 col5" >399</td>
+                        <td id="T_da817622_1586_11eb_9455_68a86d10ab2arow2_col6" class="data row2 col6" >35685.000000</td>
+                        <td id="T_da817622_1586_11eb_9455_68a86d10ab2arow2_col7" class="data row2 col7" >63.760000</td>
+            </tr>
+    </tbody></table>
 </div>
 
 </div>
@@ -14717,7 +14443,7 @@ if (outputEl) {{
 <div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df3</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df3</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">set_caption</span><span class="p">(</span><span class="s2">&quot;Malaysian General Election Dataset Summary of Statistical Information&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -14735,81 +14461,57 @@ if (outputEl) {{
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Votes for ALL Candidate</th>
-      <th>Total Registered Votes</th>
-      <th>Turn Out</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>count</th>
-      <td>727.000000</td>
-      <td>727.000000</td>
-      <td>727.000000</td>
-    </tr>
-    <tr>
-      <th>mean</th>
-      <td>30981.566713</td>
-      <td>38179.962861</td>
-      <td>81.658542</td>
-    </tr>
-    <tr>
-      <th>std</th>
-      <td>22823.247094</td>
-      <td>27228.650475</td>
-      <td>5.237689</td>
-    </tr>
-    <tr>
-      <th>min</th>
-      <td>0.000000</td>
-      <td>7614.000000</td>
-      <td>0.000000</td>
-    </tr>
-    <tr>
-      <th>25%</th>
-      <td>15790.000000</td>
-      <td>20029.500000</td>
-      <td>79.825000</td>
-    </tr>
-    <tr>
-      <th>50%</th>
-      <td>22238.000000</td>
-      <td>27849.000000</td>
-      <td>82.660000</td>
-    </tr>
-    <tr>
-      <th>75%</th>
-      <td>40506.500000</td>
-      <td>49775.500000</td>
-      <td>84.760000</td>
-    </tr>
-    <tr>
-      <th>max</th>
-      <td>156327.000000</td>
-      <td>178790.000000</td>
-      <td>90.470000</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+<style  type="text/css" >
+</style><table id="T_da885366_1586_11eb_9455_68a86d10ab2a" ><caption>Malaysian General Election Dataset Summary of Statistical Information</caption><thead>    <tr>        <th class="blank level0" ></th>        <th class="col_heading level0 col0" >Votes for ALL Candidate</th>        <th class="col_heading level0 col1" >Total Registered Votes</th>        <th class="col_heading level0 col2" >Turn Out</th>    </tr></thead><tbody>
+                <tr>
+                        <th id="T_da885366_1586_11eb_9455_68a86d10ab2alevel0_row0" class="row_heading level0 row0" >count</th>
+                        <td id="T_da885366_1586_11eb_9455_68a86d10ab2arow0_col0" class="data row0 col0" >727.000000</td>
+                        <td id="T_da885366_1586_11eb_9455_68a86d10ab2arow0_col1" class="data row0 col1" >727.000000</td>
+                        <td id="T_da885366_1586_11eb_9455_68a86d10ab2arow0_col2" class="data row0 col2" >727.000000</td>
+            </tr>
+            <tr>
+                        <th id="T_da885366_1586_11eb_9455_68a86d10ab2alevel0_row1" class="row_heading level0 row1" >mean</th>
+                        <td id="T_da885366_1586_11eb_9455_68a86d10ab2arow1_col0" class="data row1 col0" >30981.566713</td>
+                        <td id="T_da885366_1586_11eb_9455_68a86d10ab2arow1_col1" class="data row1 col1" >38179.962861</td>
+                        <td id="T_da885366_1586_11eb_9455_68a86d10ab2arow1_col2" class="data row1 col2" >81.658542</td>
+            </tr>
+            <tr>
+                        <th id="T_da885366_1586_11eb_9455_68a86d10ab2alevel0_row2" class="row_heading level0 row2" >std</th>
+                        <td id="T_da885366_1586_11eb_9455_68a86d10ab2arow2_col0" class="data row2 col0" >22823.247094</td>
+                        <td id="T_da885366_1586_11eb_9455_68a86d10ab2arow2_col1" class="data row2 col1" >27228.650475</td>
+                        <td id="T_da885366_1586_11eb_9455_68a86d10ab2arow2_col2" class="data row2 col2" >5.237689</td>
+            </tr>
+            <tr>
+                        <th id="T_da885366_1586_11eb_9455_68a86d10ab2alevel0_row3" class="row_heading level0 row3" >min</th>
+                        <td id="T_da885366_1586_11eb_9455_68a86d10ab2arow3_col0" class="data row3 col0" >0.000000</td>
+                        <td id="T_da885366_1586_11eb_9455_68a86d10ab2arow3_col1" class="data row3 col1" >7614.000000</td>
+                        <td id="T_da885366_1586_11eb_9455_68a86d10ab2arow3_col2" class="data row3 col2" >0.000000</td>
+            </tr>
+            <tr>
+                        <th id="T_da885366_1586_11eb_9455_68a86d10ab2alevel0_row4" class="row_heading level0 row4" >25%</th>
+                        <td id="T_da885366_1586_11eb_9455_68a86d10ab2arow4_col0" class="data row4 col0" >15790.000000</td>
+                        <td id="T_da885366_1586_11eb_9455_68a86d10ab2arow4_col1" class="data row4 col1" >20029.500000</td>
+                        <td id="T_da885366_1586_11eb_9455_68a86d10ab2arow4_col2" class="data row4 col2" >79.825000</td>
+            </tr>
+            <tr>
+                        <th id="T_da885366_1586_11eb_9455_68a86d10ab2alevel0_row5" class="row_heading level0 row5" >50%</th>
+                        <td id="T_da885366_1586_11eb_9455_68a86d10ab2arow5_col0" class="data row5 col0" >22238.000000</td>
+                        <td id="T_da885366_1586_11eb_9455_68a86d10ab2arow5_col1" class="data row5 col1" >27849.000000</td>
+                        <td id="T_da885366_1586_11eb_9455_68a86d10ab2arow5_col2" class="data row5 col2" >82.660000</td>
+            </tr>
+            <tr>
+                        <th id="T_da885366_1586_11eb_9455_68a86d10ab2alevel0_row6" class="row_heading level0 row6" >75%</th>
+                        <td id="T_da885366_1586_11eb_9455_68a86d10ab2arow6_col0" class="data row6 col0" >40506.500000</td>
+                        <td id="T_da885366_1586_11eb_9455_68a86d10ab2arow6_col1" class="data row6 col1" >49775.500000</td>
+                        <td id="T_da885366_1586_11eb_9455_68a86d10ab2arow6_col2" class="data row6 col2" >84.760000</td>
+            </tr>
+            <tr>
+                        <th id="T_da885366_1586_11eb_9455_68a86d10ab2alevel0_row7" class="row_heading level0 row7" >max</th>
+                        <td id="T_da885366_1586_11eb_9455_68a86d10ab2arow7_col0" class="data row7 col0" >156327.000000</td>
+                        <td id="T_da885366_1586_11eb_9455_68a86d10ab2arow7_col1" class="data row7 col1" >178790.000000</td>
+                        <td id="T_da885366_1586_11eb_9455_68a86d10ab2arow7_col2" class="data row7 col2" >90.470000</td>
+            </tr>
+    </tbody></table>
 </div>
 
 </div>
@@ -14836,7 +14538,7 @@ if (outputEl) {{
 <span class="n">df3</span><span class="p">[</span><span class="s1">&#39;Total Registered Votes&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df3</span><span class="p">[</span><span class="s1">&#39;Total Registered Votes&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;,&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span>
 <span class="n">df3</span><span class="p">[</span><span class="s1">&#39;Turn Out&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df3</span><span class="p">[</span><span class="s1">&#39;Turn Out&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;%&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span>
 <span class="n">df3</span> <span class="o">=</span> <span class="n">df3</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;Type&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;Total Registered Votes&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-<span class="n">df3</span>
+<span class="n">df3</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">set_caption</span><span class="p">(</span><span class="s2">&quot;Malaysian General Election Summary of Voters Information Grouped by Types&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -14854,51 +14556,21 @@ if (outputEl) {{
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Votes for ALL Candidate</th>
-      <th>Total Registered Votes</th>
-      <th>Turn Out</th>
-    </tr>
-    <tr>
-      <th>Type</th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>PARLIMEN</th>
-      <td>12082431.0</td>
-      <td>14940624.0</td>
-      <td>17928.86</td>
-    </tr>
-    <tr>
-      <th>DUN</th>
-      <td>10441168.0</td>
-      <td>12816209.0</td>
-      <td>41436.90</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+<style  type="text/css" >
+</style><table id="T_da90c9d8_1586_11eb_9455_68a86d10ab2a" ><caption>Malaysian General Election Summary of Voters Information Grouped by Types</caption><thead>    <tr>        <th class="blank level0" ></th>        <th class="col_heading level0 col0" >Votes for ALL Candidate</th>        <th class="col_heading level0 col1" >Total Registered Votes</th>        <th class="col_heading level0 col2" >Turn Out</th>    </tr>    <tr>        <th class="index_name level0" >Type</th>        <th class="blank" ></th>        <th class="blank" ></th>        <th class="blank" ></th>    </tr></thead><tbody>
+                <tr>
+                        <th id="T_da90c9d8_1586_11eb_9455_68a86d10ab2alevel0_row0" class="row_heading level0 row0" >PARLIMEN</th>
+                        <td id="T_da90c9d8_1586_11eb_9455_68a86d10ab2arow0_col0" class="data row0 col0" >12082431.000000</td>
+                        <td id="T_da90c9d8_1586_11eb_9455_68a86d10ab2arow0_col1" class="data row0 col1" >14940624.000000</td>
+                        <td id="T_da90c9d8_1586_11eb_9455_68a86d10ab2arow0_col2" class="data row0 col2" >17928.860000</td>
+            </tr>
+            <tr>
+                        <th id="T_da90c9d8_1586_11eb_9455_68a86d10ab2alevel0_row1" class="row_heading level0 row1" >DUN</th>
+                        <td id="T_da90c9d8_1586_11eb_9455_68a86d10ab2arow1_col0" class="data row1 col0" >10441168.000000</td>
+                        <td id="T_da90c9d8_1586_11eb_9455_68a86d10ab2arow1_col1" class="data row1 col1" >12816209.000000</td>
+                        <td id="T_da90c9d8_1586_11eb_9455_68a86d10ab2arow1_col2" class="data row1 col2" >41436.900000</td>
+            </tr>
+    </tbody></table>
 </div>
 
 </div>
@@ -14926,7 +14598,7 @@ if (outputEl) {{
 <span class="n">df3</span><span class="p">[</span><span class="s1">&#39;Turn Out&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df3</span><span class="p">[</span><span class="s1">&#39;Turn Out&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;%&#39;</span><span class="p">,</span><span class="s1">&#39;&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">astype</span><span class="p">(</span><span class="nb">float</span><span class="p">)</span>
 <span class="n">df3</span> <span class="o">=</span> <span class="n">df3</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;State&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">by</span><span class="o">=</span><span class="s1">&#39;Total Registered Votes&#39;</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
 <span class="n">df3</span><span class="p">[</span><span class="s1">&#39;</span><span class="si">% o</span><span class="s1">f Voters&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="nb">round</span><span class="p">(</span><span class="n">df3</span><span class="p">[</span><span class="s1">&#39;Votes for ALL Candidate&#39;</span><span class="p">]</span><span class="o">/</span><span class="n">df3</span><span class="p">[</span><span class="s1">&#39;Total Registered Votes&#39;</span><span class="p">]</span><span class="o">*</span><span class="mi">100</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
-<span class="n">df3</span>
+<span class="n">df3</span><span class="o">.</span><span class="n">style</span><span class="o">.</span><span class="n">set_caption</span><span class="p">(</span><span class="s2">&quot;Malaysian General Election Summary of Voters Information Grouped by States&quot;</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -14944,153 +14616,121 @@ if (outputEl) {{
 
 
 <div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Votes for ALL Candidate</th>
-      <th>Total Registered Votes</th>
-      <th>Turn Out</th>
-      <th>% of Voters</th>
-    </tr>
-    <tr>
-      <th>State</th>
-      <th></th>
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>Selangor</th>
-      <td>4112339.0</td>
-      <td>4830148.0</td>
-      <td>6699.82</td>
-      <td>85.1</td>
-    </tr>
-    <tr>
-      <th>Johor</th>
-      <td>3012594.0</td>
-      <td>3635998.0</td>
-      <td>6883.39</td>
-      <td>82.9</td>
-    </tr>
-    <tr>
-      <th>Perak</th>
-      <td>2377968.0</td>
-      <td>3021728.0</td>
-      <td>6638.76</td>
-      <td>78.7</td>
-    </tr>
-    <tr>
-      <th>Kedah</th>
-      <td>1880616.0</td>
-      <td>2292984.0</td>
-      <td>4242.67</td>
-      <td>82.0</td>
-    </tr>
-    <tr>
-      <th>Sabah</th>
-      <td>1687457.0</td>
-      <td>2234674.0</td>
-      <td>6561.36</td>
-      <td>75.5</td>
-    </tr>
-    <tr>
-      <th>Kelantan</th>
-      <td>1640916.0</td>
-      <td>2099054.0</td>
-      <td>4689.07</td>
-      <td>78.2</td>
-    </tr>
-    <tr>
-      <th>Pulau Pinang</th>
-      <td>1577812.0</td>
-      <td>1891254.0</td>
-      <td>4461.02</td>
-      <td>83.4</td>
-    </tr>
-    <tr>
-      <th>Pahang</th>
-      <td>1324886.0</td>
-      <td>1647962.0</td>
-      <td>4569.46</td>
-      <td>80.4</td>
-    </tr>
-    <tr>
-      <th>Terengganu</th>
-      <td>1241132.0</td>
-      <td>1473264.0</td>
-      <td>3410.30</td>
-      <td>84.2</td>
-    </tr>
-    <tr>
-      <th>Sarawak</th>
-      <td>880528.0</td>
-      <td>1220960.0</td>
-      <td>2228.68</td>
-      <td>72.1</td>
-    </tr>
-    <tr>
-      <th>Negeri Sembilan</th>
-      <td>977252.0</td>
-      <td>1215586.0</td>
-      <td>3556.42</td>
-      <td>80.4</td>
-    </tr>
-    <tr>
-      <th>Melaka</th>
-      <td>826058.0</td>
-      <td>989324.0</td>
-      <td>2874.56</td>
-      <td>83.5</td>
-    </tr>
-    <tr>
-      <th>Wilayah Persekutuan (KL)</th>
-      <td>696507.0</td>
-      <td>847793.0</td>
-      <td>908.35</td>
-      <td>82.2</td>
-    </tr>
-    <tr>
-      <th>Perlis</th>
-      <td>241618.0</td>
-      <td>300442.0</td>
-      <td>1475.04</td>
-      <td>80.4</td>
-    </tr>
-    <tr>
-      <th>Wilayah Persekutuan (Labuan)</th>
-      <td>21358.0</td>
-      <td>28356.0</td>
-      <td>76.39</td>
-      <td>75.3</td>
-    </tr>
-    <tr>
-      <th>Wilayah Persekutuan (Putrajaya)</th>
-      <td>24558.0</td>
-      <td>27306.0</td>
-      <td>90.47</td>
-      <td>89.9</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+<style  type="text/css" >
+</style><table id="T_da9908e6_1586_11eb_9455_68a86d10ab2a" ><caption>Malaysian General Election Summary of Voters Information Grouped by States</caption><thead>    <tr>        <th class="blank level0" ></th>        <th class="col_heading level0 col0" >Votes for ALL Candidate</th>        <th class="col_heading level0 col1" >Total Registered Votes</th>        <th class="col_heading level0 col2" >Turn Out</th>        <th class="col_heading level0 col3" >% of Voters</th>    </tr>    <tr>        <th class="index_name level0" >State</th>        <th class="blank" ></th>        <th class="blank" ></th>        <th class="blank" ></th>        <th class="blank" ></th>    </tr></thead><tbody>
+                <tr>
+                        <th id="T_da9908e6_1586_11eb_9455_68a86d10ab2alevel0_row0" class="row_heading level0 row0" >Selangor</th>
+                        <td id="T_da9908e6_1586_11eb_9455_68a86d10ab2arow0_col0" class="data row0 col0" >4112339.000000</td>
+                        <td id="T_da9908e6_1586_11eb_9455_68a86d10ab2arow0_col1" class="data row0 col1" >4830148.000000</td>
+                        <td id="T_da9908e6_1586_11eb_9455_68a86d10ab2arow0_col2" class="data row0 col2" >6699.820000</td>
+                        <td id="T_da9908e6_1586_11eb_9455_68a86d10ab2arow0_col3" class="data row0 col3" >85.100000</td>
+            </tr>
+            <tr>
+                        <th id="T_da9908e6_1586_11eb_9455_68a86d10ab2alevel0_row1" class="row_heading level0 row1" >Johor</th>
+                        <td id="T_da9908e6_1586_11eb_9455_68a86d10ab2arow1_col0" class="data row1 col0" >3012594.000000</td>
+                        <td id="T_da9908e6_1586_11eb_9455_68a86d10ab2arow1_col1" class="data row1 col1" >3635998.000000</td>
+                        <td id="T_da9908e6_1586_11eb_9455_68a86d10ab2arow1_col2" class="data row1 col2" >6883.390000</td>
+                        <td id="T_da9908e6_1586_11eb_9455_68a86d10ab2arow1_col3" class="data row1 col3" >82.900000</td>
+            </tr>
+            <tr>
+                        <th id="T_da9908e6_1586_11eb_9455_68a86d10ab2alevel0_row2" class="row_heading level0 row2" >Perak</th>
+                        <td id="T_da9908e6_1586_11eb_9455_68a86d10ab2arow2_col0" class="data row2 col0" >2377968.000000</td>
+                        <td id="T_da9908e6_1586_11eb_9455_68a86d10ab2arow2_col1" class="data row2 col1" >3021728.000000</td>
+                        <td id="T_da9908e6_1586_11eb_9455_68a86d10ab2arow2_col2" class="data row2 col2" >6638.760000</td>
+                        <td id="T_da9908e6_1586_11eb_9455_68a86d10ab2arow2_col3" class="data row2 col3" >78.700000</td>
+            </tr>
+            <tr>
+                        <th id="T_da9908e6_1586_11eb_9455_68a86d10ab2alevel0_row3" class="row_heading level0 row3" >Kedah</th>
+                        <td id="T_da9908e6_1586_11eb_9455_68a86d10ab2arow3_col0" class="data row3 col0" >1880616.000000</td>
+                        <td id="T_da9908e6_1586_11eb_9455_68a86d10ab2arow3_col1" class="data row3 col1" >2292984.000000</td>
+                        <td id="T_da9908e6_1586_11eb_9455_68a86d10ab2arow3_col2" class="data row3 col2" >4242.670000</td>
+                        <td id="T_da9908e6_1586_11eb_9455_68a86d10ab2arow3_col3" class="data row3 col3" >82.000000</td>
+            </tr>
+            <tr>
+                        <th id="T_da9908e6_1586_11eb_9455_68a86d10ab2alevel0_row4" class="row_heading level0 row4" >Sabah</th>
+                        <td id="T_da9908e6_1586_11eb_9455_68a86d10ab2arow4_col0" class="data row4 col0" >1687457.000000</td>
+                        <td id="T_da9908e6_1586_11eb_9455_68a86d10ab2arow4_col1" class="data row4 col1" >2234674.000000</td>
+                        <td id="T_da9908e6_1586_11eb_9455_68a86d10ab2arow4_col2" class="data row4 col2" >6561.360000</td>
+                        <td id="T_da9908e6_1586_11eb_9455_68a86d10ab2arow4_col3" class="data row4 col3" >75.500000</td>
+            </tr>
+            <tr>
+                        <th id="T_da9908e6_1586_11eb_9455_68a86d10ab2alevel0_row5" class="row_heading level0 row5" >Kelantan</th>
+                        <td id="T_da9908e6_1586_11eb_9455_68a86d10ab2arow5_col0" class="data row5 col0" >1640916.000000</td>
+                        <td id="T_da9908e6_1586_11eb_9455_68a86d10ab2arow5_col1" class="data row5 col1" >2099054.000000</td>
+                        <td id="T_da9908e6_1586_11eb_9455_68a86d10ab2arow5_col2" class="data row5 col2" >4689.070000</td>
+                        <td id="T_da9908e6_1586_11eb_9455_68a86d10ab2arow5_col3" class="data row5 col3" >78.200000</td>
+            </tr>
+            <tr>
+                        <th id="T_da9908e6_1586_11eb_9455_68a86d10ab2alevel0_row6" class="row_heading level0 row6" >Pulau Pinang</th>
+                        <td id="T_da9908e6_1586_11eb_9455_68a86d10ab2arow6_col0" class="data row6 col0" >1577812.000000</td>
+                        <td id="T_da9908e6_1586_11eb_9455_68a86d10ab2arow6_col1" class="data row6 col1" >1891254.000000</td>
+                        <td id="T_da9908e6_1586_11eb_9455_68a86d10ab2arow6_col2" class="data row6 col2" >4461.020000</td>
+                        <td id="T_da9908e6_1586_11eb_9455_68a86d10ab2arow6_col3" class="data row6 col3" >83.400000</td>
+            </tr>
+            <tr>
+                        <th id="T_da9908e6_1586_11eb_9455_68a86d10ab2alevel0_row7" class="row_heading level0 row7" >Pahang</th>
+                        <td id="T_da9908e6_1586_11eb_9455_68a86d10ab2arow7_col0" class="data row7 col0" >1324886.000000</td>
+                        <td id="T_da9908e6_1586_11eb_9455_68a86d10ab2arow7_col1" class="data row7 col1" >1647962.000000</td>
+                        <td id="T_da9908e6_1586_11eb_9455_68a86d10ab2arow7_col2" class="data row7 col2" >4569.460000</td>
+                        <td id="T_da9908e6_1586_11eb_9455_68a86d10ab2arow7_col3" class="data row7 col3" >80.400000</td>
+            </tr>
+            <tr>
+                        <th id="T_da9908e6_1586_11eb_9455_68a86d10ab2alevel0_row8" class="row_heading level0 row8" >Terengganu</th>
+                        <td id="T_da9908e6_1586_11eb_9455_68a86d10ab2arow8_col0" class="data row8 col0" >1241132.000000</td>
+                        <td id="T_da9908e6_1586_11eb_9455_68a86d10ab2arow8_col1" class="data row8 col1" >1473264.000000</td>
+                        <td id="T_da9908e6_1586_11eb_9455_68a86d10ab2arow8_col2" class="data row8 col2" >3410.300000</td>
+                        <td id="T_da9908e6_1586_11eb_9455_68a86d10ab2arow8_col3" class="data row8 col3" >84.200000</td>
+            </tr>
+            <tr>
+                        <th id="T_da9908e6_1586_11eb_9455_68a86d10ab2alevel0_row9" class="row_heading level0 row9" >Sarawak</th>
+                        <td id="T_da9908e6_1586_11eb_9455_68a86d10ab2arow9_col0" class="data row9 col0" >880528.000000</td>
+                        <td id="T_da9908e6_1586_11eb_9455_68a86d10ab2arow9_col1" class="data row9 col1" >1220960.000000</td>
+                        <td id="T_da9908e6_1586_11eb_9455_68a86d10ab2arow9_col2" class="data row9 col2" >2228.680000</td>
+                        <td id="T_da9908e6_1586_11eb_9455_68a86d10ab2arow9_col3" class="data row9 col3" >72.100000</td>
+            </tr>
+            <tr>
+                        <th id="T_da9908e6_1586_11eb_9455_68a86d10ab2alevel0_row10" class="row_heading level0 row10" >Negeri Sembilan</th>
+                        <td id="T_da9908e6_1586_11eb_9455_68a86d10ab2arow10_col0" class="data row10 col0" >977252.000000</td>
+                        <td id="T_da9908e6_1586_11eb_9455_68a86d10ab2arow10_col1" class="data row10 col1" >1215586.000000</td>
+                        <td id="T_da9908e6_1586_11eb_9455_68a86d10ab2arow10_col2" class="data row10 col2" >3556.420000</td>
+                        <td id="T_da9908e6_1586_11eb_9455_68a86d10ab2arow10_col3" class="data row10 col3" >80.400000</td>
+            </tr>
+            <tr>
+                        <th id="T_da9908e6_1586_11eb_9455_68a86d10ab2alevel0_row11" class="row_heading level0 row11" >Melaka</th>
+                        <td id="T_da9908e6_1586_11eb_9455_68a86d10ab2arow11_col0" class="data row11 col0" >826058.000000</td>
+                        <td id="T_da9908e6_1586_11eb_9455_68a86d10ab2arow11_col1" class="data row11 col1" >989324.000000</td>
+                        <td id="T_da9908e6_1586_11eb_9455_68a86d10ab2arow11_col2" class="data row11 col2" >2874.560000</td>
+                        <td id="T_da9908e6_1586_11eb_9455_68a86d10ab2arow11_col3" class="data row11 col3" >83.500000</td>
+            </tr>
+            <tr>
+                        <th id="T_da9908e6_1586_11eb_9455_68a86d10ab2alevel0_row12" class="row_heading level0 row12" >Wilayah Persekutuan (KL)</th>
+                        <td id="T_da9908e6_1586_11eb_9455_68a86d10ab2arow12_col0" class="data row12 col0" >696507.000000</td>
+                        <td id="T_da9908e6_1586_11eb_9455_68a86d10ab2arow12_col1" class="data row12 col1" >847793.000000</td>
+                        <td id="T_da9908e6_1586_11eb_9455_68a86d10ab2arow12_col2" class="data row12 col2" >908.350000</td>
+                        <td id="T_da9908e6_1586_11eb_9455_68a86d10ab2arow12_col3" class="data row12 col3" >82.200000</td>
+            </tr>
+            <tr>
+                        <th id="T_da9908e6_1586_11eb_9455_68a86d10ab2alevel0_row13" class="row_heading level0 row13" >Perlis</th>
+                        <td id="T_da9908e6_1586_11eb_9455_68a86d10ab2arow13_col0" class="data row13 col0" >241618.000000</td>
+                        <td id="T_da9908e6_1586_11eb_9455_68a86d10ab2arow13_col1" class="data row13 col1" >300442.000000</td>
+                        <td id="T_da9908e6_1586_11eb_9455_68a86d10ab2arow13_col2" class="data row13 col2" >1475.040000</td>
+                        <td id="T_da9908e6_1586_11eb_9455_68a86d10ab2arow13_col3" class="data row13 col3" >80.400000</td>
+            </tr>
+            <tr>
+                        <th id="T_da9908e6_1586_11eb_9455_68a86d10ab2alevel0_row14" class="row_heading level0 row14" >Wilayah Persekutuan (Labuan)</th>
+                        <td id="T_da9908e6_1586_11eb_9455_68a86d10ab2arow14_col0" class="data row14 col0" >21358.000000</td>
+                        <td id="T_da9908e6_1586_11eb_9455_68a86d10ab2arow14_col1" class="data row14 col1" >28356.000000</td>
+                        <td id="T_da9908e6_1586_11eb_9455_68a86d10ab2arow14_col2" class="data row14 col2" >76.390000</td>
+                        <td id="T_da9908e6_1586_11eb_9455_68a86d10ab2arow14_col3" class="data row14 col3" >75.300000</td>
+            </tr>
+            <tr>
+                        <th id="T_da9908e6_1586_11eb_9455_68a86d10ab2alevel0_row15" class="row_heading level0 row15" >Wilayah Persekutuan (Putrajaya)</th>
+                        <td id="T_da9908e6_1586_11eb_9455_68a86d10ab2arow15_col0" class="data row15 col0" >24558.000000</td>
+                        <td id="T_da9908e6_1586_11eb_9455_68a86d10ab2arow15_col1" class="data row15 col1" >27306.000000</td>
+                        <td id="T_da9908e6_1586_11eb_9455_68a86d10ab2arow15_col2" class="data row15 col2" >90.470000</td>
+                        <td id="T_da9908e6_1586_11eb_9455_68a86d10ab2arow15_col3" class="data row15 col3" >89.900000</td>
+            </tr>
+    </tbody></table>
 </div>
 
 </div>
@@ -15123,7 +14763,7 @@ if (outputEl) {{
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[51]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Importing and cleaning dataset</span>
@@ -15185,7 +14825,7 @@ if (outputEl) {{
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[52]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Importing and cleaning dataset</span>
@@ -15246,7 +14886,7 @@ if (outputEl) {{
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[53]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Importing and cleaning dataset</span>
@@ -15307,7 +14947,7 @@ if (outputEl) {{
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[54]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Importing and cleaning dataset</span>
@@ -15368,7 +15008,7 @@ if (outputEl) {{
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[55]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">display_side_by_side</span><span class="p">(</span><span class="n">predict1</span><span class="p">,</span> <span class="n">predict2</span><span class="p">,</span> <span class="n">predict3</span><span class="p">,</span> <span class="n">predict4</span><span class="p">)</span>
@@ -15396,7 +15036,7 @@ if (outputEl) {{
       <th>Candidate Win</th>
       <th>Prediction Results1</th>
       <th>% Seats Win</th>
-      <th>Prediction % Seats Win</th>
+      <th>Prediction1 % Seats Win</th>
     </tr>
     <tr>
       <th>Coalition</th>
@@ -15443,7 +15083,7 @@ if (outputEl) {{
       <th>Candidate Win</th>
       <th>Prediction Results2</th>
       <th>% Seats Win</th>
-      <th>Prediction % Seats Win</th>
+      <th>Prediction2 % Seats Win</th>
     </tr>
     <tr>
       <th>Coalition</th>
@@ -15490,7 +15130,7 @@ if (outputEl) {{
       <th>Candidate Win</th>
       <th>Prediction Results3</th>
       <th>% Seats Win</th>
-      <th>Prediction % Seats Win</th>
+      <th>Prediction3 % Seats Win</th>
     </tr>
     <tr>
       <th>Coalition</th>
@@ -15537,7 +15177,7 @@ if (outputEl) {{
       <th>Candidate Win</th>
       <th>Prediction Results4</th>
       <th>% Seats Win</th>
-      <th>Prediction % Seats Win</th>
+      <th>Prediction4 % Seats Win</th>
     </tr>
     <tr>
       <th>Coalition</th>
@@ -15603,7 +15243,7 @@ if (outputEl) {{
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[64]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df5</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;Election-Results-2018 - State_Results_By_Candidate.csv&#39;</span><span class="p">)</span>
@@ -15669,7 +15309,7 @@ if (outputEl) {{
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[65]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df5</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;Election-Results-2018 - State_Results_By_Candidate.csv&#39;</span><span class="p">)</span>
@@ -15735,7 +15375,7 @@ if (outputEl) {{
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[66]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df5</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;Election-Results-2018 - State_Results_By_Candidate.csv&#39;</span><span class="p">)</span>
@@ -15801,7 +15441,7 @@ if (outputEl) {{
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[67]:</div>
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df5</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;Election-Results-2018 - State_Results_By_Candidate.csv&#39;</span><span class="p">)</span>
@@ -15867,7 +15507,7 @@ if (outputEl) {{
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[68]:</div>
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">display_side_by_side</span><span class="p">(</span><span class="n">predict1</span><span class="p">,</span> <span class="n">predict2</span><span class="p">,</span> <span class="n">predict3</span><span class="p">,</span> <span class="n">predict4</span><span class="p">)</span>
@@ -16143,7 +15783,7 @@ if (outputEl) {{
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[56]:</div>
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Use our model to make predictions</span>
