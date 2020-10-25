@@ -19,7 +19,7 @@
     <script src="./js/blocs.js"></script>
     <script src='./js/jqBootstrapValidation.js'></script>
     <script src='./js/formHandler.js'></script>
-    <title>Zahiruddin Website</title>
+    <title>Boolancer - Free Bootstrap Theme</title>
 </head>
 <body>
 <!-- Main container -->
@@ -30,7 +30,7 @@
         <div class="container bloc-sm">
             <nav class="navbar nav-center row">
                 <div class="navbar-header">
-                    <!-- <a class="navbar-brand" href="index.html"><img src="img/user.png" alt="logo" /></a> -->
+                    <!-- logo if you want <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="logo" /></a> -->
                     <button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse"
                             data-target=".navbar-1">
                         <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span
@@ -43,10 +43,13 @@
                             <a href="index.html">Home</a>
                         </li>
                         <li>
-                            <a onclick="scrollToTarget('#aboutMe')">About Me</a>
+                            <a onclick="scrollToTarget('#skills')">Skills</a>
                         </li>
                         <li>
                             <a onclick="scrollToTarget('#portfolio')">Portfolio</a>
+                        </li>
+                        <li>
+                            <a onclick="scrollToTarget('#statistics')">Statistics</a>
                         </li>
                         <li>
                             <a onclick="scrollToTarget('#contact')">Contact me</a>
@@ -89,6 +92,74 @@
     </div>
     <!-- bloc-1 END -->
 
+    <!-- skills -->
+    <div class="bloc l-bloc bgc-white" id="skills">
+        <div class="container bloc-lg">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2 class="mg-md text-center">
+                        Websites I do are...
+                    </h2>
+
+                    <div class="divider-h">
+                        <span class="divider divider-half"></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row voffset">
+                <div class="col-sm-3">
+                    <div class="text-center">
+                        <span class="et-icon-heart icon-picture icon-lg animated zoomIn"></span>
+                    </div>
+                    <h3 class="text-center mg-md">
+                        Beautiful
+                    </h3>
+
+                    <p class="text-center">
+                        A little feature description could go here. A little feature description.
+                    </p>
+                </div>
+                <div class="col-sm-3">
+                    <div class="text-center">
+                        <span class="et-icon-expand icon-lg animated zoomIn animDelay02"></span>
+                    </div>
+                    <h3 class="text-center mg-md">
+                        Responsive
+                    </h3>
+
+                    <p class="text-center">
+                        A little feature description could go here. A little feature description.
+                    </p>
+                </div>
+                <div class="col-sm-3">
+                    <div class="text-center">
+                        <span class="et-icon-picture icon-lg animated zoomIn animDelay04"></span>
+                    </div>
+                    <h3 class="text-center mg-md">
+                        Clean
+                    </h3>
+
+                    <p class="text-center">
+                        A little feature description could go here. A little feature description.
+                    </p>
+                </div>
+                <div class="col-sm-3">
+                    <div class="text-center">
+                        <span class="et-icon-gears icon-lg animated zoomIn animDelay06"></span>
+                    </div>
+                    <h3 class="text-center mg-md">
+                        Optimized
+                    </h3>
+
+                    <p class="text-center">
+                        A little feature description could go here. A little feature description.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- skills END -->
+
     <!-- Bloc Group -->
     <div class='bloc-group'>
 
@@ -104,36 +175,34 @@
         </div>
         <!-- bloc-3 END -->
 
-        <!-- aboutMe -->
-        <div class="bloc bloc-tile-3 bgc-sinopia d-bloc tc-white" id="aboutMe">
+        <!-- bloc-4 -->
+        <div class="bloc bloc-tile-3 bgc-sinopia d-bloc tc-white" id="bloc-4">
             <div class="container bloc-lg">
                 <div class="row">
                     <div class="col-sm-12">
                         <h3 class="mg-md sm-shadow animated fadeInUp animDelay04 tc-white">
-                            About Me
+                            Heading content
                         </h3>
 
                         <p class="mg-lg animated fadeInUp animDelay06">
-                            I graduated in Bachelor of Engineering (Electrical & Electronic) 
-                            from University Putra Malaysia in year 2000. 
-                            I have been working as an electrical engineer for more than 18 years.
-                            In 2020, I start my journey in data science and as part of my journey, 
-                            I will share my projects in this website.
-                            Feels free to share the projects as you wish. 
-                            I am available for any inquiry as per details in My Contact.
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                            ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+                            consequat massa quis enim.
                         </p>
 
                         <div class="divider-h">
                             <span class="divider"></span>
                         </div>
                         <h3 class="mg-md text-right animated fadeInDown animDelay08 tc-white">
-                            My Projects
+                            Heading content
                         </h3>
 
                         <p class="text-right animated fadeInDown animDelay1">
-                            I am R and Python enthusiast. As part of my journey in data science, 
-                            I am sharing my works through this website. 
-                            Please feels free to read and shares my works as you wish.
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor.
+                            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                            ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+                            consequat massa quis enim.
                         </p>
                     </div>
                 </div>
@@ -175,48 +244,97 @@
             </div>
             <div class="row voffset">
                 <div class="col-sm-3">
-                    <a href="#" data-lightbox="img/Covid19.jpg"
-                       data-caption="Image description"><img src="img/Covid19.png"
+                    <a href="#" data-lightbox="img/people-woman-coffee-meeting.jpg"
+                       data-caption="Image description"><img src="img/people-woman-coffee-meeting.jpg"
                                                              class="img-responsive animated zoomIn" alt="Portfolio"/></a>
                 </div>
                 <div class="col-sm-3">
-                    <a href="#" data-lightbox="img/GE14.png" data-caption="Image description"><img
-                            src="img/GE14.png" class="img-responsive animated zoomIn" alt="Portfolio"/></a>
+                    <a href="#" data-lightbox="img/people-coffee-notes-tea.jpg" data-caption="Image description"><img
+                            src="img/people-coffee-notes-tea.jpg" class="img-responsive animated zoomIn" alt="Portfolio"/></a>
                 </div>
                 <div class="col-sm-3">
-                    <a href="#" data-lightbox="img/util1.png" data-caption="Image description"><img
-                            src="img/util1.png" class="img-responsive animated zoomIn" alt="Portfolio"/></a>
+                    <a href="#" data-lightbox="img/people-coffee-tea-meeting.jpg" data-caption="Image description"><img
+                            src="img/people-coffee-tea-meeting.jpg" class="img-responsive animated zoomIn" alt="Portfolio"/></a>
                 </div>
                 <div class="col-sm-3">
-                    <a href="#" data-lightbox="img/tba.png"
-                       data-caption="Image description"><img src="img/tba.png"
+                    <a href="#" data-lightbox="img/people-woman-coffee-meeting.jpg"
+                       data-caption="Image description"><img src="img/people-woman-coffee-meeting.jpg"
                                                              class="img-responsive animDelay02 animated zoomIn" alt="Portfolio"/></a>
                 </div>
             </div>
             <div class="row voffset">
                 <div class="col-sm-3">
-                    <a href="#" data-lightbox="img/tba.png" data-caption="Image description"><img
-                            src="img/tba.png"
+                    <a href="#" data-lightbox="img/people-coffee-notes-tea.jpg" data-caption="Image description"><img
+                            src="img/people-coffee-notes-tea.jpg"
                             class="img-responsive animDelay02 animated zoomIn animDelay04" alt="Portfolio"/></a>
                 </div>
                 <div class="col-sm-3">
-                    <a href="#" data-lightbox="img/tba.png" data-caption="Image description"><img
-                            src="img/tba.png" class="img-responsive animated zoomIn animDelay04" alt="Portfolio"/></a>
+                    <a href="#" data-lightbox="img/people-coffee-tea-meeting.jpg" data-caption="Image description"><img
+                            src="img/people-coffee-tea-meeting.jpg" class="img-responsive animated zoomIn animDelay04" alt="Portfolio"/></a>
                 </div>
                 <div class="col-sm-3">
-                    <a href="#" data-lightbox="img/tba.png"
-                       data-caption="Image description"><img src="img/tba.png"
+                    <a href="#" data-lightbox="img/people-woman-coffee-meeting.jpg"
+                       data-caption="Image description"><img src="img/people-woman-coffee-meeting.jpg"
                                                              class="img-responsive animated zoomIn animDelay04" alt="Portfolio"/></a>
                 </div>
                 <div class="col-sm-3">
-                    <a href="#" data-lightbox="img/tba.png" data-caption="Image description"><img
-                            src="img/tba.png"
+                    <a href="#" data-lightbox="img/people-coffee-notes-tea.jpg" data-caption="Image description"><img
+                            src="img/people-coffee-notes-tea.jpg"
                             class="img-responsive animated zoomIn animDelay04" alt="Portfolio"/></a>
                 </div>
             </div>
         </div>
     </div>
     <!-- portfolio END -->
+
+    <!-- statistics -->
+    <div class="bloc bgc-white-smoke l-bloc b-divider" id="statistics">
+        <div class="container bloc-md">
+            <div class="row">
+                <div class="col-sm-12">
+                    <div class="row">
+                        <div class="col-sm-3">
+                            <h3 class="mg-md tc-outer-space text-center ">
+                                1253
+                            </h3>
+
+                            <p class="text-center ">
+                                Projects
+                            </p>
+                        </div>
+                        <div class="col-sm-3">
+                            <h3 class="mg-md tc-outer-space text-center  animated bounceIn animDelay02">
+                                245
+                            </h3>
+
+                            <p class="text-center ">
+                                Clients
+                            </p>
+                        </div>
+                        <div class="col-sm-3">
+                            <h3 class="mg-md tc-outer-space text-center  animated bounceIn animDelay04">
+                                246
+                            </h3>
+
+                            <p class="text-center ">
+                                Cups of Coffee
+                            </p>
+                        </div>
+                        <div class="col-sm-3">
+                            <h3 class="mg-md tc-outer-space text-center  animated bounceIn animDelay06">
+                                124.536
+                            </h3>
+
+                            <p class="text-center ">
+                                Lines of Code
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- statistics END -->
 
     <!-- bloc-8 -->
     <div class="bloc bg-95cdfeef1 bgc-ferrari-red d-bloc b-parallax" id="contact">
@@ -225,17 +343,31 @@
                 <div class="col-sm-12 col-md-6 col-md-offset-3">
                     <form id="form-1" novalidate>
                         <h3 class="mg-md text-center">
-                            My Contact
+                            Get in Touch
                         </h3>
-                    </p>
-                    <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  Kajang, Selangor, MY</p>
-                    <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  +60132682910</p>
-                    <p><i class="fa fa-whatsapp w3-text-teal w3-xlarge"></i>  +60135280512</p>
-                    <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  zahiruddin.zahidanishah@gmail.com</p>
-                    <p><i class="fa fa-twitter-square w3-text-teal w3-xlarge"></i>  <a href="https://twitter.com/zzahir1978/">@zzahir1978</a></p>
-                    <p><i class="fa fa-instagram w3-text-teal w3-xlarge"></i>  <a href="https://www.instagram.com/zzahir1978/">zzahir1978</a></p>
-                    <p><i class="fa fa-youtube w3-text-teal w3-xlarge"></i>  <a href="https://www.youtube.com/channel/UCK03YHoevc59KOjc2gieHZQ">Beradek Conspiracy: Build The Legacy</a></p>
-                    <p><i class="fa fa-hand-point-right"></i>  <a href="https://www.freelancer.com/hireme/zzahir1978">=> To hire me as a freelancer, please click this link. </a></p>
+
+                        <div class="form-group">
+                            <label>
+                                Name
+                            </label>
+                            <input id="name" class="form-control" required/>
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                Email
+                            </label>
+                            <input id="email" class="form-control" type="email" required/>
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                Message
+                            </label><textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
+                        </div>
+                        <div class="text-center">
+                            <button class="bloc-button btn btn-lg btn-wire" type="submit">
+                                Submit
+                            </button>
+                        </div>
                     </form>
                 </div>
             </div>
@@ -251,20 +383,20 @@
                     <div class="row">
                         <div class="col-sm-4">
                             <div class="text-center">
-                                <a href="https://twitter.com/zzahir1978/" target="_blank"><span
+                                <a href="https://www.twitter.com/BootstrapOcean/" target="_blank"><span
                                         class="fa fa-twitter icon-md"></span></a>
                             </div>
                         </div>
                         <div class="col-sm-4">
                             <div class="text-center">
-                                <a href="https://www.instagram.com/zzahir1978/" target="_blank"><span
-                                        class="fa fa-instagram icon-md"></span></a>
+                                <a href="https://www.facebook.com/BootstrapOcean/" target="_blank"><span
+                                        class="fa fa-facebook icon-md"></span></a>
                             </div>
                         </div>
                         <div class="col-sm-4">
                             <div class="text-center">
-                                <a href="https://www.youtube.com/channel/UCK03YHoevc59KOjc2gieHZQ"
-                                   target="_blank"><span class="fa fa-youtube icon-md"></span></a>
+                                <a href="https://plus.google.com/b/116513433102470788789/116513433102470788789/posts"
+                                   target="_blank"><span class="fa fa-google-plus icon-md"></span></a>
                             </div>
                         </div>
                     </div>
@@ -280,7 +412,7 @@
             <div class="row">
                 <div class="col-sm-12 col-md-6 col-md-offset-3">
                     <p class="text-center">
-                        Edited Based on Free Bootstrap theme by <a
+                        Free Bootstrap theme by <a
                             href="http://www.bootstrapocean.com/theme/boolancer">BootstrapOcean</a>
                     </p>
                 </div>
