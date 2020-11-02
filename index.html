@@ -1,308 +1,270 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <meta charset="utf-8">
-    <meta name="keywords" content="">
-    <meta name="description" content="">
-    <link rel="shortcut icon" type="image/png" href="favicon.png"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=0">
-    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css">
-    <link rel="stylesheet" id="ppstyle" type="text/css" href="style.css">
-    <link rel='stylesheet' href='./css/animate.css'/>
-    <link rel='stylesheet' href='./css/et-line.min.css'/>
-    <link rel='stylesheet' href='./css/font-awesome.min.css'/>
-    <link href='http://fonts.googleapis.com/css?family=Montserrat&subset=latin,latin-ext' rel='stylesheet'
-          type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Oswald&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-    <script src="./js/jquery-2.1.0.min.js"></script>
-    <script src="./js/bootstrap.js"></script>
-    <script src="./js/blocs.js"></script>
-    <script src='./js/jqBootstrapValidation.js'></script>
-    <script src='./js/formHandler.js'></script>
-    <title>Zahiruddin Website</title>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>Zahiruddin Portal</title>
+
+  <!-- Bootstrap Core CSS -->
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+  <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/stylish-portfolio.min.css" rel="stylesheet">
+
 </head>
-<body>
-<!-- Main container -->
-<div class="page-container">
 
-    <!-- Navigation Bloc -->
-    <div class="bloc l-bloc bgc-white" id="nav-bloc">
-        <div class="container bloc-sm">
-            <nav class="navbar nav-center row">
-                <div class="navbar-header">
-                    <!-- <a class="navbar-brand" href="index.html"><img src="img/user.png" alt="logo" /></a> -->
-                    <button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse"
-                            data-target=".navbar-1">
-                        <span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span
-                            class="icon-bar"></span><span class="icon-bar"></span>
-                    </button>
-                </div>
-                <div class="collapse navbar-collapse navbar-1">
-                    <ul class="site-navigation nav navbar-nav">
-                        <li>
-                            <a href="index.html">Home</a>
-                        </li>
-                        <li>
-                            <a onclick="scrollToTarget('#aboutMe')">About Me</a>
-                        </li>
-                        <li>
-                            <a href="resume.html">My Resume</a>
-                        </li>
-                        <li>
-                            <a onclick="scrollToTarget('#portfolio')">Portfolio</a>
-                        </li>
-                        <li>
-                            <a onclick="scrollToTarget('#contact')">Contact me</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </div>
+<body id="page-top">
+
+  <!-- Navigation -->
+  <a class="menu-toggle rounded" href="#">
+    <i class="fas fa-bars"></i>
+  </a>
+  <nav id="sidebar-wrapper">
+    <ul class="sidebar-nav">
+      <li class="sidebar-brand">
+        <a class="js-scroll-trigger" href="#page-top">Zahiruddin Portal</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#page-top">Home</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#about">About</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#services">Services</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#portfolio">Portfolio</a>
+      </li>
+      <li class="sidebar-nav-item">
+        <a class="js-scroll-trigger" href="#contact">Contact</a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Header -->
+  <header class="masthead d-flex">
+    <div class="container text-center my-auto">
+      <h1 class="mb-1">Zahiruddin Zahidanishah</h1>
+      <h3 class="mb-5">
+        <em>Engineer|Data Analyst|Web Designer</em>
+      </h3>
+      <a class="btn btn-primary btn-xl js-scroll-trigger" href="#about">Find Out More</a>
     </div>
-    <!-- Navigation Bloc END -->
+    <div class="overlay"></div>
+  </header>
 
-    <!-- bloc-1 -->
-    <div class="bloc bg-95cdfeef1 bgc-ferrari-red d-bloc tc-white b-parallax" id="bloc-1">
-        <div class="container bloc-lg">
-            <div class="row">
-                <div class="col-sm-12">
-                    <div class="text-center"><img src="img/user.png" class="avatar" alt="User image" width="150"></div>
-                    <h1 class="mg-md text-center tc-black">
-                        Zahiruddin Zahidanishah
-                    </h1>
-
-                    <h2 class="text-center tc-white-smoke mg-md">
-                        Electrical Engineer * Data Analyst * Web Design * Graphics Design
-                    </h2>
-
-                    <p class="text-center">
-                        Freelancer 
-                    </p>
-
-                    <div class="divider-h">
-                        <span class="divider divider-half"></span>
-                    </div>
-                    <div class="text-center">
-                        <a class="btn   btn-lg wire-btn-white btn-wire btn-rd" onclick="scrollToTarget('#aboutMe')">More
-                            Information</a>
-                    </div>
-                </div>
-            </div>
+  <!-- About -->
+  <section class="content-section bg-light" id="about">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col-lg-10 mx-auto">
+          <h2>Hi, welcome to my website</h2>
+          <p class="lead mb-5">This website is where I share all my latest projects in regards with 
+            data analyst using R and Python, graphic design and other related to my interest. Feel free 
+            to share and used any of my contents in this website. For more information and inquiry, please feel
+            free to contact me.</p>
+          <a class="btn btn-dark btn-xl js-scroll-trigger" href="#services">My Services As A Freelancer</a>
         </div>
+      </div>
     </div>
-    <!-- bloc-1 END -->
+  </section>
 
-    <!-- Bloc Group -->
-    <div class='bloc-group'>
-
-        <!-- bloc-3 -->
-        <div class="bloc bgc-white bloc-tile-3 bg-people-woman-coffee-meeting d-bloc animated fadeIn" id="bloc-3">
-            <div class="container bloc-lg">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <span class="empty-column"></span>
-                    </div>
-                </div>
-            </div>
+  <!-- Services -->
+  <section class="content-section bg-primary text-white text-center" id="services">
+    <div class="container">
+      <div class="content-section-heading">
+        <h3 class="text-secondary mb-0">Services</h3>
+        <h2 class="mb-5">My Services As A Freelancer</h2>
+      </div>
+      <div class="row">
+        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="icon-screen-smartphone"></i>
+          </span>
+          <h4>
+            <strong>Data Analyst</strong>
+          </h4>
+          <p class="text-faded mb-0">R and Pyhton Data Analysis Report</p>
         </div>
-        <!-- bloc-3 END -->
-
-        <!-- aboutMe -->
-        <div class="bloc bloc-tile-3 bgc-sinopia d-bloc tc-white" id="aboutMe">
-            <div class="container bloc-lg">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <h3 class="mg-md sm-shadow animated fadeInUp animDelay04 tc-white">
-                            About Me
-                        </h3>
-
-                        <p class="mg-lg animated fadeInUp animDelay06">
-                            I graduated in Bachelor of Engineering (Electrical & Electronic) 
-                            from University Putra Malaysia in year 2000. 
-                            I have been working as an electrical engineer for more than 18 years.
-                            In 2020, I start my journey in data science and as part of my journey, 
-                            I will share my projects in this website.
-                            Feels free to share the projects as you wish. 
-                            I am available for any inquiry as per details in My Contact.
-                        </p>
-
-                        <div class="divider-h">
-                            <span class="divider"></span>
-                        </div>
-                        <h3 class="mg-md text-right animated fadeInDown animDelay08 tc-white">
-                            My Projects
-                        </h3>
-
-                        <p class="text-right animated fadeInDown animDelay1">
-                            I am R and Python enthusiast. As part of my journey in data science, 
-                            I am sharing my works through this website. 
-                            Please feels free to read and shares my works as you wish.
-                        </p>
-                    </div>
-                </div>
-            </div>
+        <div class="col-lg-3 col-md-6 mb-5 mb-lg-0">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="icon-pencil"></i>
+          </span>
+          <h4>
+            <strong>Web Design</strong>
+          </h4>
+          <p class="text-faded mb-0">Responsive, Minimalist & Freshly Design</p>
         </div>
-        <!-- bloc-4 END -->
-
-        <!-- bloc-5 -->
-        <div class="bloc bgc-white bloc-tile-3 bg-people-coffee-notes-tea d-bloc animated fadeIn animDelay02"
-             id="bloc-5">
-            <div class="container bloc-lg">
-                <div class="row">
-                    <div class="col-sm-12">
-                        <span class="empty-column"></span>
-                    </div>
-                </div>
-            </div>
+        <div class="col-lg-3 col-md-6 mb-5 mb-md-0">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="icon-like"></i>
+          </span>
+          <h4>
+            <strong>Translation</strong>
+          </h4>
+          <p class="text-faded mb-0">English to Malay (vice versa) Translation of Documents
+            and etc.
+          </p>
         </div>
-        <!-- bloc-5 END -->
+        <div class="col-lg-3 col-md-6">
+          <span class="service-icon rounded-circle mx-auto mb-3">
+            <i class="icon-mustache"></i>
+          </span>
+          <h4>
+            <strong>Graphic Design</strong>
+          </h4>
+          <p class="text-faded mb-0">Logo Design, Web Banner and Photos Editing</p>
+        </div>
+      </div>
     </div>
-    <!-- Bloc Group END -->
+  </section>
 
-    <!-- portfolio -->
-    <div class="bloc l-bloc bgc-white" id="portfolio">
-        <div class="container bloc-lg">
-            <div class="row">
-                <div class="col-sm-12">
-                    <h2 class="text-center mg-md">
-                        My Portfolio
-                    </h2>
-
-                    <div class="divider-h">
-                        <span class="divider divider-half"></span>
-                    </div>
-                    <p class="text-center sub-heading">
-                        Here you can see samples of my work
-                    </p>
-                </div>
+  <!-- Portfolio -->
+  <section class="content-section" id="portfolio">
+    <div class="container">
+      <div class="content-section-heading text-center">
+        <h3 class="text-secondary mb-0">Portfolio</h3>
+        <h2 class="mb-5">Recent Projects</h2>
+      </div>
+      <div class="row no-gutters">
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="https://zzahir1978.github.io/projects/Covid19my.html">
+            <div class="caption">
+              <div class="caption-content">
+                <!--<div class="h2">Covid 19 Report</div>
+                <p class="mb-0">This report is dashboard that shows the latest situation of Covid19
+                  cases in a selected country and worldwide.
+                </p>
+              </div>-->
             </div>
-            <div class="row voffset">
-                <div class="col-sm-3">
-                    <a href="projects/Covid19my.html"><img src="img/Covid19.png"
-                                                             class="img-responsive animated zoomIn" alt="Portfolio"/></a>
-                </div>
-                <div class="col-sm-3">
-                    <a href="projects/GE14.html"><img
-                            src="img/GE14.png" class="img-responsive animated zoomIn" alt="Portfolio"/></a>
-                </div>
-                <div class="col-sm-3">
-                    <a href="projects/utilities.html"><img
-                            src="img/util1.png" class="img-responsive animated zoomIn" alt="Portfolio"/></a>
-                </div>
-                <div class="col-sm-3">
-                    <a href="weather.html"><img src="img/weather.png"
-                                                             class="img-responsive animDelay02 animated zoomIn" alt="Portfolio"/></a>
-                </div>
-            </div>
-            <div class="row voffset">
-                <div class="col-sm-3">
-                    <a href="#" data-lightbox="img/tba.png" data-caption="Image description"><img
-                            src="img/tba.png"
-                            class="img-responsive animDelay02 animated zoomIn animDelay04" alt="Portfolio"/></a>
-                </div>
-                <div class="col-sm-3">
-                    <a href="#" data-lightbox="img/tba.png" data-caption="Image description"><img
-                            src="img/tba.png" class="img-responsive animated zoomIn animDelay04" alt="Portfolio"/></a>
-                </div>
-                <div class="col-sm-3">
-                    <a href="#" data-lightbox="img/tba.png"
-                       data-caption="Image description"><img src="img/tba.png"
-                                                             class="img-responsive animated zoomIn animDelay04" alt="Portfolio"/></a>
-                </div>
-                <div class="col-sm-3">
-                    <a href="#" data-lightbox="img/tba.png" data-caption="Image description"><img
-                            src="img/tba.png"
-                            class="img-responsive animated zoomIn animDelay04" alt="Portfolio"/></a>
-                </div>
-            </div>
+            <img class="img-fluid" src="img/covid19.png" alt="">
+          </a>
         </div>
-    </div>
-    <!-- portfolio END -->
-
-    <!-- bloc-8 -->
-    <div class="bloc bg-95cdfeef1 bgc-ferrari-red d-bloc b-parallax" id="contact">
-        <div class="container bloc-lg">
-            <div class="row">
-                <div class="col-sm-12 col-md-6 col-md-offset-3">
-                    <form id="form-1" novalidate>
-                        <h3 class="mg-md text-center">
-                            My Contact
-                        </h3>
-                    </p>
-                    <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  Kajang, Selangor, MY</p>
-                    <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  +60132682910</p>
-                    <p><i class="fa fa-whatsapp w3-text-teal w3-xlarge"></i>  +60135280512</p>
-                    <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  zahiruddin.zahidanishah@gmail.com</p>
-                    <p><i class="fa fa-twitter-square w3-text-teal w3-xlarge"></i>  <a href="https://twitter.com/zzahir1978/">@zzahir1978</a></p>
-                    <p><i class="fa fa-instagram w3-text-teal w3-xlarge"></i>  <a href="https://www.instagram.com/zzahir1978/">zzahir1978</a></p>
-                    <p><i class="fa fa-youtube w3-text-teal w3-xlarge"></i>  <a href="https://www.youtube.com/channel/UCK03YHoevc59KOjc2gieHZQ">Beradek Conspiracy: Build The Legacy</a></p>
-                    <p><i class="fa fa-hand-point-right"></i>  <a href="https://www.freelancer.com/hireme/zzahir1978">=> To hire me as a freelancer, please click this link. </a></p>
-                    <br>
-                    <h3 class="mg-md text-center">
-                        My QR Code
-                    </h3>
-                    <h3 class="mg-md text-center">
-                        <img src="img/qr-code.png" alt="logo" width="150"/>
-                    </h3>
-                </form>
-                </div>
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="#!">
+            <div class="caption">
+              <div class="caption-content">
+                <!--<div class="h2">Ice Cream</div>
+                <p class="mb-0">A dark blue background with a colored pencil, a clip, and a tiny ice cream cone!</p>
+              </div>-->
             </div>
+            <img class="img-fluid" src="img/ge14.png" alt="">
+          </a>
         </div>
-    </div>
-    <!-- bloc-8 END -->
-
-    <!-- bloc-9 -->
-    <div class="bloc bgc-white-smoke l-bloc" id="bloc-9">
-        <div class="container bloc-sm">
-            <div class="row">
-                <div class="col-xs-4 col-xs-offset-4">
-                    <div class="row">
-                        <div class="col-sm-4">
-                            <div class="text-center">
-                                <a href="https://twitter.com/zzahir1978/" target="_blank"><span
-                                        class="fa fa-twitter icon-md"></span></a>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="text-center">
-                                <a href="https://www.instagram.com/zzahir1978/" target="_blank"><span
-                                        class="fa fa-instagram icon-md"></span></a>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="text-center">
-                                <a href="https://www.youtube.com/channel/UCK03YHoevc59KOjc2gieHZQ"
-                                   target="_blank"><span class="fa fa-youtube icon-md"></span></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+        <div class="col-lg-6">
+          <a class="portfolio-item" href="#!">
+            <div class="caption">
+              <div class="caption-content">
+                <!--<div class="h2">Strawberries</div>
+                <p class="mb-0">Strawberries are such a tasty snack, especially with a little sugar on top!</p>
+              </div>-->
             </div>
+            <img class="img-fluid" src="img/electric.png" alt="">
+          </a>
         </div>
-    </div>
-    <!-- bloc-9 END -->
-
-    <!-- Footer - bloc-10 -->
-    <div class="bloc l-bloc bgc-white" id="bloc-10">
-        <div class="container bloc-sm">
-            <div class="row">
-                <div class="col-sm-12 col-md-6 col-md-offset-3">
-                    <p class="text-center">
-                        Edited Based on Free Bootstrap theme by <a
-                            href="http://www.bootstrapocean.com/theme/boolancer">BootstrapOcean</a>
-                    </p>
-                </div>
+        <!--<div class="col-lg-6">
+          <a class="portfolio-item" href="#!">
+            <div class="caption">
+              <div class="caption-content">
+                <div class="h2">Workspace</div>
+                <p class="mb-0">A yellow workspace with some scissors, pencils, and other objects.</p>
+              </div>
             </div>
+            <img class="img-fluid" src="img/portfolio-4.jpg" alt="">
+          </a>
         </div>
+      </div>
+    </div>-->
+  </section>
+
+  <!-- Call to Action -->
+  <!--<section class="content-section bg-primary text-white">
+    <div class="container text-center">
+      <h2 class="mb-4">The buttons below are impossible to resist...</h2>
+      <a href="#!" class="btn btn-xl btn-light mr-4">Click Me!</a>
+      <a href="#!" class="btn btn-xl btn-dark">Look at Me!</a>
     </div>
-    <!-- Footer - bloc-10 END -->
+  </section>-->
+
+  <!-- Map -->
+  <div id="contact" class="map">
+    <!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19339.7529223882!2d101.78110445205064!3d3.0531198907952577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc3490215b545f%3A0x30cc08c2503b24c3!2s11%2C%20Jalan%20Penghulu%204%2F3%2C%20Bandar%20Mahkota%20Cheras%2C%2043200%20Cheras%2C%20Selangor!5e1!3m2!1sen!2smy!4v1604283300386!5m2!1sen!2smy" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+    <br />
+    <small>
+      <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19339.7529223882!2d101.78110445205064!3d3.0531198907952577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc3490215b545f%3A0x30cc08c2503b24c3!2s11%2C%20Jalan%20Penghulu%204%2F3%2C%20Bandar%20Mahkota%20Cheras%2C%2043200%20Cheras%2C%20Selangor!5e1!3m2!1sen!2smy!4v1604283300386!5m2!1sen!2smy"></a>
+    </small>-->
+  
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-lg-10 mx-auto">
+        <h2>My Contact</h2>
+        <p><i class="fa fa-map-marker w3-text-teal w3-xlarge"></i>  Kajang, Selangor, MY</p>
+        <p><i class="fa fa-phone w3-text-teal w3-xlarge"></i>  +60132682910</p>
+        <p><i class="fa fa-whatsapp w3-text-teal w3-xlarge"></i>  +60135280512</p>
+        <p><i class="fa fa-envelope-o w3-text-teal w3-xlarge"></i>  zahiruddin.zahidanishah@gmail.com</p>
+        <h3 class="mg-md text-center">
+          My QR Code
+          </h3>
+          <h3 class="mg-md text-center">
+          <img src="img/qr-code.png" alt="logo" width="150"/>
+          </h3>
+      </div>
+    </div>
+  </div>
 </div>
-<!-- Main container END -->
+
+
+
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <div class="container">
+      <ul class="list-inline mb-5">
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3" href="https://www.facebook.com/zahiruddin.zahidanishah.90/">
+            <i class="icon-social-facebook"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white mr-3" href="https://twitter.com/zzahir1978">
+            <i class="icon-social-twitter"></i>
+          </a>
+        </li>
+        <li class="list-inline-item">
+          <a class="social-link rounded-circle text-white" href="https://github.com/zzahir1978">
+            <i class="icon-social-github"></i>
+          </a>
+        </li>
+      </ul>
+      <p class="text-muted small mb-0">Copyright &copy; Zahiruddin Website 2020</p>
+    </div>
+  </footer>
+
+  <!-- Scroll to Top Button-->
+  <a class="scroll-to-top rounded js-scroll-trigger" href="#page-top">
+    <i class="fas fa-angle-up"></i>
+  </a>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Plugin JavaScript -->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+  <!-- Custom scripts for this template -->
+  <script src="js/stylish-portfolio.min.js"></script>
 
 </body>
-
-<!-- Google Analytics -->
-
-<!-- Google Analytics END -->
 
 </html>
